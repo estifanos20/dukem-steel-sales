@@ -781,13 +781,26 @@ document.getElementById("options").classList.remove("show");
 
 function sendTelegram(){
 
-window.open(
-"https://t.me/TADHSH",
-"_blank"
-);
+    fetch("https://script.google.com/macros/s/AKfycbxWsjeEIbEEY28PH3v5UsBG5N0GGT-bzK8l5h6KPcNrCf9t-gM8j7UBswGuIrEmbOg/exec", {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+            "Content-Type": "text/plain"
+        },
+        body: JSON.stringify({
+            name: document.getElementById("customerName").value,
+            phone: document.getElementById("customerPhone").value,
+            product: document.getElementById("orderProduct").value,
+            quantity: document.getElementById("quantity").value,
+            location: document.getElementById("orderAddress").value,
+            message: document.getElementById("orderMessage").value
+        })
+    });
 
+    alert("✅ ትዕዛዝዎ ተልኳል!");
+
+    closeOptions();
 }
-
 
 /* SMS */
 
