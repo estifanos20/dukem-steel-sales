@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Dukem Steel Sales | ቆርቆሮ እና የግንባታ እቃዎች</title>
+<title>Dukem Steel Sales | ዱከም ቆርቆሮ</title>
 
 <style>
 *{
@@ -16,92 +16,120 @@
 
 body{
   font-family:Arial,"Noto Sans Ethiopic",sans-serif;
-  background:#f4f5f7;
-  color:#17202a;
-  line-height:1.6;
+  background:#f5f6f8;
+  color:#172b4d;
 }
 
 header{
   position:sticky;
   top:0;
-  z-index:1000;
-  background:#101820;
-  color:white;
-  box-shadow:0 3px 15px #0004;
+  z-index:999;
+  background:#fff;
+  box-shadow:0 3px 18px #0002;
 }
 
 .nav{
   max-width:1200px;
   margin:auto;
-  padding:15px 20px;
+  padding:10px 18px;
   display:flex;
   align-items:center;
   justify-content:space-between;
 }
 
-.logo{
-  font-size:22px;
+.logo-box{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.logo-box img{
+  width:62px;
+  height:62px;
+  object-fit:contain;
+  border-radius:8px;
+}
+
+.logo-text{
   font-weight:900;
-  color:#f7b731;
+  color:#082c54;
+  font-size:19px;
+}
+
+.logo-text span{
+  color:#f5b900;
+}
+
+nav{
+  display:flex;
+  gap:18px;
 }
 
 nav a{
-  color:white;
   text-decoration:none;
-  margin-left:18px;
+  color:#082c54;
   font-weight:bold;
 }
 
 nav a:hover{
-  color:#f7b731;
+  color:#f5b900;
 }
 
 .hero{
-  min-height:90vh;
+  min-height:88vh;
   display:flex;
   align-items:center;
-  background:
-    linear-gradient(#0009,#0009),
-    url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1600&q=80")
-    center/cover;
-  color:white;
+  justify-content:center;
   text-align:center;
+  color:white;
+  background:
+    linear-gradient(#062447cc,#062447cc),
+    url("sample-3.jpg") center/cover;
 }
 
 .hero-content{
-  width:100%;
-  max-width:900px;
-  margin:auto;
+  max-width:950px;
   padding:30px 20px;
 }
 
+.hero-logo{
+  width:125px;
+  height:125px;
+  object-fit:contain;
+  background:white;
+  border-radius:20px;
+  padding:8px;
+  margin-bottom:18px;
+}
+
 .hero h1{
-  font-size:clamp(38px,7vw,75px);
-  color:#f7b731;
-  margin-bottom:10px;
+  font-size:clamp(38px,7vw,72px);
+  color:#f7c400;
+  margin-bottom:8px;
 }
 
 .hero h2{
-  font-size:clamp(22px,4vw,40px);
-  margin-bottom:15px;
+  font-size:clamp(21px,4vw,36px);
+  margin-bottom:18px;
 }
 
 .hero p{
   font-size:19px;
-  margin-bottom:25px;
+  max-width:750px;
+  margin:auto auto 25px;
 }
 
 .buttons{
   display:flex;
   justify-content:center;
-  gap:12px;
   flex-wrap:wrap;
+  gap:12px;
 }
 
 .btn{
   display:inline-block;
-  padding:13px 22px;
-  border-radius:8px;
+  padding:14px 22px;
+  border-radius:9px;
   text-decoration:none;
   font-weight:bold;
   transition:.3s;
@@ -111,38 +139,39 @@ nav a:hover{
   transform:translateY(-3px);
 }
 
-.primary{
-  background:#f7b731;
+.gold{
+  background:#f7c400;
   color:#111;
 }
 
-.whatsapp{
-  background:#20c863;
+.green{
+  background:#16b957;
   color:white;
 }
 
-.call{
-  background:#e84118;
+.red{
+  background:#e53935;
   color:white;
 }
 
 section{
   max-width:1200px;
   margin:auto;
-  padding:70px 20px;
+  padding:65px 18px;
 }
 
-.section-title{
+.title{
   text-align:center;
-  margin-bottom:40px;
+  margin-bottom:35px;
 }
 
-.section-title h2{
-  font-size:35px;
-  color:#101820;
+.title h2{
+  font-size:34px;
+  color:#082c54;
+  margin-bottom:8px;
 }
 
-.section-title p{
+.title p{
   color:#666;
 }
 
@@ -153,84 +182,134 @@ section{
 }
 
 .feature{
-  background:white;
-  padding:28px;
+  background:#fff;
+  padding:28px 20px;
   border-radius:15px;
   text-align:center;
-  box-shadow:0 5px 20px #00000012;
+  box-shadow:0 5px 20px #0001;
+  border-bottom:4px solid #f7c400;
 }
 
-.feature .icon{
+.feature-icon{
   font-size:42px;
   margin-bottom:10px;
 }
 
+.feature h3{
+  margin-bottom:8px;
+}
+
 .products{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(245px,1fr));
   gap:20px;
 }
 
 .card{
   background:white;
   border-radius:15px;
-  padding:25px;
-  box-shadow:0 5px 20px #00000012;
-  border-top:5px solid #f7b731;
+  overflow:hidden;
+  box-shadow:0 5px 20px #0001;
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.card img{
+  width:100%;
+  height:210px;
+  object-fit:cover;
+}
+
+.card-body{
+  padding:20px;
 }
 
 .card h3{
-  color:#101820;
-  margin-bottom:15px;
+  color:#082c54;
+  margin-bottom:12px;
 }
 
 .price{
   display:flex;
   justify-content:space-between;
-  padding:10px 0;
+  padding:9px 0;
   border-bottom:1px solid #eee;
 }
 
 .price strong{
-  color:#e84118;
+  color:#e53935;
 }
 
-.special{
-  background:#101820;
+.order{
+  display:block;
+  margin-top:15px;
+  background:#16b957;
   color:white;
-  border-radius:18px;
-  padding:40px 25px;
+  padding:11px;
   text-align:center;
-  margin-top:20px;
-}
-
-.special h2{
-  color:#f7b731;
-  font-size:32px;
-  margin-bottom:10px;
-}
-
-.special .big-price{
-  font-size:40px;
+  border-radius:8px;
+  text-decoration:none;
   font-weight:bold;
-  color:#fff;
 }
 
-.transport{
-  background:linear-gradient(135deg,#f7b731,#f39c12);
-  color:#111;
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:15px;
+}
+
+.gallery img{
+  width:100%;
+  height:270px;
+  object-fit:cover;
+  border-radius:14px;
+  box-shadow:0 4px 15px #0002;
+  transition:.3s;
+}
+
+.gallery img:hover{
+  transform:scale(1.02);
+}
+
+.villa{
+  background:#082c54;
+  color:white;
+  max-width:1160px;
   border-radius:20px;
   padding:45px 25px;
   text-align:center;
 }
 
+.villa h2{
+  color:#f7c400;
+  font-size:35px;
+}
+
+.big-price{
+  font-size:42px;
+  font-weight:900;
+  margin:15px 0;
+  color:white;
+}
+
+.transport{
+  background:linear-gradient(135deg,#f7c400,#ffda45);
+  border-radius:20px;
+  padding:45px 20px;
+  text-align:center;
+}
+
 .transport h2{
   font-size:35px;
+  color:#082c54;
 }
 
 .locations{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
   gap:15px;
 }
 
@@ -240,74 +319,99 @@ section{
   border-radius:12px;
   text-align:center;
   font-weight:bold;
-  box-shadow:0 4px 15px #00000010;
+  box-shadow:0 4px 15px #0001;
 }
 
 .contact{
-  background:#101820;
-  color:white;
   max-width:none;
+  background:#082c54;
+  color:white;
 }
 
 .contact-inner{
-  max-width:1000px;
+  max-width:900px;
   margin:auto;
   text-align:center;
 }
 
+.contact-inner h2{
+  color:#f7c400;
+  font-size:35px;
+}
+
 .phone{
-  font-size:28px;
-  color:#f7b731;
+  font-size:27px;
   font-weight:bold;
+  color:white;
   margin:10px;
 }
 
 footer{
-  background:#080d12;
-  color:#aaa;
+  background:#04182e;
+  color:#bbb;
   text-align:center;
-  padding:25px;
+  padding:25px 15px;
 }
 
-.float-whatsapp{
+.float{
   position:fixed;
   right:18px;
   bottom:18px;
-  width:58px;
-  height:58px;
-  background:#20c863;
-  color:white;
+  width:60px;
+  height:60px;
   border-radius:50%;
+  background:#16b957;
+  color:white;
   display:flex;
   align-items:center;
   justify-content:center;
-  font-size:29px;
   text-decoration:none;
+  font-size:29px;
   z-index:2000;
   box-shadow:0 5px 20px #0005;
 }
 
 @media(max-width:700px){
+
   .nav{
     flex-direction:column;
+    gap:8px;
+  }
+
+  nav{
     gap:10px;
+    flex-wrap:wrap;
+    justify-content:center;
   }
 
   nav a{
-    margin:0 6px;
     font-size:13px;
+  }
+
+  .logo-box img{
+    width:52px;
+    height:52px;
   }
 
   .hero{
     min-height:82vh;
   }
 
-  section{
-    padding:50px 15px;
+  .hero-logo{
+    width:100px;
+    height:100px;
   }
 
-  .phone{
-    font-size:22px;
+  section{
+    padding:50px 14px;
+  }
+
+  .title h2{
+    font-size:29px;
+  }
+
+  .big-price{
+    font-size:34px;
   }
 }
 </style>
@@ -317,47 +421,71 @@ footer{
 
 <header>
   <div class="nav">
-    <div class="logo">🏗️ DUKEM STEEL SALES</div>
+
+    <div class="logo-box">
+      <img src="logo.jpg" alt="Dukem Steel Sales Logo">
+
+      <div class="logo-text">
+        DUKEM <span>STEEL SALES</span>
+      </div>
+    </div>
 
     <nav>
       <a href="#home">Home</a>
       <a href="#products">Products</a>
       <a href="#villa">Villa</a>
-      <a href="#transport">Transport</a>
+      <a href="#gallery">Gallery</a>
       <a href="#contact">Contact</a>
     </nav>
+
   </div>
 </header>
 
-<!-- HOME -->
+
+<!-- HERO -->
+
 <section class="hero" id="home">
+
   <div class="hero-content">
+
+    <img class="hero-logo" src="logo.jpg" alt="Dukem Steel Sales">
 
     <h1>DUKEM STEEL SALES</h1>
 
-    <h2>የቆርቆሮ እና የግንባታ እቃዎች አቅራቢ</h2>
+    <h2>ዱከም ቆርቆሮ እና የግንባታ እቃዎች</h2>
 
     <p>
       ለቤት ሰሪዎች የቪላ ቤት ጣራ ክዳን፣
-      የአጥር ቆርቆሮ እና የተለያዩ የSteel ምርቶች
-      በተመጣጣኝ ዋጋ።
+      የአጥር ቆርቆሮ እና የተለያዩ የቆርቆሮ
+      ምርቶች በተመጣጣኝ ዋጋ።
     </p>
 
     <div class="buttons">
-      <a class="btn primary" href="#products">ምርቶቻችንን ይመልከቱ</a>
-      <a class="btn call" href="tel:0922337730">📞 0922 337730</a>
-      <a class="btn whatsapp" href="https://wa.me/251922337730">
+
+      <a class="btn gold" href="#products">
+        🏗️ ምርቶችን ይመልከቱ
+      </a>
+
+      <a class="btn red" href="tel:0922337730">
+        📞 0922 337730
+      </a>
+
+      <a class="btn green" href="https://wa.me/251922337730">
         💬 WhatsApp
       </a>
+
     </div>
 
   </div>
+
 </section>
 
+
 <!-- FEATURES -->
+
 <section>
 
-  <div class="section-title">
+  <div class="title">
     <h2>ለምን Dukem Steel Sales?</h2>
     <p>ጥራት • ተመጣጣኝ ዋጋ • ፈጣን አገልግሎት</p>
   </div>
@@ -365,130 +493,183 @@ footer{
   <div class="features">
 
     <div class="feature">
-      <div class="icon">🏠</div>
+      <div class="feature-icon">🏠</div>
       <h3>የቤት ጣራ</h3>
       <p>ለቪላ እና ለተለያዩ ቤቶች የሚሆን ቆርቆሮ</p>
     </div>
 
     <div class="feature">
-      <div class="icon">🧱</div>
+      <div class="feature-icon">🧱</div>
       <h3>የአጥር ቆርቆሮ</h3>
       <p>የተለያዩ መጠንና ቀለም አማራጮች</p>
     </div>
 
     <div class="feature">
-      <div class="icon">💰</div>
+      <div class="feature-icon">💰</div>
       <h3>ቅናሽ ዋጋ</h3>
       <p>ለቤት ሰሪዎች ተመጣጣኝ የሽያጭ ዋጋ</p>
     </div>
 
     <div class="feature">
-      <div class="icon">🚚</div>
+      <div class="feature-icon">🚚</div>
       <h3>ነፃ Transport</h3>
-      <p>በተወሰኑ አካባቢዎች ነፃ ትራንስፖርት</p>
+      <p>በሚደርስባቸው አካባቢዎች የትራንስፖርት አገልግሎት</p>
     </div>
 
   </div>
+
 </section>
 
+
 <!-- PRODUCTS -->
+
 <section id="products">
 
-  <div class="section-title">
-    <h2>የቆርቆሮ ምርቶች</h2>
+  <div class="title">
+    <h2>🏗️ የቆርቆሮ ምርቶች</h2>
     <p>የተለያዩ Gauge እና የቆርቆሮ አይነቶች</p>
   </div>
 
   <div class="products">
 
     <div class="card">
-      <h3>28 Gauge</h3>
+      <img src="sample-1.jpg" alt="Colored Roofing Sheet">
 
-      <div class="price">
-        <span>ዱከም</span>
-        <strong>1,100 ብር</strong>
-      </div>
+      <div class="card-body">
 
-      <div class="price">
-        <span>አዳማ</span>
-        <strong>970 ብር</strong>
-      </div>
-    </div>
+        <h3>28 Gauge</h3>
 
-    <div class="card">
-      <h3>30 Gauge</h3>
+        <div class="price">
+          <span>ዱከም</span>
+          <strong>1,100 ብር</strong>
+        </div>
 
-      <div class="price">
-        <span>አርቲ</span>
-        <strong>900 ብር</strong>
-      </div>
+        <div class="price">
+          <span>አዳማ</span>
+          <strong>970 ብር</strong>
+        </div>
 
-      <div class="price">
-        <span>አርቲ</span>
-        <strong>950 ብር</strong>
+        <a class="order"
+           href="https://wa.me/251922337730?text=ሰላም%20Dukem%20Steel%20Sales%2C%2028%20Gauge%20ቆርቆሮ%20ማዘዝ%20እፈልጋለሁ።">
+          💬 በWhatsApp ይዘዙ
+        </a>
+
       </div>
     </div>
 
+
     <div class="card">
-      <h3>32 Gauge</h3>
+      <img src="sample-2.jpg" alt="Villa Tile Roofing">
 
-      <div class="price">
-        <span>ቃሊቲ</span>
-        <strong>700 ብር</strong>
-      </div>
+      <div class="card-body">
 
-      <div class="price">
-        <span>አርቲ</span>
-        <strong>880 ብር</strong>
-      </div>
+        <h3>30 Gauge</h3>
 
-      <div class="price">
-        <span>ግመል</span>
-        <strong>870 ብር</strong>
+        <div class="price">
+          <span>አርቲ</span>
+          <strong>900 ብር</strong>
+        </div>
+
+        <div class="price">
+          <span>አርቲ</span>
+          <strong>950 ብር</strong>
+        </div>
+
+        <a class="order"
+           href="https://wa.me/251922337730?text=ሰላም%20Dukem%20Steel%20Sales%2C%2030%20Gauge%20ቆርቆሮ%20ማዘዝ%20እፈልጋለሁ።">
+          💬 በWhatsApp ይዘዙ
+        </a>
+
       </div>
     </div>
 
+
     <div class="card">
-      <h3>35 Gauge</h3>
+      <img src="sample-3.jpg" alt="Roofing Colors">
 
-      <div class="price">
-        <span>ቡሻን</span>
-        <strong>470 ብር</strong>
+      <div class="card-body">
+
+        <h3>32 Gauge</h3>
+
+        <div class="price">
+          <span>ቃሊቲ</span>
+          <strong>700 ብር</strong>
+        </div>
+
+        <div class="price">
+          <span>አርቲ</span>
+          <strong>880 ብር</strong>
+        </div>
+
+        <div class="price">
+          <span>ግመል</span>
+          <strong>870 ብር</strong>
+        </div>
+
+        <a class="order"
+           href="https://wa.me/251922337730?text=ሰላም%20Dukem%20Steel%20Sales%2C%2032%20Gauge%20ቆርቆሮ%20ማዘዝ%20እፈልጋለሁ።">
+          💬 በWhatsApp ይዘዙ
+        </a>
+
       </div>
+    </div>
 
-      <div class="price">
-        <span>ጥላ</span>
-        <strong>520 ብር</strong>
-      </div>
 
-      <div class="price">
-        <span>ፈረስ</span>
-        <strong>540 ብር</strong>
-      </div>
+    <div class="card">
+      <img src="sample-4.jpg" alt="Steel Roofing Products">
 
-      <div class="price">
-        <span>ሰማያዊ ጥላ</span>
-        <strong>540 ብር</strong>
+      <div class="card-body">
+
+        <h3>35 Gauge</h3>
+
+        <div class="price">
+          <span>ቡሻን</span>
+          <strong>470 ብር</strong>
+        </div>
+
+        <div class="price">
+          <span>ጥላ</span>
+          <strong>520 ብር</strong>
+        </div>
+
+        <div class="price">
+          <span>ፈረስ</span>
+          <strong>540 ብር</strong>
+        </div>
+
+        <div class="price">
+          <span>ሰማያዊ ጥላ</span>
+          <strong>540 ብር</strong>
+        </div>
+
+        <a class="order"
+           href="https://wa.me/251922337730?text=ሰላም%20Dukem%20Steel%20Sales%2C%2035%20Gauge%20ቆርቆሮ%20ማዘዝ%20እፈልጋለሁ።">
+          💬 በWhatsApp ይዘዙ
+        </a>
+
       </div>
     </div>
 
   </div>
+
 </section>
 
+
 <!-- VILLA -->
+
 <section id="villa">
 
-  <div class="section-title">
+  <div class="villa">
+
     <h2>🏡 Modern Villa Tile Roofing</h2>
-    <p>ለዘመናዊ የቪላ ቤቶች</p>
-  </div>
-
-  <div class="special">
-
-    <h2>ሸካራው Tile Roofing</h2>
 
     <p>
-      28 Gauge • 0.4mm Thickness • 1.15m Side Width
+      ለዘመናዊ የቪላ ቤቶች የሚሆን
+      የTile ቆርቆሮ
+    </p>
+
+    <p>
+      28 Gauge • 0.4mm Thickness • 1.15m Width
     </p>
 
     <div class="big-price">
@@ -496,25 +677,28 @@ footer{
     </div>
 
     <p>
-      🎨 በፈለጉት ቀለም አማራጭ
+      🎨 የተለያዩ ቀለሞች
       <br>
-      🚚 ነፃ ትራንስፖርት
+      🚚 የትራንስፖርት አገልግሎት
     </p>
 
     <br>
 
-    <a class="btn primary" href="tel:0922337730">
-      📞 አሁኑኑ ይደውሉ
+    <a class="btn gold"
+       href="https://wa.me/251922337730?text=ሰላም%2C%20Villa%20Tile%20Roofing%20ማዘዝ%20እፈልጋለሁ።">
+      💬 Villa Roofing ይዘዙ
     </a>
 
   </div>
 
 </section>
 
+
 <!-- FENCE -->
+
 <section>
 
-  <div class="section-title">
+  <div class="title">
     <h2>🧱 የአጥር ቆርቆሮ</h2>
     <p>EGA 28 Gauge • 0.4mm</p>
   </div>
@@ -522,60 +706,109 @@ footer{
   <div class="products">
 
     <div class="card">
-      <h3>EGA 28 Gauge</h3>
-      <div class="price">
-        <span>1.10m ስፋት</span>
-        <strong>800 ብር / ሜትር</strong>
+      <img src="sample-1.jpg" alt="Fence Sheet">
+
+      <div class="card-body">
+
+        <h3>EGA 28 Gauge</h3>
+
+        <div class="price">
+          <span>1.10m ስፋት</span>
+          <strong>800 ብር / ሜትር</strong>
+        </div>
+
+        <a class="order"
+           href="https://wa.me/251922337730?text=ሰላም%2C%20EGA%20የአጥር%20ቆርቆሮ%20ማዘዝ%20እፈልጋለሁ።">
+          💬 ይዘዙ
+        </a>
+
       </div>
     </div>
 
-    <div class="card">
-      <h3>EGA 28 Gauge</h3>
-      <div class="price">
-        <span>90cm ስፋት</span>
-        <strong>730 ብር / ሜትር</strong>
-      </div>
-    </div>
 
     <div class="card">
-      <h3>የተለያዩ አማራጮች</h3>
-      <p>
-        በፈለጉት ቁመት ማዘጋጀት
-        እና በተለያዩ ቀለሞች ማግኘት ይችላሉ።
-      </p>
+      <img src="sample-3.jpg" alt="Fence Sheet">
+
+      <div class="card-body">
+
+        <h3>EGA 28 Gauge</h3>
+
+        <div class="price">
+          <span>90cm ስፋት</span>
+          <strong>730 ብር / ሜትር</strong>
+        </div>
+
+        <p style="margin-top:12px">
+          በፈለጉት ቁመት ማዘጋጀት ይቻላል።
+        </p>
+
+        <a class="order"
+           href="https://wa.me/251922337730">
+          💬 ይዘዙ
+        </a>
+
+      </div>
     </div>
 
   </div>
 
 </section>
 
+
+<!-- GALLERY -->
+
+<section id="gallery">
+
+  <div class="title">
+    <h2>📸 የምርቶቻችን Gallery</h2>
+    <p>የተለያዩ የቆርቆሮ አይነቶችና ቀለሞች</p>
+  </div>
+
+  <div class="gallery">
+
+    <img src="sample-1.jpg" alt="Dukem Steel Product">
+
+    <img src="sample-2.jpg" alt="Dukem Steel Product">
+
+    <img src="sample-3.jpg" alt="Dukem Steel Product">
+
+    <img src="sample-4.jpg" alt="Dukem Steel Product">
+
+  </div>
+
+</section>
+
+
 <!-- TRANSPORT -->
-<section id="transport">
+
+<section>
 
   <div class="transport">
 
     <h2>🚚 ነፃ ትራንስፖርት</h2>
 
     <p>
-      የምትፈልጉትን የቆርቆሮ እና የግንባታ
-      እቃዎች በተመጣጣኝ ዋጋ ያግኙ።
+      ለቤት ሰሪዎች እና ለግንባታ ፕሮጀክቶች
+      የቆርቆሮ እቃዎችን እናቀርባለን።
     </p>
 
     <br>
 
     <strong>
-      የትራንስፖርት አገልግሎት ስለሚገኝበት
-      አካባቢ ለመረጃ ይደውሉ።
+      የነፃ ትራንስፖርት የሚደርስበትን አካባቢ
+      ለማረጋገጥ ይደውሉ።
     </strong>
 
   </div>
 
 </section>
 
+
 <!-- LOCATIONS -->
+
 <section>
 
-  <div class="section-title">
+  <div class="title">
     <h2>📍 የምናገለግላቸው አካባቢዎች</h2>
   </div>
 
@@ -593,12 +826,14 @@ footer{
 
 </section>
 
+
 <!-- CONTACT -->
+
 <section class="contact" id="contact">
 
   <div class="contact-inner">
 
-    <h2>📞 እኛን ያግኙ</h2>
+    <h2>📞 ያግኙን</h2>
 
     <p>DUKEM STEEL SALES</p>
 
@@ -612,12 +847,12 @@ footer{
 
     <div class="buttons">
 
-      <a class="btn call" href="tel:0922337730">
-        📞 Call Now
+      <a class="btn red" href="tel:0922337730">
+        📞 0922 337730
       </a>
 
-      <a class="btn whatsapp" href="https://wa.me/251922337730">
-        💬 WhatsApp Order
+      <a class="btn green" href="https://wa.me/251922337730">
+        💬 WhatsApp
       </a>
 
     </div>
@@ -626,15 +861,16 @@ footer{
 
 </section>
 
+
 <footer>
-  © 2026 Dukem Steel Sales — All Rights Reserved.
+  © 2026 DUKEM STEEL SALES | የቆርቆሮ እና የግንባታ እቃዎች
 </footer>
 
-<a class="float-whatsapp"
-   href="https://wa.me/251922337730"
-   target="_blank">
+
+<a class="float"
+   href="https://wa.me/251922337730">
   💬
 </a>
 
 </body>
-</html>
+  </html>
