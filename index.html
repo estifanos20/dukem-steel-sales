@@ -2,7 +2,7 @@
 <html lang="am">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
 <title>Dukem Steel Sales | ዱከም ቆርቆሮ</title>
 
@@ -11,13 +11,13 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  scroll-behavior:smooth;
+  scroll-behavior:smooth
 }
 
 body{
   font-family:Arial,"Noto Sans Ethiopic",sans-serif;
-  background:#f5f6f8;
-  color:#172b4d;
+  background:#f4f6f8;
+  color:#122b4d
 }
 
 header{
@@ -25,393 +25,513 @@ header{
   top:0;
   z-index:999;
   background:#fff;
-  box-shadow:0 3px 18px #0002;
+  box-shadow:0 3px 15px #0002
 }
 
 .nav{
   max-width:1200px;
   margin:auto;
-  padding:10px 18px;
+  padding:8px 15px;
   display:flex;
-  align-items:center;
   justify-content:space-between;
+  align-items:center
 }
 
-.logo-box{
+.logo{
   display:flex;
   align-items:center;
-  gap:10px;
+  gap:8px
 }
 
-.logo-box img{
-  width:62px;
-  height:62px;
-  object-fit:contain;
-  border-radius:8px;
+.logo img{
+  width:58px;
+  height:58px;
+  object-fit:contain
 }
 
-.logo-text{
-  font-weight:900;
-  color:#082c54;
-  font-size:19px;
+.logo b{
+  color:#092d55;
+  font-size:18px
 }
 
-.logo-text span{
-  color:#f5b900;
+.logo span{
+  color:#f4bd00
 }
 
 nav{
   display:flex;
-  gap:18px;
+  gap:16px;
+  flex-wrap:wrap
 }
 
 nav a{
+  color:#092d55;
   text-decoration:none;
-  color:#082c54;
   font-weight:bold;
+  font-size:14px
 }
 
 nav a:hover{
-  color:#f5b900;
+  color:#eab400
 }
 
 .hero{
-  min-height:88vh;
+  min-height:86vh;
   display:flex;
-  align-items:center;
   justify-content:center;
+  align-items:center;
   text-align:center;
-  color:white;
+  color:#fff;
   background:
-    linear-gradient(#062447cc,#062447cc),
-    url("sample-3.jpg") center/cover;
+  linear-gradient(#062746d9,#062746d9),
+  url("sample-2.jpg") center/cover
 }
 
 .hero-content{
-  max-width:950px;
-  padding:30px 20px;
+  max-width:900px;
+  padding:30px 18px
 }
 
 .hero-logo{
-  width:125px;
-  height:125px;
+  width:115px;
+  height:115px;
   object-fit:contain;
-  background:white;
-  border-radius:20px;
-  padding:8px;
-  margin-bottom:18px;
+  background:#fff;
+  border-radius:18px;
+  padding:7px;
+  margin-bottom:15px
 }
 
 .hero h1{
-  font-size:clamp(38px,7vw,72px);
   color:#f7c400;
-  margin-bottom:8px;
+  font-size:clamp(38px,7vw,70px);
+  margin-bottom:8px
 }
 
 .hero h2{
-  font-size:clamp(21px,4vw,36px);
-  margin-bottom:18px;
+  font-size:clamp(21px,4vw,35px);
+  margin-bottom:15px
 }
 
 .hero p{
-  font-size:19px;
-  max-width:750px;
-  margin:auto auto 25px;
+  font-size:18px;
+  margin-bottom:22px
 }
 
 .buttons{
   display:flex;
   justify-content:center;
   flex-wrap:wrap;
-  gap:12px;
+  gap:10px
 }
 
 .btn{
   display:inline-block;
-  padding:14px 22px;
-  border-radius:9px;
+  padding:13px 20px;
+  border-radius:8px;
   text-decoration:none;
   font-weight:bold;
-  transition:.3s;
-}
-
-.btn:hover{
-  transform:translateY(-3px);
+  border:0;
+  cursor:pointer
 }
 
 .gold{
   background:#f7c400;
-  color:#111;
+  color:#111
 }
 
 .green{
-  background:#16b957;
-  color:white;
+  background:#18bd5b;
+  color:#fff
 }
 
 .red{
   background:#e53935;
-  color:white;
+  color:#fff
+}
+
+.blue{
+  background:#092d55;
+  color:#fff
 }
 
 section{
   max-width:1200px;
   margin:auto;
-  padding:65px 18px;
+  padding:60px 16px
 }
 
 .title{
   text-align:center;
-  margin-bottom:35px;
+  margin-bottom:30px
 }
 
 .title h2{
-  font-size:34px;
-  color:#082c54;
-  margin-bottom:8px;
+  color:#092d55;
+  font-size:33px;
+  margin-bottom:7px
 }
 
 .title p{
-  color:#666;
+  color:#666
 }
 
 .features{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
+  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:18px
 }
 
 .feature{
   background:#fff;
-  padding:28px 20px;
-  border-radius:15px;
+  padding:25px 18px;
   text-align:center;
-  box-shadow:0 5px 20px #0001;
-  border-bottom:4px solid #f7c400;
+  border-radius:15px;
+  box-shadow:0 4px 18px #0001;
+  border-bottom:4px solid #f7c400
 }
 
-.feature-icon{
-  font-size:42px;
-  margin-bottom:10px;
+.icon{
+  font-size:40px;
+  margin-bottom:8px
 }
 
-.feature h3{
-  margin-bottom:8px;
+/* FILTER */
+
+.filter-box{
+  background:#fff;
+  padding:20px;
+  border-radius:15px;
+  box-shadow:0 4px 18px #0001;
+  margin-bottom:25px
 }
+
+.search{
+  width:100%;
+  padding:14px;
+  border:2px solid #ddd;
+  border-radius:9px;
+  font-size:16px;
+  margin-bottom:12px
+}
+
+.filters{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px
+}
+
+.filter-btn{
+  border:1px solid #092d55;
+  background:#fff;
+  color:#092d55;
+  padding:9px 15px;
+  border-radius:20px;
+  cursor:pointer;
+  font-weight:bold
+}
+
+.filter-btn.active,
+.filter-btn:hover{
+  background:#092d55;
+  color:#fff
+}
+
+/* PRODUCTS */
 
 .products{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(245px,1fr));
-  gap:20px;
+  gap:20px
 }
 
 .card{
-  background:white;
+  background:#fff;
   border-radius:15px;
   overflow:hidden;
-  box-shadow:0 5px 20px #0001;
-  transition:.3s;
+  box-shadow:0 4px 18px #0001;
+  transition:.3s
 }
 
 .card:hover{
-  transform:translateY(-5px);
+  transform:translateY(-4px)
 }
 
-.card img{
+.card.hide{
+  display:none
+}
+
+.card-img{
   width:100%;
   height:210px;
-  object-fit:cover;
+  object-fit:cover
 }
 
 .card-body{
-  padding:20px;
+  padding:18px
 }
 
 .card h3{
-  color:#082c54;
-  margin-bottom:12px;
+  color:#092d55;
+  margin-bottom:12px
+}
+
+.info{
+  display:flex;
+  justify-content:space-between;
+  border-bottom:1px solid #eee;
+  padding:8px 0
 }
 
 .price{
-  display:flex;
-  justify-content:space-between;
-  padding:9px 0;
-  border-bottom:1px solid #eee;
-}
-
-.price strong{
   color:#e53935;
+  font-weight:bold
 }
 
-.order{
-  display:block;
-  margin-top:15px;
-  background:#16b957;
-  color:white;
-  padding:11px;
-  text-align:center;
-  border-radius:8px;
-  text-decoration:none;
-  font-weight:bold;
-}
-
-.gallery{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:15px;
-}
-
-.gallery img{
+.order-btn{
   width:100%;
-  height:270px;
-  object-fit:cover;
-  border-radius:14px;
-  box-shadow:0 4px 15px #0002;
-  transition:.3s;
+  margin-top:14px;
+  padding:12px;
+  border:0;
+  border-radius:8px;
+  background:#18bd5b;
+  color:#fff;
+  font-weight:bold;
+  cursor:pointer;
+  font-size:15px
 }
 
-.gallery img:hover{
-  transform:scale(1.02);
-}
+/* VILLA */
 
 .villa{
-  background:#082c54;
-  color:white;
-  max-width:1160px;
+  background:#092d55;
+  color:#fff;
+  padding:45px 20px;
   border-radius:20px;
-  padding:45px 25px;
-  text-align:center;
+  text-align:center
 }
 
 .villa h2{
   color:#f7c400;
-  font-size:35px;
+  font-size:34px
 }
 
 .big-price{
   font-size:42px;
   font-weight:900;
-  margin:15px 0;
-  color:white;
+  margin:15px
 }
 
+/* GALLERY */
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:15px
+}
+
+.gallery img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  border-radius:14px;
+  box-shadow:0 4px 15px #0002
+}
+
+/* TRANSPORT */
+
 .transport{
-  background:linear-gradient(135deg,#f7c400,#ffda45);
+  background:linear-gradient(135deg,#f7c400,#ffdc4c);
   border-radius:20px;
   padding:45px 20px;
   text-align:center;
+  color:#111
 }
 
 .transport h2{
-  font-size:35px;
-  color:#082c54;
+  font-size:34px;
+  color:#092d55
 }
+
+/* LOCATIONS */
 
 .locations{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
-  gap:15px;
+  gap:14px
 }
 
 .location{
-  background:white;
+  background:#fff;
   padding:20px;
   border-radius:12px;
   text-align:center;
   font-weight:bold;
-  box-shadow:0 4px 15px #0001;
+  box-shadow:0 4px 15px #0001
 }
+
+/* CONTACT */
 
 .contact{
   max-width:none;
-  background:#082c54;
-  color:white;
+  background:#092d55;
+  color:#fff
 }
 
 .contact-inner{
   max-width:900px;
   margin:auto;
-  text-align:center;
+  text-align:center
 }
 
-.contact-inner h2{
+.contact h2{
   color:#f7c400;
-  font-size:35px;
+  font-size:34px
 }
 
 .phone{
-  font-size:27px;
-  font-weight:bold;
-  color:white;
-  margin:10px;
+  font-size:26px;
+  margin:8px;
+  font-weight:bold
 }
 
-footer{
-  background:#04182e;
-  color:#bbb;
-  text-align:center;
-  padding:25px 15px;
+/* ORDER MODAL */
+
+.modal{
+  display:none;
+  position:fixed;
+  z-index:3000;
+  inset:0;
+  background:#0009;
+  padding:20px
 }
+
+.modal.show{
+  display:flex;
+  align-items:center;
+  justify-content:center
+}
+
+.modal-box{
+  background:#fff;
+  width:100%;
+  max-width:480px;
+  border-radius:18px;
+  padding:25px;
+  position:relative
+}
+
+.close{
+  position:absolute;
+  right:15px;
+  top:10px;
+  font-size:28px;
+  cursor:pointer;
+  color:#555
+}
+
+.modal-box h2{
+  color:#092d55;
+  margin-bottom:18px
+}
+
+.modal-box label{
+  display:block;
+  margin-top:12px;
+  font-weight:bold
+}
+
+.modal-box input,
+.modal-box select,
+.modal-box textarea{
+  width:100%;
+  padding:12px;
+  margin-top:5px;
+  border:1px solid #ccc;
+  border-radius:8px;
+  font-size:15px
+}
+
+.modal-box textarea{
+  height:80px;
+  resize:none
+}
+
+.send{
+  width:100%;
+  margin-top:18px;
+  padding:14px;
+  background:#18bd5b;
+  color:#fff;
+  border:0;
+  border-radius:9px;
+  font-size:16px;
+  font-weight:bold;
+  cursor:pointer
+}
+
+/* FLOAT */
 
 .float{
   position:fixed;
   right:18px;
   bottom:18px;
-  width:60px;
-  height:60px;
+  width:58px;
+  height:58px;
   border-radius:50%;
-  background:#16b957;
-  color:white;
+  background:#18bd5b;
+  color:#fff;
   display:flex;
-  align-items:center;
   justify-content:center;
+  align-items:center;
   text-decoration:none;
-  font-size:29px;
+  font-size:28px;
   z-index:2000;
-  box-shadow:0 5px 20px #0005;
+  box-shadow:0 4px 18px #0005
+}
+
+footer{
+  background:#04182d;
+  color:#bbb;
+  text-align:center;
+  padding:25px 10px
 }
 
 @media(max-width:700px){
 
   .nav{
     flex-direction:column;
-    gap:8px;
+    gap:7px
   }
 
   nav{
-    gap:10px;
-    flex-wrap:wrap;
     justify-content:center;
+    gap:9px
   }
 
   nav a{
-    font-size:13px;
-  }
-
-  .logo-box img{
-    width:52px;
-    height:52px;
+    font-size:12px
   }
 
   .hero{
-    min-height:82vh;
+    min-height:82vh
   }
 
   .hero-logo{
-    width:100px;
-    height:100px;
+    width:95px;
+    height:95px
   }
 
   section{
-    padding:50px 14px;
+    padding:48px 13px
   }
 
   .title h2{
-    font-size:29px;
+    font-size:28px
   }
 
   .big-price{
-    font-size:34px;
+    font-size:34px
   }
 }
 </style>
@@ -420,25 +540,26 @@ footer{
 <body>
 
 <header>
-  <div class="nav">
 
-    <div class="logo-box">
-      <img src="logo.jpg" alt="Dukem Steel Sales Logo">
+<div class="nav">
 
-      <div class="logo-text">
-        DUKEM <span>STEEL SALES</span>
-      </div>
-    </div>
+<div class="logo">
+<img src="logo.jpg">
+<div>
+<b>DUKEM <span>STEEL SALES</span></b>
+</div>
+</div>
 
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#products">Products</a>
-      <a href="#villa">Villa</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
-    </nav>
+<nav>
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#villa">Villa</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
 
-  </div>
+</div>
+
 </header>
 
 
@@ -446,37 +567,37 @@ footer{
 
 <section class="hero" id="home">
 
-  <div class="hero-content">
+<div class="hero-content">
 
-    <img class="hero-logo" src="logo.jpg" alt="Dukem Steel Sales">
+<img src="logo.jpg" class="hero-logo">
 
-    <h1>DUKEM STEEL SALES</h1>
+<h1>DUKEM STEEL SALES</h1>
 
-    <h2>ዱከም ቆርቆሮ እና የግንባታ እቃዎች</h2>
+<h2>ዱከም ቆርቆሮ እና የግንባታ እቃዎች</h2>
 
-    <p>
-      ለቤት ሰሪዎች የቪላ ቤት ጣራ ክዳን፣
-      የአጥር ቆርቆሮ እና የተለያዩ የቆርቆሮ
-      ምርቶች በተመጣጣኝ ዋጋ።
-    </p>
+<p>
+ለቤት ሰሪዎች የቪላ ቤት ጣራ ክዳን፣
+የአጥር ቆርቆሮ እና የተለያዩ የSteel ምርቶች
+በተመጣጣኝ ዋጋ።
+</p>
 
-    <div class="buttons">
+<div class="buttons">
 
-      <a class="btn gold" href="#products">
-        🏗️ ምርቶችን ይመልከቱ
-      </a>
+<a class="btn gold" href="#products">
+🏗️ ምርቶች
+</a>
 
-      <a class="btn red" href="tel:0922337730">
-        📞 0922 337730
-      </a>
+<a class="btn red" href="tel:0922337730">
+📞 0922 337730
+</a>
 
-      <a class="btn green" href="https://wa.me/251922337730">
-        💬 WhatsApp
-      </a>
+<a class="btn green" href="https://wa.me/251922337730">
+💬 WhatsApp
+</a>
 
-    </div>
+</div>
 
-  </div>
+</div>
 
 </section>
 
@@ -485,38 +606,38 @@ footer{
 
 <section>
 
-  <div class="title">
-    <h2>ለምን Dukem Steel Sales?</h2>
-    <p>ጥራት • ተመጣጣኝ ዋጋ • ፈጣን አገልግሎት</p>
-  </div>
+<div class="title">
+<h2>ለምን Dukem Steel Sales?</h2>
+<p>ጥራት • ተመጣጣኝ ዋጋ • ፈጣን አገልግሎት</p>
+</div>
 
-  <div class="features">
+<div class="features">
 
-    <div class="feature">
-      <div class="feature-icon">🏠</div>
-      <h3>የቤት ጣራ</h3>
-      <p>ለቪላ እና ለተለያዩ ቤቶች የሚሆን ቆርቆሮ</p>
-    </div>
+<div class="feature">
+<div class="icon">🏠</div>
+<h3>የቤት ጣራ</h3>
+<p>ለቪላ እና ለተለያዩ ቤቶች</p>
+</div>
 
-    <div class="feature">
-      <div class="feature-icon">🧱</div>
-      <h3>የአጥር ቆርቆሮ</h3>
-      <p>የተለያዩ መጠንና ቀለም አማራጮች</p>
-    </div>
+<div class="feature">
+<div class="icon">🧱</div>
+<h3>የአጥር ቆርቆሮ</h3>
+<p>የተለያዩ መጠንና ቀለም</p>
+</div>
 
-    <div class="feature">
-      <div class="feature-icon">💰</div>
-      <h3>ቅናሽ ዋጋ</h3>
-      <p>ለቤት ሰሪዎች ተመጣጣኝ የሽያጭ ዋጋ</p>
-    </div>
+<div class="feature">
+<div class="icon">💰</div>
+<h3>ቅናሽ ዋጋ</h3>
+<p>ለቤት ሰሪዎች ተመጣጣኝ ዋጋ</p>
+</div>
 
-    <div class="feature">
-      <div class="feature-icon">🚚</div>
-      <h3>ነፃ Transport</h3>
-      <p>በሚደርስባቸው አካባቢዎች የትራንስፖርት አገልግሎት</p>
-    </div>
+<div class="feature">
+<div class="icon">🚚</div>
+<h3>Free Transport</h3>
+<p>የነፃ ትራንስፖርት አገልግሎት</p>
+</div>
 
-  </div>
+</div>
 
 </section>
 
@@ -525,132 +646,255 @@ footer{
 
 <section id="products">
 
-  <div class="title">
-    <h2>🏗️ የቆርቆሮ ምርቶች</h2>
-    <p>የተለያዩ Gauge እና የቆርቆሮ አይነቶች</p>
-  </div>
+<div class="title">
 
-  <div class="products">
+<h2>🏗️ ምርቶቻችን</h2>
 
-    <div class="card">
-      <img src="sample-1.jpg" alt="Colored Roofing Sheet">
+<p>
+Gauge፣ Villa ወይም Fence በመፈለግ ምርት ይፈልጉ
+</p>
 
-      <div class="card-body">
-
-        <h3>28 Gauge</h3>
-
-        <div class="price">
-          <span>ዱከም</span>
-          <strong>1,100 ብር</strong>
-        </div>
-
-        <div class="price">
-          <span>አዳማ</span>
-          <strong>970 ብር</strong>
-        </div>
-
-        <a class="order"
-           href="https://wa.me/251922337730?text=ሰላም%20Dukem%20Steel%20Sales%2C%2028%20Gauge%20ቆርቆሮ%20ማዘዝ%20እፈልጋለሁ።">
-          💬 በWhatsApp ይዘዙ
-        </a>
-
-      </div>
-    </div>
+</div>
 
 
-    <div class="card">
-      <img src="sample-2.jpg" alt="Villa Tile Roofing">
+<div class="filter-box">
 
-      <div class="card-body">
+<input
+id="search"
+class="search"
+type="search"
+placeholder="🔎 ምርት ፈልግ... ለምሳሌ 28 Gauge, Villa, Fence"
+onkeyup="filterProducts()"
+>
 
-        <h3>30 Gauge</h3>
+<div class="filters">
 
-        <div class="price">
-          <span>አርቲ</span>
-          <strong>900 ብር</strong>
-        </div>
+<button class="filter-btn active" onclick="setFilter('all',this)">
+ሁሉም
+</button>
 
-        <div class="price">
-          <span>አርቲ</span>
-          <strong>950 ብር</strong>
-        </div>
+<button class="filter-btn" onclick="setFilter('28',this)">
+28 Gauge
+</button>
 
-        <a class="order"
-           href="https://wa.me/251922337730?text=ሰላም%20Dukem%20Steel%20Sales%2C%2030%20Gauge%20ቆርቆሮ%20ማዘዝ%20እፈልጋለሁ።">
-          💬 በWhatsApp ይዘዙ
-        </a>
+<button class="filter-btn" onclick="setFilter('30',this)">
+30 Gauge
+</button>
 
-      </div>
-    </div>
+<button class="filter-btn" onclick="setFilter('32',this)">
+32 Gauge
+</button>
 
+<button class="filter-btn" onclick="setFilter('35',this)">
+35 Gauge
+</button>
 
-    <div class="card">
-      <img src="sample-3.jpg" alt="Roofing Colors">
+<button class="filter-btn" onclick="setFilter('villa',this)">
+Villa
+</button>
 
-      <div class="card-body">
+<button class="filter-btn" onclick="setFilter('fence',this)">
+Fence
+</button>
 
-        <h3>32 Gauge</h3>
+</div>
 
-        <div class="price">
-          <span>ቃሊቲ</span>
-          <strong>700 ብር</strong>
-        </div>
-
-        <div class="price">
-          <span>አርቲ</span>
-          <strong>880 ብር</strong>
-        </div>
-
-        <div class="price">
-          <span>ግመል</span>
-          <strong>870 ብር</strong>
-        </div>
-
-        <a class="order"
-           href="https://wa.me/251922337730?text=ሰላም%20Dukem%20Steel%20Sales%2C%2032%20Gauge%20ቆርቆሮ%20ማዘዝ%20እፈልጋለሁ።">
-          💬 በWhatsApp ይዘዙ
-        </a>
-
-      </div>
-    </div>
+</div>
 
 
-    <div class="card">
-      <img src="sample-4.jpg" alt="Steel Roofing Products">
+<div class="products" id="productList">
 
-      <div class="card-body">
 
-        <h3>35 Gauge</h3>
+<!-- 28 -->
 
-        <div class="price">
-          <span>ቡሻን</span>
-          <strong>470 ብር</strong>
-        </div>
+<div class="card product-card" data-category="28">
 
-        <div class="price">
-          <span>ጥላ</span>
-          <strong>520 ብር</strong>
-        </div>
+<img src="sample-1.jpg" class="card-img">
 
-        <div class="price">
-          <span>ፈረስ</span>
-          <strong>540 ብር</strong>
-        </div>
+<div class="card-body">
 
-        <div class="price">
-          <span>ሰማያዊ ጥላ</span>
-          <strong>540 ብር</strong>
-        </div>
+<h3>28 Gauge ቆርቆሮ</h3>
 
-        <a class="order"
-           href="https://wa.me/251922337730?text=ሰላም%20Dukem%20Steel%20Sales%2C%2035%20Gauge%20ቆርቆሮ%20ማዘዝ%20እፈልጋለሁ።">
-          💬 በWhatsApp ይዘዙ
-        </a>
+<div class="info">
+<span>ዱከም</span>
+<span class="price">1,100 ብር</span>
+</div>
 
-      </div>
-    </div>
+<div class="info">
+<span>አዳማ</span>
+<span class="price">970 ብር</span>
+</div>
 
-  </div>
+<button class="order-btn"
+onclick="openOrder('28 Gauge ቆርቆሮ')">
+💬 ይዘዙ
+</button>
+
+</div>
+</div>
+
+
+<!-- 30 -->
+
+<div class="card product-card" data-category="30">
+
+<img src="sample-4.jpg" class="card-img">
+
+<div class="card-body">
+
+<h3>30 Gauge ቆርቆሮ</h3>
+
+<div class="info">
+<span>አርቲ</span>
+<span class="price">900 ብር</span>
+</div>
+
+<div class="info">
+<span>አርቲ</span>
+<span class="price">950 ብር</span>
+</div>
+
+<button class="order-btn"
+onclick="openOrder('30 Gauge ቆርቆሮ')">
+💬 ይዘዙ
+</button>
+
+</div>
+</div>
+
+
+<!-- 32 -->
+
+<div class="card product-card" data-category="32">
+
+<img src="sample-3.jpg" class="card-img">
+
+<div class="card-body">
+
+<h3>32 Gauge ቆርቆሮ</h3>
+
+<div class="info">
+<span>ቃሊቲ</span>
+<span class="price">700 ብር</span>
+</div>
+
+<div class="info">
+<span>አርቲ</span>
+<span class="price">880 ብር</span>
+</div>
+
+<div class="info">
+<span>ግመል</span>
+<span class="price">870 ብር</span>
+</div>
+
+<button class="order-btn"
+onclick="openOrder('32 Gauge ቆርቆሮ')">
+💬 ይዘዙ
+</button>
+
+</div>
+</div>
+
+
+<!-- 35 -->
+
+<div class="card product-card" data-category="35">
+
+<img src="sample-1.jpg" class="card-img">
+
+<div class="card-body">
+
+<h3>35 Gauge ቆርቆሮ</h3>
+
+<div class="info">
+<span>ቡሻን</span>
+<span class="price">470 ብር</span>
+</div>
+
+<div class="info">
+<span>ጥላ</span>
+<span class="price">520 ብር</span>
+</div>
+
+<div class="info">
+<span>ፈረስ</span>
+<span class="price">540 ብር</span>
+</div>
+
+<div class="info">
+<span>ሰማያዊ ጥላ</span>
+<span class="price">540 ብር</span>
+</div>
+
+<button class="order-btn"
+onclick="openOrder('35 Gauge ቆርቆሮ')">
+💬 ይዘዙ
+</button>
+
+</div>
+</div>
+
+
+<!-- VILLA -->
+
+<div class="card product-card" data-category="villa">
+
+<img src="sample-2.jpg" class="card-img">
+
+<div class="card-body">
+
+<h3>🏡 Villa Tile Roofing</h3>
+
+<div class="info">
+<span>28 Gauge</span>
+<span class="price">980 / m²</span>
+</div>
+
+<div class="info">
+<span>Thickness</span>
+<span>0.4mm</span>
+</div>
+
+<button class="order-btn"
+onclick="openOrder('Villa Tile Roofing')">
+💬 ይዘዙ
+</button>
+
+</div>
+</div>
+
+
+<!-- FENCE -->
+
+<div class="card product-card" data-category="fence">
+
+<img src="sample-3.jpg" class="card-img">
+
+<div class="card-body">
+
+<h3>🧱 EGA Fence Sheet</h3>
+
+<div class="info">
+<span>1.10m Width</span>
+<span class="price">800 / m</span>
+</div>
+
+<div class="info">
+<span>90cm Width</span>
+<span class="price">730 / m</span>
+</div>
+
+<button class="order-btn"
+onclick="openOrder('EGA Fence Sheet')">
+💬 ይዘዙ
+</button>
+
+</div>
+</div>
+
+
+</div>
 
 </section>
 
@@ -659,98 +903,32 @@ footer{
 
 <section id="villa">
 
-  <div class="villa">
+<div class="villa">
 
-    <h2>🏡 Modern Villa Tile Roofing</h2>
+<h2>🏡 Modern Villa Tile Roofing</h2>
 
-    <p>
-      ለዘመናዊ የቪላ ቤቶች የሚሆን
-      የTile ቆርቆሮ
-    </p>
+<p>
+28 Gauge • 0.4mm Thickness • 1.15m Width
+</p>
 
-    <p>
-      28 Gauge • 0.4mm Thickness • 1.15m Width
-    </p>
+<div class="big-price">
+980 ብር / m²
+</div>
 
-    <div class="big-price">
-      980 ብር / m²
-    </div>
+<p>
+🎨 የተለያዩ ቀለሞች
+<br>
+🚚 የትራንስፖርት አገልግሎት
+</p>
 
-    <p>
-      🎨 የተለያዩ ቀለሞች
-      <br>
-      🚚 የትራንስፖርት አገልግሎት
-    </p>
+<br>
 
-    <br>
+<button class="btn gold"
+onclick="openOrder('Villa Tile Roofing')">
+💬 Villa Roofing ይዘዙ
+</button>
 
-    <a class="btn gold"
-       href="https://wa.me/251922337730?text=ሰላም%2C%20Villa%20Tile%20Roofing%20ማዘዝ%20እፈልጋለሁ።">
-      💬 Villa Roofing ይዘዙ
-    </a>
-
-  </div>
-
-</section>
-
-
-<!-- FENCE -->
-
-<section>
-
-  <div class="title">
-    <h2>🧱 የአጥር ቆርቆሮ</h2>
-    <p>EGA 28 Gauge • 0.4mm</p>
-  </div>
-
-  <div class="products">
-
-    <div class="card">
-      <img src="sample-1.jpg" alt="Fence Sheet">
-
-      <div class="card-body">
-
-        <h3>EGA 28 Gauge</h3>
-
-        <div class="price">
-          <span>1.10m ስፋት</span>
-          <strong>800 ብር / ሜትር</strong>
-        </div>
-
-        <a class="order"
-           href="https://wa.me/251922337730?text=ሰላም%2C%20EGA%20የአጥር%20ቆርቆሮ%20ማዘዝ%20እፈልጋለሁ።">
-          💬 ይዘዙ
-        </a>
-
-      </div>
-    </div>
-
-
-    <div class="card">
-      <img src="sample-3.jpg" alt="Fence Sheet">
-
-      <div class="card-body">
-
-        <h3>EGA 28 Gauge</h3>
-
-        <div class="price">
-          <span>90cm ስፋት</span>
-          <strong>730 ብር / ሜትር</strong>
-        </div>
-
-        <p style="margin-top:12px">
-          በፈለጉት ቁመት ማዘጋጀት ይቻላል።
-        </p>
-
-        <a class="order"
-           href="https://wa.me/251922337730">
-          💬 ይዘዙ
-        </a>
-
-      </div>
-    </div>
-
-  </div>
+</div>
 
 </section>
 
@@ -759,22 +937,24 @@ footer{
 
 <section id="gallery">
 
-  <div class="title">
-    <h2>📸 የምርቶቻችን Gallery</h2>
-    <p>የተለያዩ የቆርቆሮ አይነቶችና ቀለሞች</p>
-  </div>
+<div class="title">
 
-  <div class="gallery">
+<h2>📸 Gallery</h2>
 
-    <img src="sample-1.jpg" alt="Dukem Steel Product">
+<p>
+የDukem Steel Sales ምርቶች
+</p>
 
-    <img src="sample-2.jpg" alt="Dukem Steel Product">
+</div>
 
-    <img src="sample-3.jpg" alt="Dukem Steel Product">
+<div class="gallery">
 
-    <img src="sample-4.jpg" alt="Dukem Steel Product">
+<img src="sample-1.jpg">
+<img src="sample-2.jpg">
+<img src="sample-3.jpg">
+<img src="sample-4.jpg">
 
-  </div>
+</div>
 
 </section>
 
@@ -783,23 +963,23 @@ footer{
 
 <section>
 
-  <div class="transport">
+<div class="transport">
 
-    <h2>🚚 ነፃ ትራንስፖርት</h2>
+<h2>🚚 ነፃ ትራንስፖርት</h2>
 
-    <p>
-      ለቤት ሰሪዎች እና ለግንባታ ፕሮጀክቶች
-      የቆርቆሮ እቃዎችን እናቀርባለን።
-    </p>
+<p>
+ለቤት ሰሪዎች የቆርቆሮ እቃዎችን
+በተመጣጣኝ ዋጋ እናቀርባለን።
+</p>
 
-    <br>
+<br>
 
-    <strong>
-      የነፃ ትራንስፖርት የሚደርስበትን አካባቢ
-      ለማረጋገጥ ይደውሉ።
-    </strong>
+<strong>
+የነፃ ትራንስፖርት የሚደርስበትን
+አካባቢ ለማረጋገጥ ይደውሉ።
+</strong>
 
-  </div>
+</div>
 
 </section>
 
@@ -808,21 +988,37 @@ footer{
 
 <section>
 
-  <div class="title">
-    <h2>📍 የምናገለግላቸው አካባቢዎች</h2>
-  </div>
+<div class="title">
 
-  <div class="locations">
+<h2>📍 የምናገለግላቸው አካባቢዎች</h2>
 
-    <div class="location">📍 CMC</div>
-    <div class="location">📍 ቱሉ ድምቱ</div>
-    <div class="location">📍 ሀዋሳ</div>
-    <div class="location">📍 ሀላባ</div>
-    <div class="location">📍 ሸክሶ</div>
-    <div class="location">📍 ሸሸመኔ</div>
-    <div class="location">📍 ደብረ ብርሃን</div>
+</div>
 
-  </div>
+<div class="locations">
+
+<div class="location">📍 CMC</div>
+<div class="location">📍 ቱሉ ድምቱ</div>
+<div class="location">📍 ሀዋሳ</div>
+<div class="location">📍 ሀላባ</div>
+<div class="location">📍 ሸክሶ</div>
+<div class="location">📍 ሸሸመኔ</div>
+<div class="location">📍 ደብረ ብርሃን</div>
+
+</div>
+
+<br>
+
+<div style="text-align:center">
+
+<a
+class="btn blue"
+target="_blank"
+href="https://www.google.com/maps/search/?api=1&query=Dukem%20Steel%20Sales%20Dukem%20Ethiopia">
+
+📍 Google Maps ላይ ይፈልጉ
+</a>
+
+</div>
 
 </section>
 
@@ -831,46 +1027,256 @@ footer{
 
 <section class="contact" id="contact">
 
-  <div class="contact-inner">
+<div class="contact-inner">
 
-    <h2>📞 ያግኙን</h2>
+<h2>📞 ያግኙን</h2>
 
-    <p>DUKEM STEEL SALES</p>
+<p>DUKEM STEEL SALES</p>
 
-    <div class="phone">
-      0922 337730
-    </div>
+<div class="phone">
+0922 337730
+</div>
 
-    <div class="phone">
-      0912 751976
-    </div>
+<div class="phone">
+0912 751976
+</div>
 
-    <div class="buttons">
+<div class="buttons">
 
-      <a class="btn red" href="tel:0922337730">
-        📞 0922 337730
-      </a>
+<a class="btn red"
+href="tel:0922337730">
+📞 0922 337730
+</a>
 
-      <a class="btn green" href="https://wa.me/251922337730">
-        💬 WhatsApp
-      </a>
+<a class="btn green"
+href="https://wa.me/251922337730">
+💬 WhatsApp
+</a>
 
-    </div>
+</div>
 
-  </div>
+</div>
 
 </section>
 
 
 <footer>
-  © 2026 DUKEM STEEL SALES | የቆርቆሮ እና የግንባታ እቃዎች
+
+© 2026 DUKEM STEEL SALES
+<br>
+የቆርቆሮ እና የግንባታ እቃዎች
+
 </footer>
 
 
-<a class="float"
-   href="https://wa.me/251922337730">
-  💬
+<!-- ORDER MODAL -->
+
+<div class="modal" id="orderModal">
+
+<div class="modal-box">
+
+<div class="close" onclick="closeOrder()">×</div>
+
+<h2>🛒 የምርት ትዕዛዝ</h2>
+
+<label>ምርት</label>
+
+<input
+id="orderProduct"
+readonly
+>
+
+
+<label>ስም</label>
+
+<input
+id="customerName"
+placeholder="ስምዎን ያስገቡ"
+>
+
+
+<label>ስልክ</label>
+
+<input
+id="customerPhone"
+type="tel"
+placeholder="09XXXXXXXX"
+>
+
+
+<label>ብዛት</label>
+
+<input
+id="quantity"
+type="number"
+min="1"
+value="1"
+>
+
+
+<label>ተጨማሪ መልዕክት</label>
+
+<textarea
+id="message"
+placeholder="ቀለም፣ መጠን ወይም ሌላ መረጃ..."
+></textarea>
+
+
+<button class="send" onclick="sendOrder()">
+💬 Order በWhatsApp ላይ ላክ
+</button>
+
+</div>
+
+</div>
+
+
+<!-- FLOAT WHATSAPP -->
+
+<a
+class="float"
+href="https://wa.me/251922337730"
+target="_blank">
+💬
 </a>
+
+
+<script>
+
+let currentFilter="all";
+
+function setFilter(filter,button){
+
+currentFilter=filter;
+
+document
+.querySelectorAll(".filter-btn")
+.forEach(btn=>btn.classList.remove("active"));
+
+button.classList.add("active");
+
+filterProducts();
+
+}
+
+
+function filterProducts(){
+
+let search=
+document
+.getElementById("search")
+.value
+.toLowerCase();
+
+let cards=
+document
+.querySelectorAll(".product-card");
+
+cards.forEach(card=>{
+
+let category=card.dataset.category;
+
+let text=card.innerText.toLowerCase();
+
+let categoryMatch=
+currentFilter==="all" ||
+category===currentFilter;
+
+let searchMatch=
+text.includes(search);
+
+if(categoryMatch && searchMatch){
+
+card.classList.remove("hide");
+
+}else{
+
+card.classList.add("hide");
+
+}
+
+});
+
+}
+
+
+function openOrder(product){
+
+document
+.getElementById("orderProduct")
+.value=product;
+
+document
+.getElementById("orderModal")
+.classList.add("show");
+
+}
+
+
+function closeOrder(){
+
+document
+.getElementById("orderModal")
+.classList.remove("show");
+
+}
+
+
+function sendOrder(){
+
+let product=
+document.getElementById("orderProduct").value;
+
+let name=
+document.getElementById("customerName").value;
+
+let phone=
+document.getElementById("customerPhone").value;
+
+let quantity=
+document.getElementById("quantity").value;
+
+let message=
+document.getElementById("message").value;
+
+if(!name || !phone){
+
+alert("እባክዎ ስም እና ስልክ ያስገቡ።");
+
+return;
+
+}
+
+let text=
+"ሰላም Dukem Steel Sales 👋%0A%0A"+
+"🛒 የምርት ትዕዛዝ%0A"+
+"🏗️ ምርት: "+encodeURIComponent(product)+"%0A"+
+"📦 ብዛት: "+encodeURIComponent(quantity)+"%0A"+
+"👤 ስም: "+encodeURIComponent(name)+"%0A"+
+"📞 ስልክ: "+encodeURIComponent(phone)+"%0A"+
+"📝 መልዕክት: "+encodeURIComponent(message);
+
+window.open(
+"https://wa.me/251922337730?text="+text,
+"_blank"
+);
+
+}
+
+window.onclick=function(event){
+
+let modal=
+document.getElementById("orderModal");
+
+if(event.target===modal){
+
+closeOrder();
+
+}
+
+}
+
+</script>
 
 </body>
   </html>
