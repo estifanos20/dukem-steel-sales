@@ -8,7 +8,7 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
 body{font-family:Arial,"Noto Sans Ethiopic",sans-serif;background:#f4f6f8;color:#123}
-header{position:sticky;top:0;z-index:1000;background:white;box-shadow:0 2px 12px #0002}
+header{position:sticky;top:0;z-index:1000;background:#fff;box-shadow:0 2px 12px #0002}
 .nav{max-width:1200px;margin:auto;padding:8px 15px;display:flex;justify-content:space-between;align-items:center;gap:10px}
 .logo{display:flex;align-items:center;gap:8px;font-weight:bold;color:#092d55}
 .logo img{width:55px;height:55px;object-fit:contain}
@@ -25,27 +25,43 @@ background:linear-gradient(#062746dd,#062746dd),url("sample-2.jpg") center/cover
 .hero h1{font-size:clamp(38px,8vw,70px);color:#f7c400;margin:15px 0 8px}
 .hero h2{font-size:clamp(20px,4vw,34px)}
 .hero p{max-width:800px;margin:18px auto;line-height:1.8}
+
 .buttons{display:flex;justify-content:center;gap:9px;flex-wrap:wrap}
 .btn{display:inline-block;padding:12px 18px;border:0;border-radius:9px;text-decoration:none;font-weight:bold;cursor:pointer}
-.gold{background:#f7c400;color:#111}.blue{background:#092d55;color:white}
-.telegram{background:#229ed9;color:white}.red{background:#e53935;color:white}
-.green{background:#16a85a;color:white}.black{background:#111;color:white}
+.gold{background:#f7c400;color:#111}
+.blue{background:#092d55;color:white}
+.telegram{background:#229ed9;color:white}
+.red{background:#e53935;color:white}
+.green{background:#16a85a;color:white}
+.black{background:#111;color:white}
 
 section{max-width:1200px;margin:auto;padding:55px 15px}
 .title{text-align:center;margin-bottom:28px}
 .title h2{color:#092d55;font-size:32px;margin-bottom:8px}
-.features,.products,.locations,.gallery{display:grid;gap:18px}
+
+.features,.products,.locations,.gallery{
+display:grid;gap:18px
+}
 .features{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
-.feature,.card,.location{background:white;border-radius:15px;padding:20px;box-shadow:0 4px 16px #0001}
+.feature,.card,.location{
+background:white;border-radius:15px;padding:20px;
+box-shadow:0 4px 16px #0001
+}
 .feature{text-align:center;border-bottom:4px solid #f7c400}
 .icon{font-size:40px}
 .feature h3{margin:8px}
 .feature p{color:#666;line-height:1.6}
 
 .filter{background:white;padding:18px;border-radius:15px;margin-bottom:22px}
-.search{width:100%;padding:13px;border:1px solid #ccc;border-radius:8px;font-size:16px;margin-bottom:10px}
+.search{
+width:100%;padding:13px;border:1px solid #ccc;
+border-radius:8px;font-size:16px;margin-bottom:10px
+}
 .filters{display:flex;gap:7px;flex-wrap:wrap}
-.filter button{padding:9px 14px;border-radius:20px;border:1px solid #092d55;background:white;color:#092d55;font-weight:bold}
+.filter button{
+padding:9px 14px;border-radius:20px;border:1px solid #092d55;
+background:white;color:#092d55;font-weight:bold
+}
 .filter button.active{background:#092d55;color:white}
 
 .products{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
@@ -54,55 +70,131 @@ section{max-width:1200px;margin:auto;padding:55px 15px}
 .card img{width:100%;height:200px;object-fit:cover}
 .cardbody{padding:17px}
 .card h3{color:#092d55;margin-bottom:10px}
-.info{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid #eee}
+.info{
+display:flex;justify-content:space-between;
+padding:7px 0;border-bottom:1px solid #eee
+}
 .price{font-weight:bold;color:#e53935}
-.order{width:100%;margin-top:13px;padding:12px;border:0;border-radius:8px;background:#229ed9;color:white;font-weight:bold;font-size:15px}
+.order{
+width:100%;margin-top:13px;padding:12px;border:0;
+border-radius:8px;background:#229ed9;color:white;
+font-weight:bold;font-size:15px
+}
 
-.villa{background:#092d55;color:white;text-align:center;padding:40px 20px;border-radius:18px}
+.villa{
+background:#092d55;color:white;text-align:center;
+padding:40px 20px;border-radius:18px
+}
 .villa h2{color:#f7c400;font-size:32px}
 .big{font-size:40px;font-weight:bold;margin:15px}
 
 .gallery{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
-.gallery img{width:100%;height:250px;object-fit:cover;border-radius:14px}
+.gallery img{
+width:100%;height:250px;object-fit:cover;border-radius:14px
+}
 
 .locations{grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
 .location{text-align:center;font-weight:bold}
 
-.transport{background:#f7c400;text-align:center;padding:40px 20px;border-radius:18px}
+.transport{
+background:#f7c400;text-align:center;
+padding:40px 20px;border-radius:18px
+}
 .transport h2{color:#092d55;font-size:32px}
 
-.contact{max-width:none;background:#092d55;color:white;text-align:center}
+.contact{
+max-width:none;background:#092d55;color:white;text-align:center
+}
 .contact h2{color:#f7c400;font-size:32px}
 .phone{font-size:24px;font-weight:bold;margin:10px}
 
-footer{background:#04182d;color:#bbb;text-align:center;padding:25px}
+footer{
+background:#04182d;color:#bbb;text-align:center;padding:25px
+}
 
-/* MODAL */
-.modal{display:none;position:fixed;inset:0;z-index:5000;background:#0009;padding:15px;align-items:center;justify-content:center}
+/* MODALS */
+
+.modal{
+display:none;position:fixed;inset:0;z-index:5000;
+background:#0009;padding:15px;
+align-items:center;justify-content:center
+}
 .modal.show{display:flex}
-.box{background:white;width:100%;max-width:500px;max-height:92vh;overflow:auto;border-radius:18px;padding:25px;position:relative}
-.close{position:absolute;right:15px;top:8px;font-size:30px;cursor:pointer}
+
+.box{
+background:white;width:100%;max-width:500px;
+max-height:92vh;overflow:auto;border-radius:18px;
+padding:25px;position:relative
+}
+
+.close{
+position:absolute;right:15px;top:8px;
+font-size:30px;cursor:pointer
+}
+
 .box h2{color:#092d55;margin-bottom:15px}
 .box label{display:block;font-weight:bold;margin-top:11px}
-.box input,.box select,.box textarea{width:100%;padding:12px;margin-top:5px;border:1px solid #ccc;border-radius:8px;font-size:15px}
+
+.box input,.box select,.box textarea{
+width:100%;padding:12px;margin-top:5px;
+border:1px solid #ccc;border-radius:8px;font-size:15px
+}
+
 .box textarea{height:80px}
-.submit{width:100%;margin-top:18px;padding:14px;border:0;border-radius:9px;background:#092d55;color:white;font-weight:bold;font-size:16px}
+
+.submit{
+width:100%;margin-top:18px;padding:14px;
+border:0;border-radius:9px;background:#092d55;
+color:white;font-weight:bold;font-size:16px
+}
 
 /* SEND OPTIONS */
+
 #options{
-display:none;position:fixed;inset:0;z-index:9000;background:#0009;
-align-items:center;justify-content:center;padding:15px
+display:none;position:fixed;inset:0;z-index:9000;
+background:#0009;align-items:center;
+justify-content:center;padding:15px
 }
 #options.show{display:flex}
-.optionbox{background:white;width:100%;max-width:430px;border-radius:18px;padding:25px;text-align:center;position:relative}
+
+.optionbox{
+background:white;width:100%;max-width:430px;
+border-radius:18px;padding:25px;
+text-align:center;position:relative
+}
+
 .optionbox h2{color:#092d55;margin-bottom:8px}
 .optionbox p{color:#666;margin-bottom:18px}
-.option{width:100%;padding:14px;margin:6px 0;border:0;border-radius:9px;color:white;font-weight:bold;font-size:16px}
-.option.tg{background:#229ed9}.option.sms{background:#16a85a}
-.option.tt{background:#111}.option.call{background:#e53935}
-.optionclose{position:absolute;right:15px;top:8px;font-size:28px;cursor:pointer}
 
-.float{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:#229ed9;color:white;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:26px;z-index:2000}
+.option{
+width:100%;padding:14px;margin:6px 0;
+border:0;border-radius:9px;color:white;
+font-weight:bold;font-size:16px;cursor:pointer
+}
+
+.option.tg{background:#229ed9}
+.option.sms{background:#16a85a}
+.option.tt{background:#111}
+.option.call{background:#e53935}
+
+.optionclose{
+position:absolute;right:15px;top:8px;
+font-size:28px;cursor:pointer
+}
+
+.float{
+position:fixed;right:18px;bottom:18px;
+width:58px;height:58px;border-radius:50%;
+background:#229ed9;color:white;
+display:flex;align-items:center;justify-content:center;
+text-decoration:none;font-size:26px;z-index:2000
+}
+
+.success{
+display:none;background:#e8fff0;color:#08752d;
+padding:12px;border-radius:8px;
+margin-top:12px;text-align:center;font-weight:bold
+}
 
 @media(max-width:700px){
 .nav{flex-direction:column}
@@ -118,7 +210,7 @@ nav a{font-size:12px}
 <div class="nav">
 
 <div class="logo">
-<img src="logo.jpg">
+<img src="logo.jpg" alt="Dukem Steel Sales">
 <div>DUKEM <span>STEEL SALES</span></div>
 </div>
 
@@ -135,12 +227,10 @@ nav a{font-size:12px}
 </header>
 
 
-<!-- HOME -->
-
 <section class="hero" id="home">
 <div>
 
-<img src="logo.jpg">
+<img src="logo.jpg" alt="Logo">
 
 <h1>DUKEM STEEL SALES</h1>
 
@@ -162,8 +252,6 @@ nav a{font-size:12px}
 </div>
 </section>
 
-
-<!-- FEATURES -->
 
 <section>
 
@@ -202,8 +290,6 @@ nav a{font-size:12px}
 </section>
 
 
-<!-- PRODUCTS -->
-
 <section id="products">
 
 <div class="title">
@@ -213,11 +299,12 @@ nav a{font-size:12px}
 
 <div class="filter">
 
-<input id="search" class="search" placeholder="🔎 ምርት ፈልግ..." onkeyup="filterProducts()">
+<input id="search" class="search"
+placeholder="🔎 ምርት ፈልግ..."
+onkeyup="filterProducts()">
 
 <div class="filters">
 
-<div class="filter">
 <button class="active" onclick="setFilter('all',this)">ሁሉም</button>
 <button onclick="setFilter('28',this)">28 Gauge</button>
 <button onclick="setFilter('30',this)">30 Gauge</button>
@@ -225,14 +312,12 @@ nav a{font-size:12px}
 <button onclick="setFilter('35',this)">35 Gauge</button>
 <button onclick="setFilter('villa',this)">Villa</button>
 <button onclick="setFilter('fence',this)">Fence</button>
-</div>
 
 </div>
 </div>
 
 
 <div class="products">
-
 
 <div class="card product" data-cat="28">
 <img src="sample-1.jpg">
@@ -305,8 +390,6 @@ nav a{font-size:12px}
 </section>
 
 
-<!-- SERVICES -->
-
 <section id="services">
 
 <div class="title">
@@ -348,14 +431,11 @@ nav a{font-size:12px}
 </section>
 
 
-<!-- VILLA -->
-
 <section id="villa">
 
 <div class="villa">
 
 <h2>🏡 Modern Villa Tile Roofing</h2>
-
 <p>28 Gauge • 0.4mm Thickness • 1.15m Width</p>
 
 <div class="big">980 ብር / m²</div>
@@ -371,8 +451,6 @@ nav a{font-size:12px}
 </div>
 </section>
 
-
-<!-- GALLERY -->
 
 <section id="gallery">
 
@@ -390,8 +468,6 @@ nav a{font-size:12px}
 </section>
 
 
-<!-- TRANSPORT -->
-
 <section>
 
 <div class="transport">
@@ -404,8 +480,6 @@ nav a{font-size:12px}
 </section>
 
 
-<!-- LOCATIONS -->
-
 <section>
 
 <div class="title">
@@ -413,7 +487,6 @@ nav a{font-size:12px}
 </div>
 
 <div class="locations">
-
 <div class="location">CMC</div>
 <div class="location">ቱሉ ድምቱ</div>
 <div class="location">ሀዋሳ</div>
@@ -421,18 +494,14 @@ nav a{font-size:12px}
 <div class="location">ሸክሶ</div>
 <div class="location">ሸሸመኔ</div>
 <div class="location">ደብረ ብርሃን</div>
-
 </div>
 
 </section>
 
 
-<!-- CONTACT -->
-
 <section class="contact" id="contact">
 
 <h2>📞 ያግኙን</h2>
-
 <p>DUKEM STEEL SALES</p>
 
 <div class="phone">0922 337730</div>
@@ -441,11 +510,8 @@ nav a{font-size:12px}
 <div class="buttons">
 
 <a class="btn red" href="tel:0922337730">📞 Call</a>
-
 <a class="btn blue" href="sms:0922337730">💬 SMS</a>
-
 <a class="btn telegram" href="https://t.me/TADHSH" target="_blank">✈️ Telegram</a>
-
 <a class="btn black" href="https://www.tiktok.com/@dukem.steel.sales" target="_blank">🎵 TikTok</a>
 
 </div>
@@ -460,7 +526,7 @@ nav a{font-size:12px}
 </footer>
 
 
-<!-- ORDER MODAL -->
+<!-- ORDER -->
 
 <div class="modal" id="orderModal">
 
@@ -496,7 +562,7 @@ nav a{font-size:12px}
 </div>
 
 
-<!-- SERVICE MODAL -->
+<!-- SERVICE -->
 
 <div class="modal" id="serviceModal">
 
@@ -521,6 +587,7 @@ nav a{font-size:12px}
 <input id="depositAmount" type="number" placeholder="ለምሳሌ 5000">
 
 <label>የክፍያ መንገድ</label>
+
 <select id="paymentMethod">
 <option>Telebirr</option>
 <option>Bank Transfer</option>
@@ -587,8 +654,19 @@ nav a{font-size:12px}
 
 <script>
 
+/* ==============================
+   DUKEM STEEL SALES
+   TELEGRAM WEB APP
+================================ */
+
+const TELEGRAM_WEB_APP =
+"https://script.google.com/macros/s/AKfycbxWsjeEIbEEY28PH3v5UsBG5N0GGT-bzK8l5h6KPcNrCf9t-gM8j7UBswGuIrEmbOg/exec";
+
 let currentFilter="all";
 let currentMessage="";
+
+let currentOrderData={};
+let currentServiceData={};
 
 
 /* FILTER */
@@ -597,21 +675,24 @@ function setFilter(filter,btn){
 
 currentFilter=filter;
 
-document.querySelectorAll(".filters button").forEach(b=>{
-b.classList.remove("active");
-});
+document.querySelectorAll(".filters button")
+.forEach(b=>b.classList.remove("active"));
 
 btn.classList.add("active");
 
 filterProducts();
-
 }
+
 
 function filterProducts(){
 
-let search=document.getElementById("search").value.toLowerCase();
+let search=document
+.getElementById("search")
+.value
+.toLowerCase();
 
-document.querySelectorAll(".product").forEach(card=>{
+document.querySelectorAll(".product")
+.forEach(card=>{
 
 let category=card.dataset.cat;
 let text=card.innerText.toLowerCase();
@@ -629,7 +710,6 @@ card.classList.toggle(
 );
 
 });
-
 }
 
 
@@ -639,32 +719,60 @@ function openOrder(product){
 
 document.getElementById("orderProduct").value=product;
 
-document.getElementById("orderModal").classList.add("show");
+document.getElementById("orderModal")
+.classList.add("show");
 
 }
+
 
 function closeOrder(){
 
-document.getElementById("orderModal").classList.remove("show");
+document.getElementById("orderModal")
+.classList.remove("show");
 
 }
 
+
 function sendOrder(){
 
-let product=document.getElementById("orderProduct").value;
-let name=document.getElementById("customerName").value;
-let phone=document.getElementById("customerPhone").value;
-let quantity=document.getElementById("quantity").value;
-let address=document.getElementById("orderAddress").value;
-let message=document.getElementById("orderMessage").value;
+let product=
+document.getElementById("orderProduct").value;
+
+let name=
+document.getElementById("customerName").value.trim();
+
+let phone=
+document.getElementById("customerPhone").value.trim();
+
+let quantity=
+document.getElementById("quantity").value;
+
+let address=
+document.getElementById("orderAddress").value.trim();
+
+let message=
+document.getElementById("orderMessage").value.trim();
+
 
 if(!name || !phone){
 
 alert("እባክዎ ስም እና ስልክ ያስገቡ።");
 
 return;
-
 }
+
+
+currentOrderData={
+name:name,
+phone:phone,
+product:product,
+quantity:quantity,
+location:address,
+message:message,
+payment:"",
+appointment:""
+};
+
 
 currentMessage=
 "DUKEM STEEL SALES\n\n"+
@@ -675,6 +783,7 @@ currentMessage=
 "Quantity: "+quantity+"\n"+
 "Address: "+address+"\n"+
 "Message: "+message;
+
 
 closeOrder();
 
@@ -701,47 +810,107 @@ if(type==="appointment"){
 title="📅 ቀጠሮ";
 }
 
-document.getElementById("serviceTitle").innerText=title;
 
-document.getElementById("depositFields").style.display=
+document.getElementById("serviceTitle")
+.innerText=title;
+
+
+document.getElementById("depositFields")
+.style.display=
 type==="deposit" ? "block" : "none";
 
-document.getElementById("appointmentFields").style.display=
-(type==="measure" || type==="appointment") ? "block" : "none";
 
-document.getElementById("serviceModal").dataset.type=type;
+document.getElementById("appointmentFields")
+.style.display=
+(type==="measure" || type==="appointment")
+? "block"
+: "none";
 
-document.getElementById("serviceModal").classList.add("show");
+
+document.getElementById("serviceModal")
+.dataset.type=type;
+
+
+document.getElementById("serviceModal")
+.classList.add("show");
 
 }
+
 
 function closeService(){
 
-document.getElementById("serviceModal").classList.remove("show");
+document.getElementById("serviceModal")
+.classList.remove("show");
 
 }
 
+
 function sendService(){
 
-let type=document.getElementById("serviceModal").dataset.type;
-let title=document.getElementById("serviceTitle").innerText;
+let type=
+document.getElementById("serviceModal")
+.dataset.type;
 
-let name=document.getElementById("serviceName").value;
-let phone=document.getElementById("servicePhone").value;
-let address=document.getElementById("serviceAddress").value;
-let amount=document.getElementById("depositAmount").value;
-let payment=document.getElementById("paymentMethod").value;
-let date=document.getElementById("appointmentDate").value;
-let time=document.getElementById("appointmentTime").value;
-let message=document.getElementById("serviceMessage").value;
+let title=
+document.getElementById("serviceTitle")
+.innerText;
+
+let name=
+document.getElementById("serviceName")
+.value.trim();
+
+let phone=
+document.getElementById("servicePhone")
+.value.trim();
+
+let address=
+document.getElementById("serviceAddress")
+.value.trim();
+
+let amount=
+document.getElementById("depositAmount")
+.value;
+
+let payment=
+document.getElementById("paymentMethod")
+.value;
+
+let date=
+document.getElementById("appointmentDate")
+.value;
+
+let time=
+document.getElementById("appointmentTime")
+.value;
+
+let message=
+document.getElementById("serviceMessage")
+.value.trim();
+
 
 if(!name || !phone){
 
 alert("እባክዎ ስም እና ስልክ ያስገቡ።");
 
 return;
-
 }
+
+
+currentServiceData={
+name:name,
+phone:phone,
+product:title,
+quantity:"",
+location:address,
+message:message,
+payment:payment,
+appointment:
+(date ? date : "")+
+(time ? " "+time : ""),
+deposit:amount,
+type:type
+};
+
 
 currentMessage=
 "DUKEM STEEL SALES\n\n"+
@@ -755,6 +924,7 @@ title+"\n"+
 "Time: "+time+"\n"+
 "Message: "+message;
 
+
 closeService();
 
 showOptions();
@@ -766,47 +936,89 @@ showOptions();
 
 function showOptions(){
 
-document.getElementById("options").classList.add("show");
+document.getElementById("options")
+.classList.add("show");
 
 }
+
 
 function closeOptions(){
 
-document.getElementById("options").classList.remove("show");
+document.getElementById("options")
+.classList.remove("show");
 
 }
 
 
-/* TELEGRAM */
+/* ==============================
+   TELEGRAM BOT
+================================ */
 
 function sendTelegram(){
 
-    fetch("https://script.google.com/macros/s/AKfycbxWsjeEIbEEY28PH3v5UsBG5N0GGT-bzK8l5h6KPcNrCf9t-gM8j7UBswGuIrEmbOg/exec", {
-        method: "POST",
-        mode: "no-cors",
-        headers: {
-            "Content-Type": "text/plain"
-        },
-        body: JSON.stringify({
-            name: document.getElementById("customerName").value,
-            phone: document.getElementById("customerPhone").value,
-            product: document.getElementById("orderProduct").value,
-            quantity: document.getElementById("quantity").value,
-            location: document.getElementById("orderAddress").value,
-            message: document.getElementById("orderMessage").value
-        })
-    });
+let data={};
 
-    alert("✅ ትዕዛዝዎ ተልኳል!");
+if(Object.keys(currentOrderData).length){
 
-    closeOptions();
+data=currentOrderData;
+
+}else{
+
+data=currentServiceData;
+
 }
+
+
+if(!data.name || !data.phone){
+
+alert("የOrder መረጃ አልተሟላም።");
+
+return;
+}
+
+
+/* Send to Google Apps Script */
+
+fetch(TELEGRAM_WEB_APP,{
+
+method:"POST",
+
+mode:"no-cors",
+
+headers:{
+"Content-Type":"text/plain;charset=utf-8"
+},
+
+body:JSON.stringify(data)
+
+})
+.then(function(){
+
+alert(
+"✅ ትዕዛዝዎ ተልኳል!\n\n"+
+"ወደ Dukem Steel Sales Telegram ተልኳል።"
+);
+
+closeOptions();
+
+})
+.catch(function(){
+
+alert(
+"⚠️ መላክ ላይ ችግር ተፈጥሯል።"
+);
+
+});
+
+}
+
 
 /* SMS */
 
 function sendSMS(){
 
-let body=encodeURIComponent(currentMessage);
+let body=
+encodeURIComponent(currentMessage);
 
 window.location.href=
 "sms:0922337730?body="+body;
@@ -830,7 +1042,8 @@ window.open(
 
 function callDukem(){
 
-window.location.href="tel:0922337730";
+window.location.href=
+"tel:0922337730";
 
 }
 
@@ -839,21 +1052,30 @@ window.location.href="tel:0922337730";
 
 window.onclick=function(e){
 
-if(e.target===document.getElementById("orderModal")){
+if(e.target===
+document.getElementById("orderModal")){
+
 closeOrder();
+
 }
 
-if(e.target===document.getElementById("serviceModal")){
+if(e.target===
+document.getElementById("serviceModal")){
+
 closeService();
+
 }
 
-if(e.target===document.getElementById("options")){
+if(e.target===
+document.getElementById("options")){
+
 closeOptions();
-}
 
 }
+
+};
 
 </script>
 
 </body>
-</html>
+    </html>
