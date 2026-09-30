@@ -7,81 +7,196 @@
 
 <style>
 *{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
-body{font-family:Arial,"Noto Sans Ethiopic",sans-serif;background:#f4f6f8;color:#17202a;line-height:1.6}
-header{position:sticky;top:0;z-index:1000;background:#fff;box-shadow:0 2px 15px #0002}
-.nav{max-width:1200px;margin:auto;padding:8px 15px;display:flex;justify-content:space-between;align-items:center;gap:15px}
+body{
+font-family:Arial,"Noto Sans Ethiopic",sans-serif;
+background:#f4f6f8;color:#17202a;line-height:1.6
+}
+header{
+position:sticky;top:0;z-index:1000;background:#fff;
+box-shadow:0 2px 15px #0002
+}
+.nav{
+max-width:1200px;margin:auto;padding:8px 15px;
+display:flex;justify-content:space-between;align-items:center;gap:15px
+}
 .logo{display:flex;align-items:center;gap:9px;font-weight:900;color:#082d55}
 .logo img{width:55px;height:55px;object-fit:contain}
 .logo span{color:#eab900}
 nav{display:flex;gap:14px;flex-wrap:wrap}
 nav a{text-decoration:none;color:#082d55;font-weight:bold;font-size:14px}
 
-.hero{min-height:88vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:40px 15px;background:linear-gradient(#062746dd,#062746dd),url("sample-2.jpg") center/cover}
+.hero{
+min-height:88vh;display:flex;align-items:center;justify-content:center;
+text-align:center;color:#fff;padding:40px 15px;
+background:
+linear-gradient(#062746dd,#062746dd),
+url("sample-2.jpg") center/cover
+}
 .hero-content{max-width:900px}
-.hero img{width:125px;height:125px;object-fit:contain;background:#fff;border-radius:22px;padding:7px}
-.hero h1{font-size:clamp(36px,8vw,70px);color:#f7c400;margin:15px 0 5px}
+.hero img{
+width:125px;height:125px;object-fit:contain;background:#fff;
+border-radius:22px;padding:7px
+}
+.hero h1{
+font-size:clamp(36px,8vw,70px);color:#f7c400;
+margin:15px 0 5px
+}
 .hero h2{font-size:clamp(20px,4vw,34px)}
 .hero p{max-width:800px;margin:18px auto;font-size:17px}
-.buttons{display:flex;justify-content:center;gap:9px;flex-wrap:wrap}
-.btn{display:inline-block;padding:12px 18px;border:0;border-radius:9px;text-decoration:none;font-weight:bold;cursor:pointer}
-.gold{background:#f7c400;color:#111}.blue{background:#082d55;color:#fff}.telegram{background:#229ed9;color:#fff}
-.red{background:#e53935;color:#fff}.green{background:#16a85a;color:#fff}.black{background:#111;color:#fff}
+.buttons{
+display:flex;justify-content:center;gap:9px;flex-wrap:wrap
+}
+.btn{
+display:inline-block;padding:12px 18px;border:0;border-radius:9px;
+text-decoration:none;font-weight:bold;cursor:pointer
+}
+.gold{background:#f7c400;color:#111}
+.blue{background:#082d55;color:#fff}
+.telegram{background:#229ed9;color:#fff}
+.red{background:#e53935;color:#fff}
+.green{background:#16a85a;color:#fff}
+.black{background:#111;color:#fff}
 
 section{max-width:1200px;margin:auto;padding:55px 15px}
-.title{text-align:center;margin-bottom:28px}.title h2{color:#082d55;font-size:32px;margin-bottom:7px}
-.features,.products,.locations,.gallery{display:grid;gap:18px}
+.title{text-align:center;margin-bottom:28px}
+.title h2{color:#082d55;font-size:32px;margin-bottom:7px}
+
+.features,.products,.locations,.gallery{
+display:grid;gap:18px
+}
 .features{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
-.feature,.card,.location{background:#fff;border-radius:15px;padding:20px;box-shadow:0 4px 18px #0001}
+.feature,.card,.location{
+background:#fff;border-radius:15px;padding:20px;
+box-shadow:0 4px 18px #0001
+}
 .feature{text-align:center;border-bottom:4px solid #f7c400}
-.icon{font-size:40px}.feature h3{margin:7px;color:#082d55}.feature p{color:#666}
+.icon{font-size:40px}
+.feature h3{margin:7px;color:#082d55}
+.feature p{color:#666}
 
-.filterbox{background:#fff;padding:18px;border-radius:15px;margin-bottom:22px}
-.search{width:100%;padding:13px;border:1px solid #ccc;border-radius:8px;font-size:16px;margin-bottom:12px}
+.filterbox{
+background:#fff;padding:18px;border-radius:15px;margin-bottom:22px
+}
+.search{
+width:100%;padding:13px;border:1px solid #ccc;border-radius:8px;
+font-size:16px;margin-bottom:12px
+}
 .filters{display:flex;gap:7px;flex-wrap:wrap}
-.filters button{padding:9px 14px;border-radius:20px;border:1px solid #082d55;background:#fff;color:#082d55;font-weight:bold;cursor:pointer}
+.filters button{
+padding:9px 14px;border-radius:20px;border:1px solid #082d55;
+background:#fff;color:#082d55;font-weight:bold;cursor:pointer
+}
 .filters button.active{background:#082d55;color:#fff}
-.products{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-.card{padding:0;overflow:hidden}.card.hide{display:none}
-.card img{width:100%;height:210px;object-fit:cover}
-.cardbody{padding:17px}.card h3{color:#082d55;margin-bottom:10px}
-.info{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid #eee}
-.price{font-weight:bold;color:#e53935}
-.order{width:100%;margin-top:13px;padding:12px;border:0;border-radius:8px;background:#229ed9;color:#fff;font-weight:bold;font-size:15px;cursor:pointer}
 
-.villa{background:#082d55;color:#fff;text-align:center;padding:45px 20px;border-radius:18px}
-.villa h2{color:#f7c400;font-size:32px}.big{font-size:40px;font-weight:bold;margin:15px}
+.products{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{padding:0;overflow:hidden}
+.card.hide{display:none}
+.card img{width:100%;height:210px;object-fit:cover}
+.cardbody{padding:17px}
+.card h3{color:#082d55;margin-bottom:10px}
+.info{
+display:flex;justify-content:space-between;
+padding:7px 0;border-bottom:1px solid #eee
+}
+.price{font-weight:bold;color:#e53935}
+.order{
+width:100%;margin-top:13px;padding:12px;border:0;border-radius:8px;
+background:#229ed9;color:#fff;font-weight:bold;font-size:15px;cursor:pointer
+}
+
+.villa{
+background:#082d55;color:#fff;text-align:center;
+padding:45px 20px;border-radius:18px
+}
+.villa h2{color:#f7c400;font-size:32px}
+.big{font-size:40px;font-weight:bold;margin:15px}
+
 .gallery{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
-.gallery img{width:100%;height:250px;object-fit:cover;border-radius:14px}
+.gallery img{
+width:100%;height:250px;object-fit:cover;border-radius:14px
+}
+
 .locations{grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
 .location{text-align:center;font-weight:bold;color:#082d55}
-.transport{background:#f7c400;text-align:center;padding:40px 20px;border-radius:18px}
-.transport h2{color:#082d55;font-size:32px}
-.contact{max-width:none;background:#082d55;color:#fff;text-align:center}
-.contact h2{color:#f7c400;font-size:32px}.phone{font-size:24px;font-weight:bold;margin:8px}
-footer{background:#04182d;color:#bbb;text-align:center;padding:25px}
 
-.modal{display:none;position:fixed;inset:0;z-index:5000;background:#0009;padding:15px;align-items:center;justify-content:center}
+.transport{
+background:#f7c400;text-align:center;padding:40px 20px;border-radius:18px
+}
+.transport h2{color:#082d55;font-size:32px}
+
+.contact{
+max-width:none;background:#082d55;color:#fff;text-align:center
+}
+.contact h2{color:#f7c400;font-size:32px}
+.phone{font-size:24px;font-weight:bold;margin:8px}
+
+footer{
+background:#04182d;color:#bbb;text-align:center;padding:25px
+}
+
+/* MODALS */
+.modal{
+display:none;position:fixed;inset:0;z-index:5000;background:#0009;
+padding:15px;align-items:center;justify-content:center
+}
 .modal.show{display:flex}
-.box{background:#fff;width:100%;max-width:500px;max-height:92vh;overflow:auto;border-radius:18px;padding:25px;position:relative}
-.close{position:absolute;right:15px;top:8px;font-size:30px;cursor:pointer}
+.box{
+background:#fff;width:100%;max-width:500px;max-height:92vh;
+overflow:auto;border-radius:18px;padding:25px;position:relative
+}
+.close{
+position:absolute;right:15px;top:8px;font-size:30px;cursor:pointer
+}
 .box h2{color:#082d55;margin-bottom:15px}
 .box label{display:block;font-weight:bold;margin-top:11px}
-.box input,.box select,.box textarea{width:100%;padding:12px;margin-top:5px;border:1px solid #ccc;border-radius:8px;font-size:15px}
+.box input,.box select,.box textarea{
+width:100%;padding:12px;margin-top:5px;border:1px solid #ccc;
+border-radius:8px;font-size:15px
+}
 .box textarea{height:80px}
-.submit{width:100%;margin-top:18px;padding:14px;border:0;border-radius:9px;background:#082d55;color:#fff;font-weight:bold;font-size:16px;cursor:pointer}
+.submit{
+width:100%;margin-top:18px;padding:14px;border:0;border-radius:9px;
+background:#082d55;color:#fff;font-weight:bold;font-size:16px;cursor:pointer
+}
 
-#options{display:none;position:fixed;inset:0;z-index:9000;background:#0009;align-items:center;justify-content:center;padding:15px}
+/* SEND OPTIONS */
+#options{
+display:none;position:fixed;inset:0;z-index:9000;background:#0009;
+align-items:center;justify-content:center;padding:15px
+}
 #options.show{display:flex}
-.optionbox{background:#fff;width:100%;max-width:430px;border-radius:18px;padding:25px;text-align:center;position:relative}
-.optionbox h2{color:#082d55;margin-bottom:8px}.optionbox p{color:#666;margin-bottom:18px}
-.option{width:100%;padding:14px;margin:6px 0;border:0;border-radius:9px;color:#fff;font-weight:bold;font-size:16px;cursor:pointer}
-.option.tg{background:#229ed9}.option.sms{background:#16a85a}.option.tt{background:#111}.option.call{background:#e53935}
-.optionclose{position:absolute;right:15px;top:8px;font-size:28px;cursor:pointer}
-.float{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:#229ed9;color:#fff;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:26px;z-index:2000}
+.optionbox{
+background:#fff;width:100%;max-width:430px;border-radius:18px;
+padding:25px;text-align:center;position:relative
+}
+.optionbox h2{color:#082d55;margin-bottom:8px}
+.optionbox p{color:#666;margin-bottom:18px}
+.option{
+width:100%;padding:14px;margin:6px 0;border:0;border-radius:9px;
+color:#fff;font-weight:bold;font-size:16px;cursor:pointer
+}
+.option.tg{background:#229ed9}
+.option.sms{background:#16a85a}
+.option.tt{background:#111}
+.option.call{background:#e53935}
+.optionclose{
+position:absolute;right:15px;top:8px;font-size:28px;cursor:pointer
+}
+
+.float{
+position:fixed;right:18px;bottom:18px;width:58px;height:58px;
+border-radius:50%;background:#229ed9;color:#fff;
+display:flex;align-items:center;justify-content:center;
+text-decoration:none;font-size:26px;z-index:2000
+}
 
 @media(max-width:700px){
-.nav{flex-direction:column}nav{justify-content:center;gap:8px}nav a{font-size:12px}
-.hero{min-height:80vh}.hero img{width:100px;height:100px}section{padding:42px 12px}
+.nav{flex-direction:column}
+nav{justify-content:center;gap:8px}
+nav a{font-size:12px}
+.hero{min-height:80vh}
+.hero img{width:100px;height:100px}
+section{padding:42px 12px}
 }
 </style>
 </head>
@@ -94,6 +209,7 @@ footer{background:#04182d;color:#bbb;text-align:center;padding:25px}
 <img src="logo.jpg" alt="Dukem Steel Sales">
 <div>DUKEM <span>STEEL SALES</span></div>
 </div>
+
 <nav>
 <a href="#home">Home</a>
 <a href="#products">Products</a>
@@ -107,34 +223,77 @@ footer{background:#04182d;color:#bbb;text-align:center;padding:25px}
 
 <section class="hero" id="home">
 <div class="hero-content">
+
 <img src="logo.jpg" alt="Dukem Steel Sales">
+
 <h1>DUKEM STEEL SALES</h1>
+
 <h2>ዱከም ቆርቆሮ እና የግንባታ እቃዎች</h2>
-<p>ለቤት ሰሪዎች የቪላ ቤት ጣራ ክዳን፣ የአጥር ቆርቆሮ እና የተለያዩ የSteel ምርቶች በተመጣጣኝ ዋጋ።</p>
+
+<p>
+ለቤት ሰሪዎች የቪላ ቤት ጣራ ክዳን፣
+የአጥር ቆርቆሮ እና የተለያዩ የSteel ምርቶች
+በተመጣጣኝ ዋጋ።
+</p>
+
 <div class="buttons">
 <a class="btn gold" href="#products">🏗️ ምርቶች</a>
 <a class="btn red" href="tel:0922337730">📞 Call</a>
 <a class="btn telegram" href="https://t.me/TADHSH" target="_blank">✈️ Telegram</a>
 <a class="btn black" href="https://www.tiktok.com/@dukem.steel.sales" target="_blank">🎵 TikTok</a>
 </div>
+
 </div>
 </section>
 
 <section>
-<div class="title"><h2>ለምን Dukem Steel Sales?</h2><p>ጥራት • ተመጣጣኝ ዋጋ • ፈጣን አገልግሎት</p></div>
+<div class="title">
+<h2>ለምን Dukem Steel Sales?</h2>
+<p>ጥራት • ተመጣጣኝ ዋጋ • ፈጣን አገልግሎት</p>
+</div>
+
 <div class="features">
-<div class="feature"><div class="icon">🏠</div><h3>የቤት ጣራ</h3><p>ለቪላ እና ለተለያዩ ቤቶች</p></div>
-<div class="feature"><div class="icon">🧱</div><h3>የአጥር ቆርቆሮ</h3><p>የተለያዩ መጠንና ቀለም</p></div>
-<div class="feature"><div class="icon">💰</div><h3>ቅናሽ ዋጋ</h3><p>ለቤት ሰሪዎች ተመጣጣኝ ዋጋ</p></div>
-<div class="feature"><div class="icon">🚚</div><h3>ነፃ Transport</h3><p>የነፃ ትራንስፖርት</p></div>
+
+<div class="feature">
+<div class="icon">🏠</div>
+<h3>የቤት ጣራ</h3>
+<p>ለቪላ እና ለተለያዩ ቤቶች</p>
+</div>
+
+<div class="feature">
+<div class="icon">🧱</div>
+<h3>የአጥር ቆርቆሮ</h3>
+<p>የተለያዩ መጠንና ቀለም</p>
+</div>
+
+<div class="feature">
+<div class="icon">💰</div>
+<h3>ቅናሽ ዋጋ</h3>
+<p>ለቤት ሰሪዎች ተመጣጣኝ ዋጋ</p>
+</div>
+
+<div class="feature">
+<div class="icon">🚚</div>
+<h3>ነፃ Transport</h3>
+<p>የነፃ ትራንስፖርት አገልግሎት</p>
+</div>
+
 </div>
 </section>
 
 <section id="products">
-<div class="title"><h2>🏗️ ምርቶቻችን</h2><p>የሚፈልጉትን ምርት ይምረጡ</p></div>
+
+<div class="title">
+<h2>🏗️ ምርቶቻችን</h2>
+<p>የሚፈልጉትን ምርት ይምረጡ</p>
+</div>
 
 <div class="filterbox">
-<input id="search" class="search" placeholder="🔎 ምርት ፈልግ..." onkeyup="filterProducts()">
+
+<input id="search" class="search"
+placeholder="🔎 ምርት ፈልግ..."
+onkeyup="filterProducts()">
+
 <div class="filters">
 <button class="active" onclick="setFilter('all',this)">ሁሉም</button>
 <button onclick="setFilter('28',this)">28 Gauge</button>
@@ -144,89 +303,111 @@ footer{background:#04182d;color:#bbb;text-align:center;padding:25px}
 <button onclick="setFilter('villa',this)">Villa</button>
 <button onclick="setFilter('fence',this)">Fence</button>
 </div>
+
 </div>
 
 <div class="products">
 
 <div class="card product" data-cat="28">
-<img src="sample-1.jpg"><div class="cardbody">
+<img src="sample-1.jpg">
+<div class="cardbody">
 <h3>28 Gauge ቆርቆሮ</h3>
 <div class="info"><span>ዱከም</span><span class="price">1,100 ብር</span></div>
 <div class="info"><span>አዳማ</span><span class="price">970 ብር</span></div>
 <button class="order" onclick="openOrder('28 Gauge ቆርቆሮ')">🛒 Order</button>
-</div></div>
+</div>
+</div>
 
 <div class="card product" data-cat="30">
-<img src="sample-4.jpg"><div class="cardbody">
+<img src="sample-4.jpg">
+<div class="cardbody">
 <h3>30 Gauge ቆርቆሮ</h3>
 <div class="info"><span>አርቲ</span><span class="price">900 ብር</span></div>
 <div class="info"><span>አርቲ</span><span class="price">950 ብር</span></div>
 <button class="order" onclick="openOrder('30 Gauge ቆርቆሮ')">🛒 Order</button>
-</div></div>
+</div>
+</div>
 
 <div class="card product" data-cat="32">
-<img src="sample-3.jpg"><div class="cardbody">
+<img src="sample-3.jpg">
+<div class="cardbody">
 <h3>32 Gauge ቆርቆሮ</h3>
 <div class="info"><span>ቃሊቲ</span><span class="price">700 ብር</span></div>
 <div class="info"><span>አርቲ</span><span class="price">880 ብር</span></div>
 <div class="info"><span>ግመል</span><span class="price">870 ብር</span></div>
 <button class="order" onclick="openOrder('32 Gauge ቆርቆሮ')">🛒 Order</button>
-</div></div>
+</div>
+</div>
 
 <div class="card product" data-cat="35">
-<img src="sample-1.jpg"><div class="cardbody">
+<img src="sample-1.jpg">
+<div class="cardbody">
 <h3>35 Gauge ቆርቆሮ</h3>
 <div class="info"><span>ቡሻን</span><span class="price">470 ብር</span></div>
 <div class="info"><span>ጥላ</span><span class="price">520 ብር</span></div>
 <div class="info"><span>ፈረስ</span><span class="price">540 ብር</span></div>
 <button class="order" onclick="openOrder('35 Gauge ቆርቆሮ')">🛒 Order</button>
-</div></div>
+</div>
+</div>
 
 <div class="card product" data-cat="villa">
-<img src="sample-2.jpg"><div class="cardbody">
+<img src="sample-2.jpg">
+<div class="cardbody">
 <h3>🏡 Villa Tile Roofing</h3>
 <div class="info"><span>28 Gauge</span><span class="price">980 / m²</span></div>
 <div class="info"><span>Thickness</span><span>0.4mm</span></div>
 <div class="info"><span>Width</span><span>1.15m</span></div>
 <button class="order" onclick="openOrder('Villa Tile Roofing')">🛒 Order</button>
-</div></div>
+</div>
+</div>
 
 <div class="card product" data-cat="fence">
-<img src="sample-3.jpg"><div class="cardbody">
+<img src="sample-3.jpg">
+<div class="cardbody">
 <h3>🧱 EGA Fence Sheet</h3>
 <div class="info"><span>1.10m</span><span class="price">800 / m</span></div>
 <div class="info"><span>90cm</span><span class="price">730 / m</span></div>
 <div class="info"><span>Thickness</span><span>0.4mm</span></div>
 <button class="order" onclick="openOrder('EGA Fence Sheet')">🛒 Order</button>
-</div></div>
+</div>
+</div>
 
 </div>
 </section>
 
 <section id="services">
-<div class="title"><h2>🛠️ አገልግሎቶቻችን</h2><p>Order • Deposit • Measurement • Appointment</p></div>
+
+<div class="title">
+<h2>🛠️ አገልግሎቶቻችን</h2>
+<p>Order • Deposit • Measurement • Appointment</p>
+</div>
+
 <div class="features">
 
 <div class="feature">
-<div class="icon">🛒</div><h3>የቆርቆሮ ትዕዛዝ</h3>
+<div class="icon">🛒</div>
+<h3>የቆርቆሮ ትዕዛዝ</h3>
 <p>የምትፈልጉትን ምርት ይዘዙ</p>
 <button class="btn telegram" onclick="openOrder('General Order')">Order</button>
 </div>
 
 <div class="feature">
-<div class="icon">💰</div><h3>ቀብድ ክፍያ</h3>
+<div class="icon">💰</div>
+<h3>ቀብድ ክፍያ</h3>
 <p>ትዕዛዝዎን ለማረጋገጥ</p>
 <button class="btn gold" onclick="openService('deposit')">Deposit</button>
 </div>
 
 <div class="feature">
-<div class="icon">📏</div><h3>ልኬት ማስለካት</h3>
+<div class="icon">📏</div>
+<h3>ልኬት ማስለካት</h3>
 <p>ቤትዎ ላይ ልኬት እንዲለካ</p>
 <button class="btn blue" onclick="openService('measure')">ልኬት ጠይቅ</button>
 </div>
 
 <div class="feature">
-<div class="icon">📅</div><h3>ቀጠሮ ያስይዙ</h3>
+<div class="icon">📅</div>
+<h3>ቀጠሮ ያስይዙ</h3>
 <p>ቀንና ሰዓት ይምረጡ</p>
 <button class="btn green" onclick="openService('appointment')">ቀጠሮ</button>
 </div>
@@ -239,55 +420,81 @@ footer{background:#04182d;color:#bbb;text-align:center;padding:25px}
 <h2>🏡 Modern Villa Tile Roofing</h2>
 <p>28 Gauge • 0.4mm Thickness • 1.15m Width</p>
 <div class="big">980 ብር / m²</div>
-<p>🎨 የተለያዩ ቀለሞች • 🚚 ነፃ Transport</p><br>
-<button class="btn gold" onclick="openOrder('Villa Tile Roofing')">🛒 Villa Roofing Order</button>
+<p>🎨 የተለያዩ ቀለሞች • 🚚 ነፃ Transport</p>
+<br>
+<button class="btn gold" onclick="openOrder('Villa Tile Roofing')">
+🛒 Villa Roofing Order
+</button>
 </div>
 </section>
 
 <section id="gallery">
-<div class="title"><h2>📸 Gallery</h2></div>
+<div class="title">
+<h2>📸 Gallery</h2>
+</div>
+
 <div class="gallery">
-<img src="sample-1.jpg"><img src="sample-2.jpg"><img src="sample-3.jpg"><img src="sample-4.jpg">
+<img src="sample-1.jpg">
+<img src="sample-2.jpg">
+<img src="sample-3.jpg">
+<img src="sample-4.jpg">
 </div>
 </section>
 
 <section>
 <div class="transport">
 <h2>🚚 ነፃ ትራንስፖርት</h2>
-<p>ለቤት ሰሪዎች በተመጣጣኝ ዋጋ እናቀርባለን።</p><br>
+<p>ለቤት ሰሪዎች በተመጣጣኝ ዋጋ እናቀርባለን።</p>
+<br>
 <strong>የነፃ ትራንስፖርት አካባቢ ለማረጋገጥ ይደውሉ።</strong>
 </div>
 </section>
 
 <section>
-<div class="title"><h2>📍 የምናገለግላቸው አካባቢዎች</h2></div>
+<div class="title">
+<h2>📍 የምናገለግላቸው አካባቢዎች</h2>
+</div>
+
 <div class="locations">
-<div class="location">CMC</div><div class="location">ቱሉ ድምቱ</div>
-<div class="location">ሀዋሳ</div><div class="location">ሀላባ</div>
-<div class="location">ሸክሶ</div><div class="location">ሸሸመኔ</div>
+<div class="location">CMC</div>
+<div class="location">ቱሉ ድምቱ</div>
+<div class="location">ሀዋሳ</div>
+<div class="location">ሀላባ</div>
+<div class="location">ሸክሶ</div>
+<div class="location">ሸሸመኔ</div>
 <div class="location">ደብረ ብርሃን</div>
 </div>
 </section>
 
 <section class="contact" id="contact">
-<h2>📞 ያግኙን</h2><p>DUKEM STEEL SALES</p>
+
+<h2>📞 ያግኙን</h2>
+<p>DUKEM STEEL SALES</p>
+
 <div class="phone">0922 337730</div>
 <div class="phone">0912 751976</div>
+
 <div class="buttons">
 <a class="btn red" href="tel:0922337730">📞 Call</a>
 <a class="btn green" href="sms:0922337730">💬 SMS</a>
 <a class="btn telegram" href="https://t.me/TADHSH" target="_blank">✈️ Telegram</a>
 <a class="btn black" href="https://www.tiktok.com/@dukem.steel.sales" target="_blank">🎵 TikTok</a>
 </div>
+
 </section>
 
-<footer>© 2026 DUKEM STEEL SALES<br>የቆርቆሮ እና የግንባታ እቃዎች</footer>
+<footer>
+© 2026 DUKEM STEEL SALES
+<br>
+የቆርቆሮ እና የግንባታ እቃዎች
+</footer>
 
-
-<!-- ORDER MODAL -->
+<!-- ORDER FORM -->
 <div class="modal" id="orderModal">
 <div class="box">
+
 <div class="close" onclick="closeOrder()">×</div>
+
 <h2>🛒 የምርት ትዕዛዝ</h2>
 
 <label>ምርት</label>
@@ -308,15 +515,19 @@ footer{background:#04182d;color:#bbb;text-align:center;padding:25px}
 <label>ተጨማሪ መልዕክት</label>
 <textarea id="orderMessage" placeholder="ተጨማሪ መረጃ..."></textarea>
 
-<button class="submit" onclick="sendOrder()">📤 ትዕዛዝ ላክ</button>
+<button class="submit" onclick="sendOrder()">
+📤 ትዕዛዝ ላክ
+</button>
+
 </div>
 </div>
 
-
-<!-- SERVICE MODAL -->
+<!-- SERVICE FORM -->
 <div class="modal" id="serviceModal">
 <div class="box">
+
 <div class="close" onclick="closeService()">×</div>
+
 <h2 id="serviceTitle">Service</h2>
 
 <label>ስም</label>
@@ -329,6 +540,7 @@ footer{background:#04182d;color:#bbb;text-align:center;padding:25px}
 <input id="serviceAddress" placeholder="ለምሳሌ CMC">
 
 <div id="depositFields">
+
 <label>💰 ቀብድ መጠን</label>
 <input id="depositAmount" type="number" placeholder="ለምሳሌ 5000">
 
@@ -338,40 +550,62 @@ footer{background:#04182d;color:#bbb;text-align:center;padding:25px}
 <option>Bank Transfer</option>
 <option>Cash</option>
 </select>
+
 </div>
 
 <div id="appointmentFields">
+
 <label>📅 ቀን</label>
 <input id="appointmentDate" type="date">
+
 <label>⏰ ሰዓት</label>
 <input id="appointmentTime" type="time">
+
 </div>
 
 <label>ተጨማሪ መልዕክት</label>
-<textarea id="serviceMessage" placeholder="ተጨማሪ መረጃ..."></textarea>
+<textarea id="serviceMessage"></textarea>
 
-<button class="submit" onclick="sendService()">📤 ቀጥል</button>
+<button class="submit" onclick="sendService()">
+📤 ቀጥል
+</button>
+
 </div>
 </div>
-
 
 <!-- SEND OPTIONS -->
 <div id="options">
+
 <div class="optionbox">
+
 <div class="optionclose" onclick="closeOptions()">×</div>
 
-<h2>📤 የመላኪያ መንገድ</h2>
-<p>መረጃዎን በየት መንገድ መላክ ይፈልጋሉ?</p>
+<h2>📤 Order የት ይላክ?</h2>
 
-<button class="option tg" onclick="sendTelegram()">✈️ Telegram</button>
-<button class="option sms" onclick="sendSMS()">💬 SMS</button>
-<button class="option tt" onclick="sendTikTok()">🎵 TikTok Message</button>
-<button class="option call" onclick="callDukem()">📞 Phone Call</button>
+<p>
+Order መረጃዎን በሚፈልጉት መንገድ ይላኩ።
+</p>
+
+<button class="option tg" onclick="sendTelegram()">
+✈️ Telegram ላክ
+</button>
+
+<button class="option sms" onclick="sendSMS()">
+💬 SMS ላክ
+</button>
+
+<button class="option tt" onclick="sendTikTok()">
+🎵 TikTok Message
+</button>
+
+<button class="option call" onclick="callDukem()">
+📞 Phone Call
+</button>
+
 </div>
 </div>
 
 <a class="float" href="https://t.me/TADHSH" target="_blank">✈️</a>
-
 
 <script>
 
@@ -380,35 +614,50 @@ let currentMessage="";
 
 /* FILTER */
 function setFilter(filter,btn){
+
 currentFilter=filter;
-document.querySelectorAll(".filters button").forEach(b=>b.classList.remove("active"));
+
+document.querySelectorAll(".filters button")
+.forEach(b=>b.classList.remove("active"));
+
 btn.classList.add("active");
+
 filterProducts();
 }
 
 function filterProducts(){
+
 let search=document.getElementById("search").value.toLowerCase();
 
 document.querySelectorAll(".product").forEach(card=>{
+
 let category=card.dataset.cat;
 let text=card.innerText.toLowerCase();
 
-let okCategory=currentFilter==="all"||category===currentFilter;
+let okCategory=
+currentFilter==="all" ||
+category===currentFilter;
+
 let okSearch=text.includes(search);
 
 card.classList.toggle("hide",!(okCategory&&okSearch));
+
 });
 }
 
-
 /* ORDER */
 function openOrder(product){
+
 document.getElementById("orderProduct").value=product;
+
 document.getElementById("orderModal").classList.add("show");
+
 }
 
 function closeOrder(){
+
 document.getElementById("orderModal").classList.remove("show");
+
 }
 
 function sendOrder(){
@@ -420,35 +669,43 @@ let quantity=document.getElementById("quantity").value;
 let address=document.getElementById("orderAddress").value.trim();
 let message=document.getElementById("orderMessage").value.trim();
 
-if(!name||!phone){
+if(!name || !phone){
+
 alert("እባክዎ ስም እና ስልክ ያስገቡ።");
+
 return;
+
 }
 
 currentMessage=
-`DUKEM STEEL SALES
-
-🛒 ORDER
-Product: ${product}
-Name: ${name}
-Phone: ${phone}
-Quantity: ${quantity}
-Address: ${address}
-Message: ${message}`;
+"DUKEM STEEL SALES\n\n"+
+"🛒 ORDER\n"+
+"Product: "+product+"\n"+
+"Name: "+name+"\n"+
+"Phone: "+phone+"\n"+
+"Quantity: "+quantity+"\n"+
+"Address: "+address+"\n"+
+"Message: "+message;
 
 closeOrder();
-showOptions();
-}
 
+showOptions();
+
+}
 
 /* SERVICES */
 function openService(type){
 
 let title="";
 
-if(type==="deposit") title="💰 ቀብድ ክፍያ";
-if(type==="measure") title="📏 ልኬት ማስለካት";
-if(type==="appointment") title="📅 ቀጠሮ";
+if(type==="deposit")
+title="💰 ቀብድ ክፍያ";
+
+if(type==="measure")
+title="📏 ልኬት ማስለካት";
+
+if(type==="appointment")
+title="📅 ቀጠሮ";
 
 document.getElementById("serviceTitle").innerText=title;
 
@@ -459,11 +716,15 @@ document.getElementById("appointmentFields").style.display=
 (type==="measure"||type==="appointment")?"block":"none";
 
 document.getElementById("serviceModal").dataset.type=type;
+
 document.getElementById("serviceModal").classList.add("show");
+
 }
 
 function closeService(){
+
 document.getElementById("serviceModal").classList.remove("show");
+
 }
 
 function sendService(){
@@ -483,52 +744,73 @@ let time=document.getElementById("appointmentTime").value;
 
 let message=document.getElementById("serviceMessage").value.trim();
 
-if(!name||!phone){
+if(!name || !phone){
+
 alert("እባክዎ ስም እና ስልክ ያስገቡ።");
+
 return;
+
 }
 
 currentMessage=
-`DUKEM STEEL SALES
-
-${title}
-Name: ${name}
-Phone: ${phone}
-Address: ${address}
-Deposit: ${amount}
-Payment: ${payment}
-Date: ${date}
-Time: ${time}
-Message: ${message}`;
+"DUKEM STEEL SALES\n\n"+
+title+"\n"+
+"Name: "+name+"\n"+
+"Phone: "+phone+"\n"+
+"Address: "+address+"\n"+
+"Deposit: "+amount+"\n"+
+"Payment: "+payment+"\n"+
+"Date: "+date+"\n"+
+"Time: "+time+"\n"+
+"Message: "+message;
 
 closeService();
+
 showOptions();
+
 }
 
-
-/* SEND OPTIONS */
+/* OPTIONS */
 function showOptions(){
+
 document.getElementById("options").classList.add("show");
+
 }
 
 function closeOptions(){
-document.getElementById("options").classList.remove("show");
-}
 
+document.getElementById("options").classList.remove("show");
+
+}
 
 /* TELEGRAM */
 function sendTelegram(){
 
 let text=encodeURIComponent(currentMessage);
 
-window.open(
-"https://t.me/share/url?url=&text="+text,
-"_blank"
-);
+/*
+Telegram opens the contact/channel.
+The message is copied to clipboard when supported,
+so it can be pasted directly into the Telegram chat.
+*/
 
-closeOptions();
+if(navigator.clipboard){
+
+navigator.clipboard.writeText(currentMessage)
+.then(()=>{
+window.open("https://t.me/TADHSH","_blank");
+})
+.catch(()=>{
+window.open("https://t.me/TADHSH","_blank");
+});
+
+}else{
+
+window.open("https://t.me/TADHSH","_blank");
+
 }
 
+}
 
 /* SMS */
 function sendSMS(){
@@ -538,32 +820,46 @@ let body=encodeURIComponent(currentMessage);
 window.location.href=
 "sms:0922337730?body="+body;
 
-closeOptions();
 }
-
 
 /* TIKTOK */
 function sendTikTok(){
+
+if(navigator.clipboard){
+
+navigator.clipboard.writeText(currentMessage)
+.then(()=>{
+window.open(
+"https://www.tiktok.com/@dukem.steel.sales",
+"_blank"
+);
+})
+.catch(()=>{
+window.open(
+"https://www.tiktok.com/@dukem.steel.sales",
+"_blank"
+);
+});
+
+}else{
 
 window.open(
 "https://www.tiktok.com/@dukem.steel.sales",
 "_blank"
 );
 
-closeOptions();
 }
 
+}
 
 /* CALL */
 function callDukem(){
 
 window.location.href="tel:0922337730";
 
-closeOptions();
 }
 
-
-/* CLOSE */
+/* CLOSE MODALS */
 window.onclick=function(e){
 
 if(e.target===document.getElementById("orderModal"))
@@ -580,4 +876,4 @@ closeOptions();
 </script>
 
 </body>
-                                                                </html>
+  </html>
