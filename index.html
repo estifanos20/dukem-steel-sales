@@ -11,14 +11,14 @@
  box-sizing:border-box;
  margin:0;
  padding:0;
- scroll-behavior:smooth
+ scroll-behavior:smooth;
 }
 
 body{
  font-family:Arial,"Noto Sans Ethiopic",sans-serif;
  background:#f4f6f8;
  color:#17202a;
- line-height:1.6
+ line-height:1.6;
 }
 
 header{
@@ -26,7 +26,7 @@ header{
  top:0;
  z-index:1000;
  background:#fff;
- box-shadow:0 2px 15px #0002
+ box-shadow:0 2px 15px #0002;
 }
 
 .nav{
@@ -36,7 +36,7 @@ header{
  display:flex;
  justify-content:space-between;
  align-items:center;
- gap:15px
+ gap:15px;
 }
 
 .logo{
@@ -44,30 +44,30 @@ header{
  align-items:center;
  gap:9px;
  font-weight:900;
- color:#082d55
+ color:#082d55;
 }
 
 .logo img{
- width:55px;
- height:55px;
- object-fit:contain
+ width:52px;
+ height:52px;
+ object-fit:contain;
 }
 
 .logo span{
- color:#eab900
+ color:#eab900;
 }
 
 nav{
  display:flex;
- gap:14px;
- flex-wrap:wrap
+ gap:13px;
+ flex-wrap:wrap;
 }
 
 nav a{
  text-decoration:none;
  color:#082d55;
  font-weight:bold;
- font-size:14px
+ font-size:14px;
 }
 
 .hero{
@@ -80,11 +80,11 @@ nav a{
  padding:40px 15px;
  background:
  linear-gradient(#062746dd,#062746dd),
- url("sample-2.jpg") center/cover
+ url("sample-2.jpg") center/cover;
 }
 
 .hero-content{
- max-width:900px
+ max-width:900px;
 }
 
 .hero img{
@@ -93,30 +93,30 @@ nav a{
  object-fit:contain;
  background:#fff;
  border-radius:22px;
- padding:7px
+ padding:7px;
 }
 
 .hero h1{
  font-size:clamp(36px,8vw,70px);
  color:#f7c400;
- margin:15px 0 5px
+ margin:15px 0 5px;
 }
 
 .hero h2{
- font-size:clamp(20px,4vw,34px)
+ font-size:clamp(20px,4vw,34px);
 }
 
 .hero p{
  max-width:800px;
  margin:18px auto;
- font-size:17px
+ font-size:17px;
 }
 
 .buttons{
  display:flex;
  justify-content:center;
  gap:9px;
- flex-wrap:wrap
+ flex-wrap:wrap;
 }
 
 .btn{
@@ -126,7 +126,7 @@ nav a{
  border-radius:9px;
  text-decoration:none;
  font-weight:bold;
- cursor:pointer
+ cursor:pointer;
 }
 
 .gold{background:#f7c400;color:#111}
@@ -139,18 +139,18 @@ nav a{
 section{
  max-width:1200px;
  margin:auto;
- padding:55px 15px
+ padding:55px 15px;
 }
 
 .title{
  text-align:center;
- margin-bottom:28px
+ margin-bottom:28px;
 }
 
 .title h2{
  color:#082d55;
  font-size:32px;
- margin-bottom:7px
+ margin-bottom:7px;
 }
 
 .features,
@@ -158,11 +158,11 @@ section{
 .locations,
 .gallery{
  display:grid;
- gap:18px
+ gap:18px;
 }
 
 .features{
- grid-template-columns:repeat(auto-fit,minmax(210px,1fr))
+ grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
 }
 
 .feature,
@@ -171,32 +171,32 @@ section{
  background:#fff;
  border-radius:15px;
  padding:20px;
- box-shadow:0 4px 18px #0001
+ box-shadow:0 4px 18px #0001;
 }
 
 .feature{
  text-align:center;
- border-bottom:4px solid #f7c400
+ border-bottom:4px solid #f7c400;
 }
 
 .icon{
- font-size:40px
+ font-size:40px;
 }
 
 .feature h3{
  margin:7px;
- color:#082d55
+ color:#082d55;
 }
 
 .feature p{
- color:#666
+ color:#666;
 }
 
 .filterbox{
  background:#fff;
  padding:18px;
  border-radius:15px;
- margin-bottom:22px
+ margin-bottom:22px;
 }
 
 .search{
@@ -205,13 +205,13 @@ section{
  border:1px solid #ccc;
  border-radius:8px;
  font-size:16px;
- margin-bottom:12px
+ margin-bottom:12px;
 }
 
 .filters{
  display:flex;
  gap:7px;
- flex-wrap:wrap
+ flex-wrap:wrap;
 }
 
 .filters button{
@@ -221,69 +221,70 @@ section{
  background:#fff;
  color:#082d55;
  font-weight:bold;
- cursor:pointer
+ cursor:pointer;
 }
 
 .filters button.active{
  background:#082d55;
- color:#fff
+ color:#fff;
 }
 
 .products{
- grid-template-columns:repeat(auto-fit,minmax(240px,1fr))
+ grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
 }
 
 .card{
  padding:0;
- overflow:hidden
+ overflow:hidden;
 }
 
 .card.hide{
- display:none
+ display:none;
 }
 
 .card img{
  width:100%;
  height:210px;
- object-fit:cover
+ object-fit:cover;
 }
 
 .cardbody{
- padding:17px
+ padding:17px;
 }
 
 .card h3{
  color:#082d55;
- margin-bottom:10px
+ margin-bottom:10px;
 }
 
 .info{
  display:flex;
  justify-content:space-between;
  padding:7px 0;
- border-bottom:1px solid #eee
+ border-bottom:1px solid #eee;
 }
 
 .price{
  font-weight:bold;
- color:#e53935
+ color:#e53935;
 }
 
 .order{
  width:100%;
  margin-top:13px;
- padding:13px;
+ padding:12px;
  border:0;
  border-radius:8px;
  background:#229ed9;
  color:#fff;
  font-weight:bold;
  font-size:15px;
- cursor:pointer
+ cursor:pointer;
 }
 
-.order:active{
- transform:scale(.97)
+.order:hover{
+ opacity:.9;
+ transform:translateY(-1px);
 }
 
 .villa{
@@ -291,80 +292,85 @@ section{
  color:#fff;
  text-align:center;
  padding:45px 20px;
- border-radius:18px
+ border-radius:18px;
 }
 
 .villa h2{
  color:#f7c400;
- font-size:32px
+ font-size:32px;
 }
 
 .big{
  font-size:40px;
  font-weight:bold;
- margin:15px
+ margin:15px;
 }
 
 .gallery{
- grid-template-columns:repeat(auto-fit,minmax(230px,1fr))
+ grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
 }
 
 .gallery img{
  width:100%;
  height:250px;
  object-fit:cover;
- border-radius:14px
+ border-radius:14px;
+ cursor:pointer;
+ transition:.2s;
+}
+
+.gallery img:hover{
+ transform:scale(1.02);
 }
 
 .locations{
- grid-template-columns:repeat(auto-fit,minmax(160px,1fr))
+ grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
 }
 
 .location{
  text-align:center;
  font-weight:bold;
- color:#082d55
+ color:#082d55;
 }
 
 .transport{
  background:#f7c400;
  text-align:center;
  padding:40px 20px;
- border-radius:18px
+ border-radius:18px;
 }
 
 .transport h2{
  color:#082d55;
- font-size:32px
+ font-size:32px;
 }
 
 .contact{
  max-width:none;
  background:#082d55;
  color:#fff;
- text-align:center
+ text-align:center;
 }
 
 .contact h2{
  color:#f7c400;
- font-size:32px
+ font-size:32px;
 }
 
 .phone{
  font-size:24px;
  font-weight:bold;
- margin:8px
+ margin:8px;
 }
 
 footer{
  background:#04182d;
  color:#bbb;
  text-align:center;
- padding:25px
+ padding:25px;
 }
 
-
-/* MODAL */
+/* MODALS */
 
 .modal{
  display:none;
@@ -372,24 +378,24 @@ footer{
  inset:0;
  z-index:5000;
  background:#0009;
- padding:12px;
+ padding:15px;
  align-items:center;
- justify-content:center
+ justify-content:center;
 }
 
 .modal.show{
- display:flex
+ display:flex;
 }
 
 .box{
  background:#fff;
  width:100%;
  max-width:500px;
- max-height:94vh;
+ max-height:92vh;
  overflow:auto;
- border-radius:20px;
- padding:24px;
- position:relative
+ border-radius:18px;
+ padding:25px;
+ position:relative;
 }
 
 .close{
@@ -398,41 +404,33 @@ footer{
  top:8px;
  font-size:30px;
  cursor:pointer;
- color:#555
 }
 
 .box h2{
  color:#082d55;
- margin-bottom:15px
+ margin-bottom:15px;
 }
 
 .box label{
  display:block;
  font-weight:bold;
- margin-top:11px
+ margin-top:11px;
 }
 
 .box input,
 .box select,
 .box textarea{
  width:100%;
- padding:13px;
+ padding:12px;
  margin-top:5px;
  border:1px solid #ccc;
  border-radius:8px;
  font-size:15px;
- outline:none
-}
-
-.box input:focus,
-.box select:focus,
-.box textarea:focus{
- border-color:#229ed9
 }
 
 .box textarea{
  height:90px;
- resize:vertical
+ resize:vertical;
 }
 
 .submit{
@@ -445,9 +443,8 @@ footer{
  color:#fff;
  font-weight:bold;
  font-size:16px;
- cursor:pointer
+ cursor:pointer;
 }
-
 
 /* SEND OPTIONS */
 
@@ -459,112 +456,104 @@ footer{
  background:#0009;
  align-items:center;
  justify-content:center;
- padding:12px
+ padding:15px;
 }
 
 #options.show{
- display:flex
+ display:flex;
 }
 
 .optionbox{
  background:#fff;
  width:100%;
  max-width:430px;
- border-radius:20px;
+ border-radius:18px;
  padding:25px;
  text-align:center;
- position:relative
+ position:relative;
 }
 
 .optionbox h2{
  color:#082d55;
- margin-bottom:8px
+ margin-bottom:8px;
 }
 
 .optionbox p{
  color:#666;
- margin-bottom:18px
+ margin-bottom:18px;
 }
 
 .option{
  width:100%;
- padding:15px;
+ padding:14px;
  margin:6px 0;
  border:0;
- border-radius:10px;
+ border-radius:9px;
  color:#fff;
  font-weight:bold;
  font-size:16px;
- cursor:pointer
+ cursor:pointer;
 }
 
-.option.tg{
- background:#229ed9
-}
-
-.option.sms{
- background:#16a85a
-}
-
-.option.tt{
- background:#111
-}
-
-.option.call{
- background:#e53935
-}
+.option.tg{background:#229ed9}
+.option.sms{background:#16a85a}
+.option.tt{background:#111}
+.option.call{background:#e53935}
 
 .optionclose{
  position:absolute;
  right:15px;
  top:8px;
  font-size:28px;
- cursor:pointer
+ cursor:pointer;
 }
 
+/* IMAGE VIEWER */
 
-/* ORDER SUCCESS */
-
-#success{
+#imageViewer{
  display:none;
  position:fixed;
  inset:0;
  z-index:10000;
- background:#0009;
+ background:#000e;
  align-items:center;
  justify-content:center;
- padding:15px
+ padding:15px;
 }
 
-#success.show{
- display:flex
+#imageViewer.show{
+ display:flex;
 }
 
-.successbox{
- background:white;
- width:100%;
- max-width:420px;
- padding:30px 22px;
- border-radius:20px;
- text-align:center
+#imageViewer img{
+ max-width:95%;
+ max-height:90vh;
+ border-radius:10px;
 }
 
-.success-icon{
- font-size:55px
+.imageClose{
+ position:absolute;
+ top:15px;
+ right:20px;
+ color:#fff;
+ font-size:38px;
+ cursor:pointer;
 }
 
-.successbox h2{
- color:#082d55;
- margin:8px 0
+/* TOTAL PRICE */
+
+.totalBox{
+ margin-top:15px;
+ padding:15px;
+ background:#f4f6f8;
+ border-radius:10px;
+ text-align:center;
 }
 
-.successbox p{
- color:#666;
- margin-bottom:18px
+.totalBox strong{
+ font-size:22px;
+ color:#e53935;
 }
-
-
-/* FLOAT */
 
 .float{
  position:fixed;
@@ -581,154 +570,56 @@ footer{
  text-decoration:none;
  font-size:26px;
  z-index:2000;
- box-shadow:0 4px 15px #0004
+ box-shadow:0 4px 15px #0004;
 }
-
-
-/* MOBILE */
 
 @media(max-width:700px){
 
  .nav{
   flex-direction:column;
-  padding:7px 10px
  }
 
  nav{
   justify-content:center;
-  gap:7px
+  gap:8px;
  }
 
  nav a{
   font-size:12px;
-  padding:3px
  }
 
  .hero{
-  min-height:78vh;
-  padding:30px 12px
+  min-height:80vh;
  }
 
  .hero img{
   width:100px;
-  height:100px
- }
-
- .hero h1{
-  font-size:38px
- }
-
- .hero h2{
-  font-size:20px
- }
-
- .hero p{
-  font-size:15px
+  height:100px;
  }
 
  section{
-  padding:40px 12px
- }
-
- .title h2{
-  font-size:27px
- }
-
- .features{
-  grid-template-columns:1fr 1fr;
-  gap:12px
- }
-
- .feature{
-  padding:15px 10px
- }
-
- .feature .icon{
-  font-size:32px
- }
-
- .feature h3{
-  font-size:15px
- }
-
- .feature p{
-  font-size:13px
- }
-
- .products{
-  grid-template-columns:1fr
- }
-
- .gallery{
-  grid-template-columns:1fr 1fr;
-  gap:10px
- }
-
- .gallery img{
-  height:170px
- }
-
- .villa h2{
-  font-size:25px
- }
-
- .big{
-  font-size:32px
+  padding:42px 12px;
  }
 
  .phone{
-  font-size:20px
+  font-size:20px;
  }
 
- .box{
-  padding:20px 17px
- }
-
- .buttons .btn{
-  min-width:110px
+ .big{
+  font-size:32px;
  }
 }
-
-
-/* VERY SMALL PHONES */
-
-@media(max-width:380px){
-
- .features{
-  grid-template-columns:1fr
- }
-
- nav a{
-  font-size:11px
- }
-
- .hero h1{
-  font-size:32px
- }
-
- .gallery{
-  grid-template-columns:1fr
- }
-}
-
 </style>
 </head>
 
 <body>
 
-
 <header>
-
 <div class="nav">
 
 <div class="logo">
-
 <img src="logo.jpg" alt="Dukem Steel Sales">
-
-<div>
-DUKEM <span>STEEL SALES</span>
-</div>
-
+<div>DUKEM <span>STEEL SALES</span></div>
 </div>
 
 <nav>
@@ -741,23 +632,18 @@ DUKEM <span>STEEL SALES</span>
 </nav>
 
 </div>
-
 </header>
-
 
 <!-- HERO -->
 
 <section class="hero" id="home">
-
 <div class="hero-content">
 
 <img src="logo.jpg" alt="Dukem Steel Sales">
 
 <h1>DUKEM STEEL SALES</h1>
 
-<h2>
-ዱከም ቆርቆሮ እና የግንባታ እቃዎች
-</h2>
+<h2>ዱከም ቆርቆሮ እና የግንባታ እቃዎች</h2>
 
 <p>
 ለቤት ሰሪዎች የቪላ ቤት ጣራ ክዳን፣
@@ -790,24 +676,16 @@ target="_blank">
 </div>
 
 </div>
-
 </section>
-
 
 <!-- FEATURES -->
 
 <section>
 
 <div class="title">
-
 <h2>ለምን Dukem Steel Sales?</h2>
-
-<p>
-ጥራት • ተመጣጣኝ ዋጋ • ፈጣን አገልግሎት
-</p>
-
+<p>ጥራት • ተመጣጣኝ ዋጋ • ፈጣን አገልግሎት</p>
 </div>
-
 
 <div class="features">
 
@@ -832,28 +710,20 @@ target="_blank">
 <div class="feature">
 <div class="icon">🚚</div>
 <h3>ነፃ Transport</h3>
-<p>የነፃ ትራንስፖርት</p>
+<p>የነፃ ትራንስፖርት አገልግሎት</p>
 </div>
 
 </div>
-
 </section>
-
 
 <!-- PRODUCTS -->
 
 <section id="products">
 
 <div class="title">
-
 <h2>🏗️ ምርቶቻችን</h2>
-
-<p>
-የሚፈልጉትን ምርት ይምረጡ
-</p>
-
+<p>የሚፈልጉትን ምርት ይምረጡ</p>
 </div>
-
 
 <div class="filterbox">
 
@@ -861,9 +731,7 @@ target="_blank">
 id="search"
 class="search"
 placeholder="🔎 ምርት ፈልግ..."
-onkeyup="filterProducts()"
->
-
+onkeyup="filterProducts()">
 
 <div class="filters">
 
@@ -872,43 +740,25 @@ onclick="setFilter('all',this)">
 ሁሉም
 </button>
 
-<button onclick="setFilter('28',this)">
-28 Gauge
-</button>
-
-<button onclick="setFilter('30',this)">
-30 Gauge
-</button>
-
-<button onclick="setFilter('32',this)">
-32 Gauge
-</button>
-
-<button onclick="setFilter('35',this)">
-35 Gauge
-</button>
-
-<button onclick="setFilter('villa',this)">
-Villa
-</button>
-
-<button onclick="setFilter('fence',this)">
-Fence
-</button>
+<button onclick="setFilter('28',this)">28 Gauge</button>
+<button onclick="setFilter('30',this)">30 Gauge</button>
+<button onclick="setFilter('32',this)">32 Gauge</button>
+<button onclick="setFilter('35',this)">35 Gauge</button>
+<button onclick="setFilter('villa',this)">Villa</button>
+<button onclick="setFilter('fence',this)">Fence</button>
 
 </div>
-
 </div>
-
 
 <div class="products">
-
 
 <!-- 28 -->
 
 <div class="card product" data-cat="28">
 
-<img src="sample-1.jpg">
+<img src="sample-1.jpg"
+onclick="viewImage(this.src)"
+alt="28 Gauge">
 
 <div class="cardbody">
 
@@ -925,19 +775,20 @@ Fence
 </div>
 
 <button class="order"
-onclick="openOrder('28 Gauge ቆርቆሮ')">
+onclick="openOrder('28 Gauge ቆርቆሮ',1100)">
 🛒 Order
 </button>
 
 </div>
 </div>
 
-
 <!-- 30 -->
 
 <div class="card product" data-cat="30">
 
-<img src="sample-4.jpg">
+<img src="sample-4.jpg"
+onclick="viewImage(this.src)"
+alt="30 Gauge">
 
 <div class="cardbody">
 
@@ -954,19 +805,20 @@ onclick="openOrder('28 Gauge ቆርቆሮ')">
 </div>
 
 <button class="order"
-onclick="openOrder('30 Gauge ቆርቆሮ')">
+onclick="openOrder('30 Gauge ቆርቆሮ',900)">
 🛒 Order
 </button>
 
 </div>
 </div>
 
-
 <!-- 32 -->
 
 <div class="card product" data-cat="32">
 
-<img src="sample-3.jpg">
+<img src="sample-3.jpg"
+onclick="viewImage(this.src)"
+alt="32 Gauge">
 
 <div class="cardbody">
 
@@ -988,19 +840,20 @@ onclick="openOrder('30 Gauge ቆርቆሮ')">
 </div>
 
 <button class="order"
-onclick="openOrder('32 Gauge ቆርቆሮ')">
+onclick="openOrder('32 Gauge ቆርቆሮ',700)">
 🛒 Order
 </button>
 
 </div>
 </div>
 
-
 <!-- 35 -->
 
 <div class="card product" data-cat="35">
 
-<img src="sample-1.jpg">
+<img src="sample-1.jpg"
+onclick="viewImage(this.src)"
+alt="35 Gauge">
 
 <div class="cardbody">
 
@@ -1022,19 +875,20 @@ onclick="openOrder('32 Gauge ቆርቆሮ')">
 </div>
 
 <button class="order"
-onclick="openOrder('35 Gauge ቆርቆሮ')">
+onclick="openOrder('35 Gauge ቆርቆሮ',470)">
 🛒 Order
 </button>
 
 </div>
 </div>
 
-
 <!-- VILLA -->
 
 <div class="card product" data-cat="villa">
 
-<img src="sample-2.jpg">
+<img src="sample-2.jpg"
+onclick="viewImage(this.src)"
+alt="Villa Roofing">
 
 <div class="cardbody">
 
@@ -1056,19 +910,20 @@ onclick="openOrder('35 Gauge ቆርቆሮ')">
 </div>
 
 <button class="order"
-onclick="openOrder('Villa Tile Roofing')">
+onclick="openOrder('Villa Tile Roofing',980)">
 🛒 Order
 </button>
 
 </div>
 </div>
 
-
 <!-- FENCE -->
 
 <div class="card product" data-cat="fence">
 
-<img src="sample-3.jpg">
+<img src="sample-3.jpg"
+onclick="viewImage(this.src)"
+alt="EGA Fence">
 
 <div class="cardbody">
 
@@ -1090,7 +945,7 @@ onclick="openOrder('Villa Tile Roofing')">
 </div>
 
 <button class="order"
-onclick="openOrder('EGA Fence Sheet')">
+onclick="openOrder('EGA Fence Sheet',800)">
 🛒 Order
 </button>
 
@@ -1098,9 +953,7 @@ onclick="openOrder('EGA Fence Sheet')">
 </div>
 
 </div>
-
 </section>
-
 
 <!-- SERVICES -->
 
@@ -1116,9 +969,7 @@ Order • Deposit • Measurement • Appointment
 
 </div>
 
-
 <div class="features">
-
 
 <div class="feature">
 
@@ -1126,17 +977,14 @@ Order • Deposit • Measurement • Appointment
 
 <h3>የቆርቆሮ ትዕዛዝ</h3>
 
-<p>
-የምትፈልጉትን ምርት ይዘዙ
-</p>
+<p>የምትፈልጉትን ምርት ይዘዙ</p>
 
 <button class="btn telegram"
-onclick="openOrder('General Order')">
+onclick="openOrder('General Order',0)">
 Order
 </button>
 
 </div>
-
 
 <div class="feature">
 
@@ -1144,9 +992,7 @@ Order
 
 <h3>ቀብድ ክፍያ</h3>
 
-<p>
-ትዕዛዝዎን ለማረጋገጥ
-</p>
+<p>ትዕዛዝዎን ለማረጋገጥ</p>
 
 <button class="btn gold"
 onclick="openService('deposit')">
@@ -1155,16 +1001,13 @@ Deposit
 
 </div>
 
-
 <div class="feature">
 
 <div class="icon">📏</div>
 
 <h3>ልኬት ማስለካት</h3>
 
-<p>
-ቤትዎ ላይ ልኬት እንዲለካ
-</p>
+<p>ቤትዎ ላይ ልኬት እንዲለካ</p>
 
 <button class="btn blue"
 onclick="openService('measure')">
@@ -1173,16 +1016,13 @@ onclick="openService('measure')">
 
 </div>
 
-
 <div class="feature">
 
 <div class="icon">📅</div>
 
 <h3>ቀጠሮ ያስይዙ</h3>
 
-<p>
-ቀንና ሰዓት ይምረጡ
-</p>
+<p>ቀንና ሰዓት ይምረጡ</p>
 
 <button class="btn green"
 onclick="openService('appointment')">
@@ -1192,9 +1032,7 @@ onclick="openService('appointment')">
 </div>
 
 </div>
-
 </section>
-
 
 <!-- VILLA -->
 
@@ -1202,9 +1040,7 @@ onclick="openService('appointment')">
 
 <div class="villa">
 
-<h2>
-🏡 Modern Villa Tile Roofing
-</h2>
+<h2>🏡 Modern Villa Tile Roofing</h2>
 
 <p>
 28 Gauge • 0.4mm Thickness • 1.15m Width
@@ -1220,18 +1056,13 @@ onclick="openService('appointment')">
 
 <br>
 
-<button
-class="btn gold"
-onclick="openOrder('Villa Tile Roofing')">
-
+<button class="btn gold"
+onclick="openOrder('Villa Tile Roofing',980)">
 🛒 Villa Roofing Order
-
 </button>
 
 </div>
-
 </section>
-
 
 <!-- GALLERY -->
 
@@ -1239,19 +1070,30 @@ onclick="openOrder('Villa Tile Roofing')">
 
 <div class="title">
 <h2>📸 Gallery</h2>
+<p>ምስሉን ለማሳደግ ይንኩ</p>
 </div>
 
 <div class="gallery">
 
-<img src="sample-1.jpg">
-<img src="sample-2.jpg">
-<img src="sample-3.jpg">
-<img src="sample-4.jpg">
+<img src="sample-1.jpg"
+onclick="viewImage(this.src)"
+alt="Steel Sample">
+
+<img src="sample-2.jpg"
+onclick="viewImage(this.src)"
+alt="Villa Roofing">
+
+<img src="sample-3.jpg"
+onclick="viewImage(this.src)"
+alt="Fence Sheet">
+
+<img src="sample-4.jpg"
+onclick="viewImage(this.src)"
+alt="Steel Product">
 
 </div>
 
 </section>
-
 
 <!-- TRANSPORT -->
 
@@ -1259,9 +1101,7 @@ onclick="openOrder('Villa Tile Roofing')">
 
 <div class="transport">
 
-<h2>
-🚚 ነፃ ትራንስፖርት
-</h2>
+<h2>🚚 ነፃ ትራንስፖርት</h2>
 
 <p>
 ለቤት ሰሪዎች በተመጣጣኝ ዋጋ እናቀርባለን።
@@ -1274,9 +1114,7 @@ onclick="openOrder('Villa Tile Roofing')">
 </strong>
 
 </div>
-
 </section>
-
 
 <!-- LOCATIONS -->
 
@@ -1301,9 +1139,7 @@ onclick="openOrder('Villa Tile Roofing')">
 <div class="location">ደብረ ብርሃን</div>
 
 </div>
-
 </section>
-
 
 <!-- CONTACT -->
 
@@ -1313,13 +1149,8 @@ onclick="openOrder('Villa Tile Roofing')">
 
 <p>DUKEM STEEL SALES</p>
 
-<div class="phone">
-0922 337730
-</div>
-
-<div class="phone">
-0912 751976
-</div>
+<div class="phone">0922 337730</div>
+<div class="phone">0912 751976</div>
 
 <div class="buttons">
 
@@ -1346,9 +1177,7 @@ target="_blank">
 </a>
 
 </div>
-
 </section>
-
 
 <footer>
 
@@ -1360,97 +1189,56 @@ target="_blank">
 
 </footer>
 
-
 <!-- ORDER MODAL -->
 
 <div class="modal" id="orderModal">
 
 <div class="box">
 
-<div class="close"
-onclick="closeOrder()">
-×
-</div>
+<div class="close" onclick="closeOrder()">×</div>
 
-<h2>
-🛒 የምርት ትዕዛዝ
-</h2>
+<h2>🛒 የምርት ትዕዛዝ</h2>
 
-<label>
-ምርት
-</label>
+<label>ምርት</label>
+<input id="orderProduct" readonly>
 
-<input
-id="orderProduct"
-readonly
->
+<label>የአንዱ ዋጋ</label>
+<input id="unitPrice" readonly>
 
+<label>ስም</label>
+<input id="customerName" placeholder="ሙሉ ስም">
 
-<label>
-ስም *
-</label>
+<label>ስልክ</label>
+<input id="customerPhone" placeholder="09XXXXXXXX">
 
-<input
-id="customerName"
-placeholder="ሙሉ ስም"
->
-
-
-<label>
-ስልክ *
-</label>
-
-<input
-id="customerPhone"
-type="tel"
-placeholder="09XXXXXXXX"
->
-
-
-<label>
-ብዛት *
-</label>
-
+<label>ብዛት</label>
 <input
 id="quantity"
 type="number"
 value="1"
 min="1"
->
+oninput="calculateTotal()">
 
+<div class="totalBox">
+ጠቅላላ ዋጋ<br>
+<strong id="totalPrice">0 ብር</strong>
+</div>
 
-<label>
-አድራሻ / አካባቢ *
-</label>
+<label>አድራሻ</label>
+<input id="orderAddress" placeholder="አካባቢ / አድራሻ">
 
-<input
-id="orderAddress"
-placeholder="ለምሳሌ CMC"
->
-
-
-<label>
-ተጨማሪ መልዕክት
-</label>
+<label>ተጨማሪ መልዕክት</label>
 
 <textarea
 id="orderMessage"
-placeholder="ተጨማሪ መረጃ..."
-></textarea>
+placeholder="ተጨማሪ መረጃ..."></textarea>
 
-
-<button
-class="submit"
-onclick="sendOrder()">
-
-📤 Order ላክ
-
+<button class="submit" onclick="sendOrder()">
+📤 ትዕዛዝ ላክ
 </button>
 
 </div>
-
 </div>
-
 
 <!-- SERVICE MODAL -->
 
@@ -1458,63 +1246,28 @@ onclick="sendOrder()">
 
 <div class="box">
 
-<div class="close"
-onclick="closeService()">
-×
-</div>
+<div class="close" onclick="closeService()">×</div>
 
-<h2 id="serviceTitle">
-Service
-</h2>
+<h2 id="serviceTitle">Service</h2>
 
+<label>ስም</label>
+<input id="serviceName" placeholder="ሙሉ ስም">
 
-<label>
-ስም *
-</label>
+<label>ስልክ</label>
+<input id="servicePhone" placeholder="09XXXXXXXX">
 
-<input
-id="serviceName"
-placeholder="ሙሉ ስም"
->
-
-
-<label>
-ስልክ *
-</label>
-
-<input
-id="servicePhone"
-type="tel"
-placeholder="09XXXXXXXX"
->
-
-
-<label>
-አድራሻ / አካባቢ *
-</label>
-
-<input
-id="serviceAddress"
-placeholder="ለምሳሌ CMC"
->
-
+<label>አድራሻ / አካባቢ</label>
+<input id="serviceAddress" placeholder="ለምሳሌ CMC">
 
 <div id="depositFields">
 
-<label>
-💰 ቀብድ መጠን
-</label>
-
+<label>💰 ቀብድ መጠን</label>
 <input
 id="depositAmount"
 type="number"
-placeholder="ለምሳሌ 5000"
->
+placeholder="ለምሳሌ 5000">
 
-
-<label>
-የክፍያ መንገድ
-</label>
+<label>የክፍያ መንገድ</label>
 
 <select id="paymentMethod">
 
@@ -1526,53 +1279,28 @@ placeholder="ለምሳሌ 5000"
 
 </div>
 
-
 <div id="appointmentFields">
 
-<label>
-📅 ቀን
-</label>
+<label>📅 ቀን</label>
+<input id="appointmentDate" type="date">
 
-<input
-id="appointmentDate"
-type="date"
->
-
-
-<label>
-⏰ ሰዓት
-</label>
-
-<input
-id="appointmentTime"
-type="time"
->
+<label>⏰ ሰዓት</label>
+<input id="appointmentTime" type="time">
 
 </div>
 
-
-<label>
-ተጨማሪ መልዕክት
-</label>
+<label>ተጨማሪ መልዕክት</label>
 
 <textarea
 id="serviceMessage"
-placeholder="ተጨማሪ መረጃ..."
-></textarea>
+placeholder="ተጨማሪ መረጃ..."></textarea>
 
-
-<button
-class="submit"
-onclick="sendService()">
-
+<button class="submit" onclick="sendService()">
 📤 ቀጥል
-
 </button>
 
 </div>
-
 </div>
-
 
 <!-- SEND OPTIONS -->
 
@@ -1581,105 +1309,59 @@ onclick="sendService()">
 <div class="optionbox">
 
 <div class="optionclose"
-onclick="closeOptions()">
-×
-</div>
+onclick="closeOptions()">×</div>
 
-<h2>
-📤 Order የት ይላክ?
-</h2>
+<h2>📤 የመላኪያ መንገድ</h2>
 
 <p>
-የOrder መረጃዎን የሚፈልጉትን መንገድ ይምረጡ።
+Order መረጃዎን የት መላክ ይፈልጋሉ?
 </p>
 
-
-<button
-class="option tg"
+<button class="option tg"
 onclick="sendTelegram()">
-
-✈️ Telegram ላክ
-
+✈️ Telegram Message
 </button>
 
-
-<button
-class="option sms"
+<button class="option sms"
 onclick="sendSMS()">
-
-💬 SMS ላክ
-
+💬 SMS Message
 </button>
 
-
-<button
-class="option tt"
+<button class="option tt"
 onclick="sendTikTok()">
-
 🎵 TikTok Message
-
 </button>
 
-
-<button
-class="option call"
+<button class="option call"
 onclick="callDukem()">
-
 📞 Phone Call
-
 </button>
 
 </div>
+</div>
+
+<!-- IMAGE VIEWER -->
+
+<div id="imageViewer"
+onclick="closeImage()">
+
+<div class="imageClose">×</div>
+
+<img id="bigImage" src="" alt="Preview">
 
 </div>
 
-
-<!-- SUCCESS -->
-
-<div id="success">
-
-<div class="successbox">
-
-<div class="success-icon">
-✅
-</div>
-
-<h2>
-Order ተዘጋጅቷል!
-</h2>
-
-<p id="successText">
-የመላኪያ መንገድ ይምረጡ።
-</p>
-
-<button
-class="btn blue"
-onclick="closeSuccess()">
-
-OK
-
-</button>
-
-</div>
-
-</div>
-
-
-<a
-class="float"
+<a class="float"
 href="https://t.me/TADHSH"
 target="_blank">
-
 ✈️
-
 </a>
-
 
 <script>
 
 let currentFilter="all";
 let currentMessage="";
-
+let currentPrice=0;
 
 /* FILTER */
 
@@ -1687,16 +1369,13 @@ function setFilter(filter,btn){
 
  currentFilter=filter;
 
- document
- .querySelectorAll(".filters button")
+ document.querySelectorAll(".filters button")
  .forEach(b=>b.classList.remove("active"));
 
  btn.classList.add("active");
 
  filterProducts();
-
 }
-
 
 function filterProducts(){
 
@@ -1705,8 +1384,7 @@ function filterProducts(){
  .value
  .toLowerCase();
 
- document
- .querySelectorAll(".product")
+ document.querySelectorAll(".product")
  .forEach(card=>{
 
   let category=card.dataset.cat;
@@ -1723,40 +1401,62 @@ function filterProducts(){
 
   card.classList.toggle(
   "hide",
-  !(okCategory && okSearch)
+  !(okCategory&&okSearch)
   );
 
  });
-
 }
-
 
 /* ORDER */
 
-function openOrder(product){
+function openOrder(product,price){
 
  document.getElementById("orderProduct")
  .value=product;
 
+ currentPrice=price || 0;
+
+ document.getElementById("unitPrice")
+ .value=
+ currentPrice>0
+ ? currentPrice+" ብር"
+ : "ዋጋ በትዕዛዝ ይረጋገጣል";
+
+ document.getElementById("quantity").value=1;
+
+ calculateTotal();
+
  document.getElementById("orderModal")
  .classList.add("show");
-
 }
 
+function calculateTotal(){
+
+ let quantity=
+ parseInt(
+ document.getElementById("quantity").value
+ ) || 1;
+
+ let total=
+ currentPrice*quantity;
+
+ document.getElementById("totalPrice")
+ .innerText=
+ total>0
+ ? total.toLocaleString()+" ብር"
+ : "ዋጋ በትዕዛዝ";
+}
 
 function closeOrder(){
 
  document.getElementById("orderModal")
  .classList.remove("show");
-
 }
-
 
 function sendOrder(){
 
  let product=
- document.getElementById("orderProduct")
- .value;
+ document.getElementById("orderProduct").value;
 
  let name=
  document.getElementById("customerName")
@@ -1767,8 +1467,7 @@ function sendOrder(){
  .value.trim();
 
  let quantity=
- document.getElementById("quantity")
- .value;
+ document.getElementById("quantity").value;
 
  let address=
  document.getElementById("orderAddress")
@@ -1778,36 +1477,40 @@ function sendOrder(){
  document.getElementById("orderMessage")
  .value.trim();
 
+ let total=
+ currentPrice * (parseInt(quantity)||1);
 
- if(!name || !phone || !address){
+ if(!name || !phone){
 
   alert(
-  "እባክዎ ስም፣ ስልክ እና አድራሻ ያስገቡ።"
+  "እባክዎ ስም እና ስልክ ያስገቡ።"
   );
 
   return;
  }
 
-
  currentMessage=
  "DUKEM STEEL SALES\n\n"+
  "🛒 ORDER\n"+
- "━━━━━━━━━━━━\n"+
  "Product: "+product+"\n"+
  "Name: "+name+"\n"+
  "Phone: "+phone+"\n"+
  "Quantity: "+quantity+"\n"+
+ "Unit Price: "+
+ (currentPrice>0
+ ? currentPrice+" ብር"
+ : "To be confirmed")+"\n"+
+ "Total: "+
+ (total>0
+ ? total.toLocaleString()+" ብር"
+ : "To be confirmed")+"\n"+
  "Address: "+address+"\n"+
- "Message: "+message+"\n"+
- "━━━━━━━━━━━━";
-
+ "Message: "+message;
 
  closeOrder();
 
  showOptions();
-
 }
-
 
 /* SERVICES */
 
@@ -1824,40 +1527,34 @@ function openService(type){
  if(type==="appointment")
  title="📅 ቀጠሮ";
 
-
  document.getElementById("serviceTitle")
  .innerText=title;
 
-
  document.getElementById("depositFields")
  .style.display=
- type==="deposit" ? "block" : "none";
-
+ type==="deposit"
+ ? "block"
+ : "none";
 
  document.getElementById("appointmentFields")
  .style.display=
  (type==="measure" ||
  type==="appointment")
- ? "block" : "none";
-
+ ? "block"
+ : "none";
 
  document.getElementById("serviceModal")
  .dataset.type=type;
 
-
  document.getElementById("serviceModal")
  .classList.add("show");
-
 }
-
 
 function closeService(){
 
  document.getElementById("serviceModal")
  .classList.remove("show");
-
 }
-
 
 function sendService(){
 
@@ -1901,21 +1598,18 @@ function sendService(){
  document.getElementById("serviceMessage")
  .value.trim();
 
-
- if(!name || !phone || !address){
+ if(!name || !phone){
 
   alert(
-  "እባክዎ ስም፣ ስልክ እና አድራሻ ያስገቡ።"
+  "እባክዎ ስም እና ስልክ ያስገቡ።"
   );
 
   return;
  }
 
-
  currentMessage=
  "DUKEM STEEL SALES\n\n"+
  title+"\n"+
- "━━━━━━━━━━━━\n"+
  "Name: "+name+"\n"+
  "Phone: "+phone+"\n"+
  "Address: "+address+"\n"+
@@ -1923,56 +1617,59 @@ function sendService(){
  "Payment: "+payment+"\n"+
  "Date: "+date+"\n"+
  "Time: "+time+"\n"+
- "Message: "+message+"\n"+
- "━━━━━━━━━━━━";
-
+ "Message: "+message;
 
  closeService();
 
  showOptions();
-
 }
-
 
 /* OPTIONS */
 
 function showOptions(){
 
- document
- .getElementById("options")
+ document.getElementById("options")
  .classList.add("show");
-
 }
-
 
 function closeOptions(){
 
- document
- .getElementById("options")
+ document.getElementById("options")
  .classList.remove("show");
-
 }
-
 
 /* TELEGRAM */
 
 function sendTelegram(){
 
- copyMessage(function(){
+ /*
+ Telegram cannot reliably pre-fill
+ a message into a public channel/contact
+ from a normal website.
 
-  window.open(
-  "https://t.me/TADHSH",
-  "_blank"
-  );
+ We copy the order first, then open Telegram.
+ */
 
-  showSuccess(
-  "Order መረጃው ተቀድቷል። Telegram ከከፈተ በኋላ Paste አድርገው Send ያድርጉ።"
-  );
+ copyMessage();
 
- });
+ window.open(
+ "https://t.me/TADHSH",
+ "_blank"
+ );
 
 }
 
+/* COPY */
+
+function copyMessage(){
+
+ if(navigator.clipboard){
+
+  navigator.clipboard.writeText(currentMessage)
+  .catch(()=>{});
+
+ }
+}
 
 /* SMS */
 
@@ -1983,49 +1680,20 @@ function sendSMS(){
 
  window.location.href=
  "sms:0922337730?body="+body;
-
 }
-
 
 /* TIKTOK */
 
 function sendTikTok(){
 
- copyMessage(function(){
+ copyMessage();
 
-  window.open(
-  "https://www.tiktok.com/@dukem.steel.sales",
-  "_blank"
-  );
-
-  showSuccess(
-  "Order መረጃው ተቀድቷል። TikTok ከከፈተ በኋላ Paste አድርገው Message ይላኩ።"
-  );
-
- });
+ window.open(
+ "https://www.tiktok.com/@dukem.steel.sales",
+ "_blank"
+ );
 
 }
-
-
-/* COPY */
-
-function copyMessage(callback){
-
- if(navigator.clipboard){
-
-  navigator.clipboard
-  .writeText(currentMessage)
-  .then(callback)
-  .catch(callback);
-
- }else{
-
-  callback();
-
- }
-
-}
-
 
 /* CALL */
 
@@ -2033,35 +1701,26 @@ function callDukem(){
 
  window.location.href=
  "tel:0922337730";
-
 }
 
+/* IMAGE VIEWER */
 
-/* SUCCESS */
+function viewImage(src){
 
-function showSuccess(text){
+ document.getElementById("bigImage")
+ .src=src;
 
- document.getElementById("options")
- .classList.remove("show");
-
- document.getElementById("successText")
- .innerText=text;
-
- document.getElementById("success")
+ document.getElementById("imageViewer")
  .classList.add("show");
-
 }
 
+function closeImage(){
 
-function closeSuccess(){
-
- document.getElementById("success")
+ document.getElementById("imageViewer")
  .classList.remove("show");
-
 }
 
-
-/* CLOSE MODALS */
+/* CLOSE */
 
 window.onclick=function(e){
 
@@ -2088,9 +1747,9 @@ window.onclick=function(e){
 
  if(
  e.target===
- document.getElementById("success")
+ document.getElementById("imageViewer")
  ){
-  closeSuccess();
+  closeImage();
  }
 
 };
@@ -2098,4 +1757,4 @@ window.onclick=function(e){
 </script>
 
 </body>
-</html>
+ </html>
