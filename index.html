@@ -3,155 +3,164 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Dukem Steel Sales | ዱከም ቆርቆሮ</title>
+<meta name="description" content="Dukem Steel Sales - የቆርቆሮ እና የግንባታ እቃዎች">
+<title>DUKEM STEEL SALES | ዱከም ቆርቆሮ</title>
 
 <style>
 *{
-  box-sizing:border-box;
   margin:0;
   padding:0;
-  scroll-behavior:smooth
+  box-sizing:border-box;
+  scroll-behavior:smooth;
 }
 
 :root{
-  --navy:#061f3b;
-  --blue:#0b3b6f;
-  --gold:#f6c400;
-  --gold2:#ffdc45;
+  --navy:#062b52;
+  --navy2:#031b35;
+  --gold:#f7c400;
   --white:#fff;
-  --light:#f4f7fb;
+  --light:#f4f7fa;
+  --text:#17202a;
+  --muted:#667085;
   --red:#e53935;
   --telegram:#229ed9;
   --green:#16a85a;
-  --dark:#07111d;
   --shadow:0 10px 35px rgba(0,0,0,.10);
 }
 
 body{
   font-family:Arial,"Noto Sans Ethiopic",sans-serif;
   background:var(--light);
-  color:#17202a;
+  color:var(--text);
   line-height:1.6;
 }
 
-/* HEADER */
+a{
+  text-decoration:none;
+}
+
+button{
+  font-family:inherit;
+}
+
+.container{
+  width:min(1180px,92%);
+  margin:auto;
+}
+
+/* ================= HEADER ================= */
+
 header{
   position:sticky;
   top:0;
-  z-index:1000;
+  z-index:3000;
   background:rgba(255,255,255,.96);
   backdrop-filter:blur(12px);
   box-shadow:0 3px 20px rgba(0,0,0,.10);
 }
 
 .nav{
-  max-width:1250px;
-  margin:auto;
-  padding:8px 18px;
+  min-height:72px;
   display:flex;
-  justify-content:space-between;
   align-items:center;
+  justify-content:space-between;
   gap:20px;
 }
 
-.logo{
+.brand{
   display:flex;
   align-items:center;
   gap:10px;
-  font-weight:900;
   color:var(--navy);
-  white-space:nowrap;
+  font-weight:900;
+  font-size:17px;
 }
 
-.logo img{
+.brand img{
   width:52px;
   height:52px;
   object-fit:contain;
 }
 
-.logo span{
-  color:#d8a900;
+.brand span{
+  color:#d9a900;
 }
 
 nav{
   display:flex;
+  align-items:center;
   gap:18px;
-  flex-wrap:wrap;
-  justify-content:center;
 }
 
 nav a{
-  text-decoration:none;
   color:var(--navy);
-  font-weight:bold;
   font-size:14px;
+  font-weight:800;
   transition:.25s;
 }
 
 nav a:hover{
-  color:#d3a800;
+  color:#d6a900;
 }
 
-/* HERO */
+.menu-btn{
+  display:none;
+  border:0;
+  background:var(--navy);
+  color:#fff;
+  border-radius:9px;
+  padding:10px 13px;
+  font-size:20px;
+}
+
+/* ================= HERO ================= */
+
 .hero{
-  min-height:90vh;
+  min-height:88vh;
   display:flex;
   align-items:center;
-  justify-content:center;
   text-align:center;
   color:#fff;
-  padding:60px 18px;
   position:relative;
   overflow:hidden;
-
   background:
-  linear-gradient(135deg,rgba(3,23,43,.94),rgba(7,55,100,.82)),
+  linear-gradient(135deg,rgba(2,25,48,.94),rgba(6,43,82,.80)),
   url("sample-2.jpg") center/cover;
-}
-
-.hero:before{
-  content:"";
-  position:absolute;
-  width:420px;
-  height:420px;
-  border:1px solid rgba(255,255,255,.12);
-  border-radius:50%;
-  top:-180px;
-  right:-120px;
 }
 
 .hero:after{
   content:"";
   position:absolute;
-  width:300px;
-  height:300px;
-  border:1px solid rgba(246,196,0,.18);
+  width:450px;
+  height:450px;
   border-radius:50%;
-  bottom:-150px;
-  left:-100px;
+  border:70px solid rgba(247,196,0,.08);
+  right:-180px;
+  bottom:-180px;
 }
 
 .hero-content{
-  max-width:950px;
+  width:min(950px,92%);
+  margin:auto;
   position:relative;
   z-index:2;
-  animation:heroIn .9s ease;
+  animation:fadeUp .8s ease;
 }
 
-@keyframes heroIn{
+@keyframes fadeUp{
   from{
     opacity:0;
-    transform:translateY(25px)
+    transform:translateY(25px);
   }
   to{
     opacity:1;
-    transform:translateY(0)
+    transform:translateY(0);
   }
 }
 
-.hero img{
-  width:135px;
-  height:135px;
+.hero-logo{
+  width:125px;
+  height:125px;
   object-fit:contain;
   background:#fff;
   border-radius:28px;
@@ -159,42 +168,52 @@ nav a:hover{
   box-shadow:0 15px 45px rgba(0,0,0,.3);
 }
 
+.badge{
+  display:inline-block;
+  margin-top:22px;
+  padding:7px 15px;
+  border-radius:30px;
+  background:rgba(247,196,0,.15);
+  border:1px solid rgba(247,196,0,.6);
+  color:var(--gold);
+  font-weight:800;
+}
+
 .hero h1{
   font-size:clamp(38px,8vw,76px);
+  line-height:1.05;
   color:var(--gold);
-  margin:20px 0 5px;
-  font-weight:1000;
+  margin:15px 0 10px;
   letter-spacing:1px;
 }
 
 .hero h2{
-  font-size:clamp(21px,4vw,36px);
+  font-size:clamp(20px,4vw,35px);
 }
 
 .hero p{
-  max-width:820px;
-  margin:20px auto;
+  max-width:800px;
+  margin:18px auto 25px;
+  color:#e9eef5;
   font-size:17px;
-  color:#eef5ff;
 }
 
-.buttons{
+.hero-buttons{
   display:flex;
   justify-content:center;
-  gap:10px;
   flex-wrap:wrap;
+  gap:10px;
 }
 
 .btn{
+  border:0;
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  gap:5px;
-  padding:13px 20px;
-  border:0;
+  gap:7px;
+  padding:13px 19px;
   border-radius:10px;
-  text-decoration:none;
-  font-weight:bold;
+  font-weight:900;
   cursor:pointer;
   transition:.25s;
 }
@@ -209,8 +228,8 @@ nav a:hover{
   color:#111;
 }
 
-.blue{
-  background:var(--blue);
+.navy{
+  background:var(--navy);
   color:#fff;
 }
 
@@ -234,153 +253,155 @@ nav a:hover{
   color:#fff;
 }
 
-/* GENERAL */
+/* ================= SECTIONS ================= */
+
 section{
-  max-width:1250px;
-  margin:auto;
-  padding:70px 18px;
+  padding:70px 0;
 }
 
-.title{
+.section-title{
   text-align:center;
   margin-bottom:35px;
 }
 
-.title h2{
+.section-title .small{
+  color:#d19f00;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+.section-title h2{
   color:var(--navy);
-  font-size:clamp(27px,5vw,38px);
-  margin-bottom:8px;
+  font-size:clamp(27px,5vw,40px);
+  margin:4px 0;
 }
 
-.title p{
-  color:#66717d;
+.section-title p{
+  color:var(--muted);
 }
 
-/* FEATURES */
+/* ================= FEATURES ================= */
+
 .features{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
-  gap:20px;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
 }
 
 .feature{
   background:#fff;
+  padding:27px 20px;
   border-radius:18px;
-  padding:28px 20px;
   text-align:center;
   box-shadow:var(--shadow);
   border-bottom:4px solid var(--gold);
-  transition:.3s;
+  transition:.25s;
 }
 
 .feature:hover{
   transform:translateY(-7px);
 }
 
-.icon{
-  font-size:45px;
+.feature-icon{
+  font-size:43px;
 }
 
 .feature h3{
   color:var(--navy);
-  margin:9px 0;
+  margin:8px 0;
 }
 
 .feature p{
-  color:#68727c;
+  color:var(--muted);
+  font-size:14px;
 }
 
-/* FILTER */
-.filterbox{
+/* ================= PRODUCTS ================= */
+
+.products-area{
+  background:#eef3f8;
+}
+
+.filter-box{
   background:#fff;
-  padding:20px;
+  padding:18px;
   border-radius:18px;
-  margin-bottom:25px;
   box-shadow:var(--shadow);
+  margin-bottom:25px;
 }
 
 .search{
   width:100%;
-  padding:14px 16px;
-  border:1px solid #d5dce4;
+  border:1px solid #d5dbe3;
+  padding:14px;
   border-radius:10px;
-  font-size:16px;
   outline:none;
+  font-size:16px;
+  margin-bottom:13px;
 }
 
 .search:focus{
-  border-color:var(--blue);
-  box-shadow:0 0 0 3px rgba(11,59,111,.08);
+  border-color:var(--navy);
 }
 
 .filters{
   display:flex;
-  gap:8px;
   flex-wrap:wrap;
-  margin-top:14px;
+  gap:8px;
 }
 
-.filters button{
-  padding:9px 15px;
-  border-radius:30px;
-  border:1px solid var(--blue);
+.filter{
+  border:1px solid var(--navy);
   background:#fff;
-  color:var(--blue);
-  font-weight:bold;
+  color:var(--navy);
+  padding:9px 14px;
+  border-radius:25px;
   cursor:pointer;
-  transition:.2s;
+  font-weight:800;
 }
 
-.filters button:hover,
-.filters button.active{
+.filter.active{
   background:var(--navy);
   color:#fff;
 }
 
-/* PRODUCTS */
 .products{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(245px,1fr));
+  grid-template-columns:repeat(3,1fr);
   gap:22px;
 }
 
-.card{
+.product{
   background:#fff;
   border-radius:18px;
   overflow:hidden;
   box-shadow:var(--shadow);
-  transition:.3s;
-  border:1px solid #edf0f3;
+  transition:.25s;
 }
 
-.card:hover{
-  transform:translateY(-8px);
-  box-shadow:0 18px 45px rgba(0,0,0,.14);
+.product:hover{
+  transform:translateY(-6px);
 }
 
-.card.hide{
+.product.hide{
   display:none;
 }
 
-.card img{
-  width:100%;
+.product-img{
   height:220px;
+  width:100%;
   object-fit:cover;
-  transition:.4s;
 }
 
-.card:hover img{
-  transform:scale(1.04);
+.product-body{
+  padding:19px;
 }
 
-.cardbody{
-  padding:20px;
-}
-
-.card h3{
+.product h3{
   color:var(--navy);
-  margin-bottom:12px;
   font-size:20px;
+  margin-bottom:12px;
 }
 
 .info{
@@ -391,411 +412,445 @@ section{
 }
 
 .price{
-  font-weight:900;
   color:var(--red);
+  font-weight:900;
 }
 
-.order{
+.order-btn{
   width:100%;
   margin-top:15px;
-  padding:13px;
   border:0;
-  border-radius:10px;
-  background:linear-gradient(135deg,var(--blue),var(--navy));
+  background:var(--navy);
   color:#fff;
-  font-weight:bold;
-  font-size:15px;
+  padding:13px;
+  border-radius:10px;
+  font-weight:900;
   cursor:pointer;
   transition:.25s;
 }
 
-.order:hover{
-  background:var(--gold);
-  color:#111;
-  transform:translateY(-2px);
+.order-btn:hover{
+  background:#0b467e;
 }
 
-/* VILLA */
-.villa{
-  background:
-  linear-gradient(135deg,rgba(4,29,55,.97),rgba(9,70,125,.94));
-  color:#fff;
-  text-align:center;
-  padding:55px 20px;
-  border-radius:24px;
+/* ================= SERVICES ================= */
+
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+
+.service{
+  background:#fff;
+  padding:25px 20px;
+  border-radius:18px;
   box-shadow:var(--shadow);
-  overflow:hidden;
+  text-align:center;
+}
+
+.service .icon{
+  font-size:42px;
+}
+
+.service h3{
+  color:var(--navy);
+  margin:7px 0;
+}
+
+.service p{
+  color:var(--muted);
+  margin-bottom:15px;
+  font-size:14px;
+}
+
+/* ================= VILLA ================= */
+
+.villa{
   position:relative;
+  overflow:hidden;
+  background:
+  linear-gradient(120deg,rgba(3,27,53,.97),rgba(6,43,82,.9)),
+  url("sample-2.jpg") center/cover;
+  color:#fff;
+  border-radius:25px;
+  padding:60px 25px;
+  text-align:center;
+  box-shadow:var(--shadow);
 }
 
 .villa h2{
   color:var(--gold);
-  font-size:clamp(28px,5vw,40px);
+  font-size:clamp(27px,5vw,42px);
 }
 
-.big{
-  font-size:clamp(35px,7vw,52px);
-  font-weight:1000;
-  margin:15px;
+.villa p{
+  margin-top:8px;
 }
 
-/* GALLERY */
+.villa-price{
+  font-size:46px;
+  font-weight:900;
+  color:#fff;
+  margin:14px 0;
+}
+
+.villa-price span{
+  color:var(--gold);
+}
+
+/* ================= GALLERY ================= */
+
 .gallery{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-  gap:18px;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
 }
 
 .gallery img{
   width:100%;
-  height:260px;
+  height:240px;
   object-fit:cover;
-  border-radius:18px;
+  border-radius:16px;
   box-shadow:var(--shadow);
   transition:.3s;
 }
 
 .gallery img:hover{
-  transform:scale(1.025);
+  transform:scale(1.03);
 }
 
-/* LOCATIONS */
-.locations{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
-  gap:15px;
-}
+/* ================= TRANSPORT ================= */
 
-.location{
-  background:#fff;
-  text-align:center;
-  font-weight:bold;
-  color:var(--navy);
-  padding:20px;
-  border-radius:14px;
-  box-shadow:var(--shadow);
-  transition:.25s;
-}
-
-.location:hover{
-  background:var(--gold);
-  transform:translateY(-4px);
-}
-
-/* TRANSPORT */
 .transport{
-  background:linear-gradient(135deg,#f7c400,#ffe36d);
-  text-align:center;
-  padding:50px 20px;
+  background:linear-gradient(135deg,#f7c400,#ffe36a);
   border-radius:22px;
+  padding:45px 20px;
+  text-align:center;
   box-shadow:var(--shadow);
 }
 
 .transport h2{
   color:var(--navy);
-  font-size:clamp(28px,5vw,40px);
+  font-size:32px;
 }
 
-/* CONTACT */
+/* ================= LOCATIONS ================= */
+
+.locations{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+}
+
+.location{
+  background:#fff;
+  padding:18px;
+  border-radius:13px;
+  text-align:center;
+  color:var(--navy);
+  font-weight:900;
+  box-shadow:0 5px 20px rgba(0,0,0,.07);
+}
+
+/* ================= CONTACT ================= */
+
 .contact{
-  max-width:none;
-  background:linear-gradient(135deg,#061f3b,#0b477e);
+  background:var(--navy);
   color:#fff;
   text-align:center;
 }
 
 .contact h2{
   color:var(--gold);
-  font-size:35px;
+  font-size:36px;
 }
 
 .phone{
   font-size:25px;
   font-weight:900;
-  margin:7px;
+  margin:5px;
 }
 
-/* FOOTER */
+.contact-buttons{
+  margin-top:20px;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:9px;
+}
+
+/* ================= FOOTER ================= */
+
 footer{
-  background:#030e1a;
-  color:#aeb8c2;
+  background:var(--navy2);
+  color:#aeb9c5;
   text-align:center;
   padding:28px 15px;
 }
 
-/* MODALS */
+footer strong{
+  color:var(--gold);
+}
+
+/* ================= MODAL ================= */
+
 .modal{
-  display:none;
   position:fixed;
   inset:0;
-  z-index:5000;
   background:rgba(0,0,0,.72);
-  padding:15px;
+  display:none;
   align-items:center;
   justify-content:center;
+  padding:15px;
+  z-index:5000;
 }
 
 .modal.show{
   display:flex;
 }
 
-.box{
+.modal-box{
   background:#fff;
-  width:100%;
-  max-width:510px;
+  width:min(500px,100%);
   max-height:92vh;
   overflow:auto;
-  border-radius:22px;
-  padding:28px;
+  border-radius:20px;
+  padding:25px;
   position:relative;
-  box-shadow:0 25px 80px rgba(0,0,0,.3);
+  animation:modalIn .25s ease;
+}
+
+@keyframes modalIn{
+  from{
+    opacity:0;
+    transform:scale(.92);
+  }
+  to{
+    opacity:1;
+    transform:scale(1);
+  }
 }
 
 .close{
   position:absolute;
-  right:17px;
+  right:15px;
   top:8px;
   font-size:30px;
   cursor:pointer;
   color:#555;
 }
 
-.box h2{
+.modal-box h2{
   color:var(--navy);
   margin-bottom:15px;
 }
 
-.box label{
+label{
   display:block;
-  font-weight:bold;
-  margin-top:12px;
+  font-weight:800;
+  margin-top:11px;
 }
 
-.box input,
-.box select,
-.box textarea{
+input,select,textarea{
   width:100%;
-  padding:13px;
-  margin-top:5px;
-  border:1px solid #d0d6dc;
+  padding:12px;
+  border:1px solid #ccd3db;
   border-radius:9px;
+  margin-top:5px;
   font-size:15px;
   outline:none;
 }
 
-.box input:focus,
-.box select:focus,
-.box textarea:focus{
-  border-color:var(--blue);
+textarea{
+  min-height:85px;
+  resize:vertical;
 }
 
-.box textarea{
-  height:85px;
-  resize:vertical;
+input:focus,select:focus,textarea:focus{
+  border-color:var(--navy);
 }
 
 .submit{
   width:100%;
-  margin-top:20px;
-  padding:14px;
+  margin-top:18px;
   border:0;
   border-radius:10px;
+  padding:14px;
   background:var(--navy);
   color:#fff;
-  font-weight:bold;
-  font-size:16px;
+  font-weight:900;
   cursor:pointer;
 }
 
-/* OPTIONS */
-#options{
-  display:none;
+/* ================= SEND OPTIONS ================= */
+
+.options{
   position:fixed;
   inset:0;
-  z-index:9000;
   background:rgba(0,0,0,.72);
+  display:none;
   align-items:center;
   justify-content:center;
   padding:15px;
+  z-index:7000;
 }
 
-#options.show{
+.options.show{
   display:flex;
 }
 
-.optionbox{
+.option-box{
+  width:min(430px,100%);
   background:#fff;
-  width:100%;
-  max-width:440px;
-  border-radius:22px;
-  padding:28px;
+  padding:26px;
+  border-radius:20px;
   text-align:center;
   position:relative;
-  box-shadow:0 25px 80px rgba(0,0,0,.3);
 }
 
-.optionbox h2{
+.option-box h2{
   color:var(--navy);
 }
 
-.optionbox p{
-  color:#66717d;
-  margin-bottom:18px;
+.option-box p{
+  color:var(--muted);
+  margin:5px 0 18px;
 }
 
 .option{
   width:100%;
-  padding:15px;
-  margin:6px 0;
   border:0;
   border-radius:10px;
+  padding:14px;
+  margin:6px 0;
   color:#fff;
-  font-weight:bold;
   font-size:16px;
-  cursor:pointer;
-  transition:.2s;
-}
-
-.option:hover{
-  transform:translateY(-2px);
-}
-
-.option.tg{background:var(--telegram)}
-.option.sms{background:var(--green)}
-.option.tt{background:#111}
-.option.call{background:var(--red)}
-
-.optionclose{
-  position:absolute;
-  right:17px;
-  top:8px;
-  font-size:28px;
+  font-weight:900;
   cursor:pointer;
 }
 
-/* FLOAT */
+/* ================= FLOAT ================= */
+
 .float{
   position:fixed;
   right:18px;
   bottom:18px;
-  width:60px;
-  height:60px;
+  width:58px;
+  height:58px;
   border-radius:50%;
   background:var(--telegram);
   color:#fff;
   display:flex;
   align-items:center;
   justify-content:center;
-  text-decoration:none;
-  font-size:27px;
-  z-index:2000;
+  font-size:25px;
+  z-index:2500;
   box-shadow:0 8px 25px rgba(0,0,0,.25);
-  animation:pulse 2s infinite;
 }
 
-@keyframes pulse{
-  0%,100%{box-shadow:0 8px 25px rgba(0,0,0,.25)}
-  50%{box-shadow:0 8px 35px rgba(34,158,217,.55)}
-}
+/* ================= MOBILE ================= */
 
-/* MOBILE */
-@media(max-width:760px){
+@media(max-width:900px){
 
-  .nav{
-    flex-direction:column;
-    padding:8px 10px;
+  .features,
+  .service-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .products{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .gallery{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .locations{
+    grid-template-columns:repeat(2,1fr);
   }
 
   nav{
-    gap:8px;
+    display:none;
   }
 
-  nav a{
-    font-size:12px;
+  nav.open{
+    display:flex;
+    position:absolute;
+    top:72px;
+    left:0;
+    right:0;
+    background:#fff;
+    padding:18px;
+    flex-direction:column;
+    box-shadow:0 10px 20px rgba(0,0,0,.12);
+  }
+
+  .menu-btn{
+    display:block;
+  }
+}
+
+@media(max-width:600px){
+
+  .nav{
+    min-height:65px;
+  }
+
+  .brand img{
+    width:45px;
+    height:45px;
+  }
+
+  .brand{
+    font-size:14px;
+  }
+
+  section{
+    padding:48px 0;
   }
 
   .hero{
     min-height:82vh;
-    padding:45px 15px;
   }
 
-  .hero img{
-    width:105px;
-    height:105px;
+  .hero-logo{
+    width:100px;
+    height:100px;
   }
 
   .hero p{
     font-size:15px;
   }
 
-  section{
-    padding:48px 12px;
-  }
-
-  .products{
-    grid-template-columns:1fr 1fr;
-    gap:12px;
-  }
-
-  .card img{
-    height:170px;
-  }
-
-  .cardbody{
-    padding:13px;
-  }
-
-  .card h3{
-    font-size:16px;
-  }
-
-  .info{
-    font-size:13px;
-  }
-
-  .order{
-    font-size:13px;
-    padding:11px;
-  }
-
-  .gallery img{
-    height:190px;
-  }
-}
-
-@media(max-width:480px){
-
+  .features,
+  .service-grid,
   .products{
     grid-template-columns:1fr;
   }
 
-  .hero h1{
-    font-size:39px;
+  .gallery{
+    grid-template-columns:1fr 1fr;
   }
 
-  .hero h2{
+  .gallery img{
+    height:180px;
+  }
+
+  .locations{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .villa-price{
+    font-size:34px;
+  }
+
+  .phone{
     font-size:21px;
   }
 
   .btn{
-    width:auto;
-    padding:11px 15px;
-  }
-
-  .features{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .feature{
-    padding:20px 10px;
-  }
-
-  .feature h3{
-    font-size:15px;
-  }
-
-  .feature p{
-    font-size:13px;
+    padding:12px 15px;
   }
 }
 </style>
@@ -803,31 +858,37 @@ footer{
 
 <body>
 
+<!-- HEADER -->
 <header>
-<div class="nav">
+<div class="container nav">
 
-<div class="logo">
+<a class="brand" href="#home">
 <img src="logo.jpg" alt="Dukem Steel Sales">
 <div>DUKEM <span>STEEL SALES</span></div>
-</div>
+</a>
 
-<nav>
-<a href="#home">Home</a>
-<a href="#products">Products</a>
-<a href="#services">Services</a>
-<a href="#villa">Villa</a>
-<a href="#gallery">Gallery</a>
-<a href="#contact">Contact</a>
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+<nav id="mainNav">
+<a href="#home" onclick="closeMenu()">Home</a>
+<a href="#products" onclick="closeMenu()">Products</a>
+<a href="#services" onclick="closeMenu()">Services</a>
+<a href="#villa" onclick="closeMenu()">Villa</a>
+<a href="#gallery" onclick="closeMenu()">Gallery</a>
+<a href="#contact" onclick="closeMenu()">Contact</a>
 </nav>
 
 </div>
 </header>
 
+
 <!-- HERO -->
 <section class="hero" id="home">
 <div class="hero-content">
 
-<img src="logo.jpg" alt="Dukem Steel Sales">
+<img class="hero-logo" src="logo.jpg" alt="Dukem Steel Sales">
+
+<div class="badge">🏗️ QUALITY • PRICE • SERVICE</div>
 
 <h1>DUKEM STEEL SALES</h1>
 
@@ -839,7 +900,7 @@ footer{
 በተመጣጣኝ ዋጋ።
 </p>
 
-<div class="buttons">
+<div class="hero-buttons">
 
 <a class="btn gold" href="#products">🏗️ ምርቶች</a>
 
@@ -862,10 +923,13 @@ target="_blank">
 </div>
 </section>
 
+
 <!-- FEATURES -->
 <section>
+<div class="container">
 
-<div class="title">
+<div class="section-title">
+<div class="small">WHY US</div>
 <h2>ለምን Dukem Steel Sales?</h2>
 <p>ጥራት • ተመጣጣኝ ዋጋ • ፈጣን አገልግሎት</p>
 </div>
@@ -873,83 +937,108 @@ target="_blank">
 <div class="features">
 
 <div class="feature">
-<div class="icon">🏠</div>
+<div class="feature-icon">🏠</div>
 <h3>የቤት ጣራ</h3>
 <p>ለቪላ እና ለተለያዩ ቤቶች</p>
 </div>
 
 <div class="feature">
-<div class="icon">🧱</div>
+<div class="feature-icon">🧱</div>
 <h3>የአጥር ቆርቆሮ</h3>
-<p>የተለያዩ መጠንና ቀለም</p>
+<p>የተለያዩ መጠንና አይነት</p>
 </div>
 
 <div class="feature">
-<div class="icon">💰</div>
-<h3>ቅናሽ ዋጋ</h3>
-<p>ለቤት ሰሪዎች ተመጣጣኝ ዋጋ</p>
+<div class="feature-icon">💰</div>
+<h3>ተመጣጣኝ ዋጋ</h3>
+<p>ለቤት ሰሪዎች ምቹ ዋጋ</p>
 </div>
 
 <div class="feature">
-<div class="icon">🚚</div>
+<div class="feature-icon">🚚</div>
 <h3>ነፃ Transport</h3>
 <p>የነፃ ትራንስፖርት አገልግሎት</p>
 </div>
 
 </div>
+</div>
 </section>
 
-<!-- PRODUCTS -->
-<section id="products">
 
-<div class="title">
+<!-- PRODUCTS -->
+<section class="products-area" id="products">
+<div class="container">
+
+<div class="section-title">
+<div class="small">OUR PRODUCTS</div>
 <h2>🏗️ ምርቶቻችን</h2>
-<p>የሚፈልጉትን ምርት ይምረጡ</p>
+<p>የሚፈልጉትን ምርት በቀላሉ ይፈልጉ</p>
 </div>
 
-<div class="filterbox">
+<div class="filter-box">
 
 <input
 id="search"
 class="search"
 placeholder="🔎 ምርት ፈልግ..."
-onkeyup="filterProducts()">
+oninput="filterProducts()"
+>
 
 <div class="filters">
 
-<button class="active" onclick="setFilter('all',this)">ሁሉም</button>
-<button onclick="setFilter('28',this)">28 Gauge</button>
-<button onclick="setFilter('30',this)">30 Gauge</button>
-<button onclick="setFilter('32',this)">32 Gauge</button>
-<button onclick="setFilter('35',this)">35 Gauge</button>
-<button onclick="setFilter('villa',this)">Villa</button>
-<button onclick="setFilter('fence',this)">Fence</button>
+<button class="filter active" onclick="setFilter('all',this)">
+ሁሉም
+</button>
+
+<button class="filter" onclick="setFilter('28',this)">
+28 Gauge
+</button>
+
+<button class="filter" onclick="setFilter('30',this)">
+30 Gauge
+</button>
+
+<button class="filter" onclick="setFilter('32',this)">
+32 Gauge
+</button>
+
+<button class="filter" onclick="setFilter('35',this)">
+35 Gauge
+</button>
+
+<button class="filter" onclick="setFilter('villa',this)">
+Villa
+</button>
+
+<button class="filter" onclick="setFilter('fence',this)">
+Fence
+</button>
 
 </div>
 </div>
+
 
 <div class="products">
 
+
 <!-- 28 -->
-<div class="card product" data-cat="28">
-
-<img src="sample-1.jpg" alt="28 Gauge">
-
-<div class="cardbody">
+<div class="product" data-cat="28">
+<img class="product-img" src="sample-1.jpg" alt="28 Gauge">
+<div class="product-body">
 
 <h3>28 Gauge ቆርቆሮ</h3>
 
 <div class="info">
 <span>ዱከም</span>
-<span class="price">1,100 ብር</span>
+<strong class="price">1,100 ብር</strong>
 </div>
 
 <div class="info">
 <span>አዳማ</span>
-<span class="price">970 ብር</span>
+<strong class="price">970 ብር</strong>
 </div>
 
-<button class="order"
+<button class="order-btn"
 onclick="openOrder('28 Gauge ቆርቆሮ')">
 🛒 Order Now
 </button>
@@ -957,26 +1046,25 @@ onclick="openOrder('28 Gauge ቆርቆሮ')">
 </div>
 </div>
 
+
 <!-- 30 -->
-<div class="card product" data-cat="30">
-
-<img src="sample-4.jpg" alt="30 Gauge">
-
-<div class="cardbody">
+<div class="product" data-cat="30">
+<img class="product-img" src="sample-4.jpg" alt="30 Gauge">
+<div class="product-body">
 
 <h3>30 Gauge ቆርቆሮ</h3>
 
 <div class="info">
 <span>አርቲ</span>
-<span class="price">900 ብር</span>
+<strong class="price">900 ብር</strong>
 </div>
 
 <div class="info">
 <span>አርቲ</span>
-<span class="price">950 ብር</span>
+<strong class="price">950 ብር</strong>
 </div>
 
-<button class="order"
+<button class="order-btn"
 onclick="openOrder('30 Gauge ቆርቆሮ')">
 🛒 Order Now
 </button>
@@ -984,31 +1072,30 @@ onclick="openOrder('30 Gauge ቆርቆሮ')">
 </div>
 </div>
 
+
 <!-- 32 -->
-<div class="card product" data-cat="32">
-
-<img src="sample-3.jpg" alt="32 Gauge">
-
-<div class="cardbody">
+<div class="product" data-cat="32">
+<img class="product-img" src="sample-3.jpg" alt="32 Gauge">
+<div class="product-body">
 
 <h3>32 Gauge ቆርቆሮ</h3>
 
 <div class="info">
 <span>ቃሊቲ</span>
-<span class="price">700 ብር</span>
+<strong class="price">700 ብር</strong>
 </div>
 
 <div class="info">
 <span>አርቲ</span>
-<span class="price">880 ብር</span>
+<strong class="price">880 ብር</strong>
 </div>
 
 <div class="info">
 <span>ግመል</span>
-<span class="price">870 ብር</span>
+<strong class="price">870 ብር</strong>
 </div>
 
-<button class="order"
+<button class="order-btn"
 onclick="openOrder('32 Gauge ቆርቆሮ')">
 🛒 Order Now
 </button>
@@ -1016,31 +1103,30 @@ onclick="openOrder('32 Gauge ቆርቆሮ')">
 </div>
 </div>
 
+
 <!-- 35 -->
-<div class="card product" data-cat="35">
-
-<img src="sample-1.jpg" alt="35 Gauge">
-
-<div class="cardbody">
+<div class="product" data-cat="35">
+<img class="product-img" src="sample-1.jpg" alt="35 Gauge">
+<div class="product-body">
 
 <h3>35 Gauge ቆርቆሮ</h3>
 
 <div class="info">
 <span>ቡሻን</span>
-<span class="price">470 ብር</span>
+<strong class="price">470 ብር</strong>
 </div>
 
 <div class="info">
 <span>ጥላ</span>
-<span class="price">520 ብር</span>
+<strong class="price">520 ብር</strong>
 </div>
 
 <div class="info">
 <span>ፈረስ</span>
-<span class="price">540 ብር</span>
+<strong class="price">540 ብር</strong>
 </div>
 
-<button class="order"
+<button class="order-btn"
 onclick="openOrder('35 Gauge ቆርቆሮ')">
 🛒 Order Now
 </button>
@@ -1048,31 +1134,30 @@ onclick="openOrder('35 Gauge ቆርቆሮ')">
 </div>
 </div>
 
+
 <!-- VILLA -->
-<div class="card product" data-cat="villa">
-
-<img src="sample-2.jpg" alt="Villa Roofing">
-
-<div class="cardbody">
+<div class="product" data-cat="villa">
+<img class="product-img" src="sample-2.jpg" alt="Villa Roofing">
+<div class="product-body">
 
 <h3>🏡 Villa Tile Roofing</h3>
 
 <div class="info">
 <span>28 Gauge</span>
-<span class="price">980 / m²</span>
+<strong class="price">980 / m²</strong>
 </div>
 
 <div class="info">
 <span>Thickness</span>
-<span>0.4mm</span>
+<strong>0.4mm</strong>
 </div>
 
 <div class="info">
 <span>Width</span>
-<span>1.15m</span>
+<strong>1.15m</strong>
 </div>
 
-<button class="order"
+<button class="order-btn"
 onclick="openOrder('Villa Tile Roofing')">
 🛒 Order Now
 </button>
@@ -1080,31 +1165,30 @@ onclick="openOrder('Villa Tile Roofing')">
 </div>
 </div>
 
+
 <!-- FENCE -->
-<div class="card product" data-cat="fence">
-
-<img src="sample-3.jpg" alt="EGA Fence">
-
-<div class="cardbody">
+<div class="product" data-cat="fence">
+<img class="product-img" src="sample-3.jpg" alt="EGA Fence">
+<div class="product-body">
 
 <h3>🧱 EGA Fence Sheet</h3>
 
 <div class="info">
 <span>1.10m</span>
-<span class="price">800 / m</span>
+<strong class="price">800 / m</strong>
 </div>
 
 <div class="info">
 <span>90cm</span>
-<span class="price">730 / m</span>
+<strong class="price">730 / m</strong>
 </div>
 
 <div class="info">
 <span>Thickness</span>
-<span>0.4mm</span>
+<strong>0.4mm</strong>
 </div>
 
-<button class="order"
+<button class="order-btn"
 onclick="openOrder('EGA Fence Sheet')">
 🛒 Order Now
 </button>
@@ -1113,70 +1197,66 @@ onclick="openOrder('EGA Fence Sheet')">
 </div>
 
 </div>
+</div>
 </section>
+
 
 <!-- SERVICES -->
 <section id="services">
+<div class="container">
 
-<div class="title">
-
+<div class="section-title">
+<div class="small">OUR SERVICES</div>
 <h2>🛠️ አገልግሎቶቻችን</h2>
-
 <p>Order • Deposit • Measurement • Appointment</p>
-
 </div>
 
-<div class="features">
+<div class="service-grid">
 
-<div class="feature">
+<div class="service">
 <div class="icon">🛒</div>
 <h3>የቆርቆሮ ትዕዛዝ</h3>
 <p>የምትፈልጉትን ምርት ይዘዙ</p>
-
-<button class="btn telegram"
-onclick="openOrder('General Order')">
+<button class="btn navy" onclick="openOrder('General Order')">
 Order
 </button>
 </div>
 
-<div class="feature">
+<div class="service">
 <div class="icon">💰</div>
 <h3>ቀብድ ክፍያ</h3>
 <p>ትዕዛዝዎን ለማረጋገጥ</p>
-
-<button class="btn gold"
-onclick="openService('deposit')">
+<button class="btn gold" onclick="openService('deposit')">
 Deposit
 </button>
 </div>
 
-<div class="feature">
+<div class="service">
 <div class="icon">📏</div>
 <h3>ልኬት ማስለካት</h3>
 <p>ቤትዎ ላይ ልኬት እንዲለካ</p>
-
-<button class="btn blue"
-onclick="openService('measure')">
+<button class="btn navy" onclick="openService('measure')">
 ልኬት ጠይቅ
 </button>
 </div>
 
-<div class="feature">
+<div class="service">
 <div class="icon">📅</div>
-<h3>ቀጠሮ ያስይዙ</h3>
+<h3>ቀጠሮ</h3>
 <p>ቀንና ሰዓት ይምረጡ</p>
-
-<button class="btn green"
-onclick="openService('appointment')">
+<button class="btn green" onclick="openService('appointment')">
 ቀጠሮ
 </button>
 </div>
 
 </div>
+</div>
 </section>
+
 
 <!-- VILLA -->
 <section id="villa">
+<div class="container">
 
 <div class="villa">
 
@@ -1184,7 +1264,9 @@ onclick="openService('appointment')">
 
 <p>28 Gauge • 0.4mm Thickness • 1.15m Width</p>
 
-<div class="big">980 ብር / m²</div>
+<div class="villa-price">
+980 <span>ብር / m²</span>
+</div>
 
 <p>🎨 የተለያዩ ቀለሞች • 🚚 ነፃ Transport</p>
 
@@ -1196,14 +1278,18 @@ onclick="openOrder('Villa Tile Roofing')">
 </button>
 
 </div>
+</div>
 </section>
+
 
 <!-- GALLERY -->
 <section id="gallery">
+<div class="container">
 
-<div class="title">
+<div class="section-title">
+<div class="small">OUR WORK</div>
 <h2>📸 Gallery</h2>
-<p>የDukem Steel Sales ምርቶች</p>
+<p>የምርቶቻችን ምሳሌዎች</p>
 </div>
 
 <div class="gallery">
@@ -1214,10 +1300,13 @@ onclick="openOrder('Villa Tile Roofing')">
 <img src="sample-4.jpg" alt="Steel Product">
 
 </div>
+</div>
 </section>
+
 
 <!-- TRANSPORT -->
 <section>
+<div class="container">
 
 <div class="transport">
 
@@ -1234,15 +1323,16 @@ onclick="openOrder('Villa Tile Roofing')">
 </strong>
 
 </div>
+</div>
 </section>
+
 
 <!-- LOCATIONS -->
 <section>
+<div class="container">
 
-<div class="title">
-
+<div class="section-title">
 <h2>📍 የምናገለግላቸው አካባቢዎች</h2>
-
 </div>
 
 <div class="locations">
@@ -1254,12 +1344,17 @@ onclick="openOrder('Villa Tile Roofing')">
 <div class="location">ሸክሶ</div>
 <div class="location">ሸሸመኔ</div>
 <div class="location">ደብረ ብርሃን</div>
+<div class="location">ዱከም</div>
 
+</div>
 </div>
 </section>
 
+
 <!-- CONTACT -->
 <section class="contact" id="contact">
+
+<div class="container">
 
 <h2>📞 ያግኙን</h2>
 
@@ -1268,7 +1363,7 @@ onclick="openOrder('Villa Tile Roofing')">
 <div class="phone">0922 337730</div>
 <div class="phone">0912 751976</div>
 
-<div class="buttons">
+<div class="contact-buttons">
 
 <a class="btn red" href="tel:0922337730">
 📞 Call
@@ -1291,20 +1386,22 @@ target="_blank">
 </a>
 
 </div>
+
+</div>
 </section>
 
+
 <footer>
-
-© 2026 DUKEM STEEL SALES
+<strong>DUKEM STEEL SALES</strong>
 <br>
-የቆርቆሮ እና የግንባታ እቃዎች
-
+© 2026 • የቆርቆሮ እና የግንባታ እቃዎች
 </footer>
+
 
 <!-- ORDER MODAL -->
 <div class="modal" id="orderModal">
 
-<div class="box">
+<div class="modal-box">
 
 <div class="close" onclick="closeOrder()">×</div>
 
@@ -1326,8 +1423,7 @@ target="_blank">
 <input id="orderAddress" placeholder="አካባቢ / አድራሻ">
 
 <label>ተጨማሪ መልዕክት</label>
-<textarea id="orderMessage"
-placeholder="ተጨማሪ መረጃ..."></textarea>
+<textarea id="orderMessage" placeholder="ተጨማሪ መረጃ..."></textarea>
 
 <button class="submit" onclick="sendOrder()">
 📤 ትዕዛዝ ላክ
@@ -1336,10 +1432,11 @@ placeholder="ተጨማሪ መረጃ..."></textarea>
 </div>
 </div>
 
+
 <!-- SERVICE MODAL -->
 <div class="modal" id="serviceModal">
 
-<div class="box">
+<div class="modal-box">
 
 <div class="close" onclick="closeService()">×</div>
 
@@ -1360,7 +1457,6 @@ placeholder="ተጨማሪ መረጃ..."></textarea>
 <input id="depositAmount" type="number" placeholder="ለምሳሌ 5000">
 
 <label>የክፍያ መንገድ</label>
-
 <select id="paymentMethod">
 <option>Telebirr</option>
 <option>Bank Transfer</option>
@@ -1380,9 +1476,7 @@ placeholder="ተጨማሪ መረጃ..."></textarea>
 </div>
 
 <label>ተጨማሪ መልዕክት</label>
-
-<textarea id="serviceMessage"
-placeholder="ተጨማሪ መረጃ..."></textarea>
+<textarea id="serviceMessage" placeholder="ተጨማሪ መረጃ..."></textarea>
 
 <button class="submit" onclick="sendService()">
 📤 ቀጥል
@@ -1391,318 +1485,370 @@ placeholder="ተጨማሪ መረጃ..."></textarea>
 </div>
 </div>
 
+
 <!-- SEND OPTIONS -->
-<div id="options">
+<div class="options" id="options">
 
-<div class="optionbox">
+<div class="option-box">
 
-<div class="optionclose" onclick="closeOptions()">×</div>
+<div class="close" onclick="closeOptions()">×</div>
 
 <h2>📤 የመላኪያ መንገድ</h2>
 
-<p>መረጃዎን የት መላክ ይፈልጋሉ?</p>
+<p>Order መረጃዎን የት መላክ ይፈልጋሉ?</p>
 
-<button class="option tg" onclick="sendTelegram()">
+<button class="option telegram"
+onclick="sendTelegram()">
 ✈️ Telegram Message
 </button>
 
-<button class="option sms" onclick="sendSMS()">
+<button class="option green"
+onclick="sendSMS()">
 💬 SMS Message
 </button>
 
-<button class="option tt" onclick="sendTikTok()">
-🎵 TikTok Message
+<button class="option black"
+onclick="sendTikTok()">
+🎵 TikTok
 </button>
 
-<button class="option call" onclick="callDukem()">
+<button class="option red"
+onclick="callDukem()">
 📞 Phone Call
 </button>
 
 </div>
 </div>
 
+
+<!-- FLOAT TELEGRAM -->
 <a class="float"
 href="https://t.me/TADHSH"
 target="_blank">
 ✈️
 </a>
 
+
 <script>
 
 let currentFilter="all";
 let currentMessage="";
 
+
+/* MENU */
+
+function toggleMenu(){
+  document.getElementById("mainNav").classList.toggle("open");
+}
+
+function closeMenu(){
+  document.getElementById("mainNav").classList.remove("open");
+}
+
+
 /* FILTER */
+
 function setFilter(filter,btn){
 
-currentFilter=filter;
+  currentFilter=filter;
 
-document.querySelectorAll(".filters button")
-.forEach(b=>b.classList.remove("active"));
+  document.querySelectorAll(".filter")
+  .forEach(b=>b.classList.remove("active"));
 
-btn.classList.add("active");
+  btn.classList.add("active");
 
-filterProducts();
+  filterProducts();
 }
 
 function filterProducts(){
 
-let search=
-document.getElementById("search").value.toLowerCase();
+  const search=
+  document.getElementById("search").value.toLowerCase().trim();
 
-document.querySelectorAll(".product")
-.forEach(card=>{
+  document.querySelectorAll(".product").forEach(card=>{
 
-let category=card.dataset.cat;
-let text=card.innerText.toLowerCase();
+    const category=card.dataset.cat;
+    const text=card.innerText.toLowerCase();
 
-let okCategory=
-currentFilter==="all" ||
-category===currentFilter;
+    const categoryOK=
+    currentFilter==="all" ||
+    category===currentFilter;
 
-let okSearch=text.includes(search);
+    const searchOK=
+    text.includes(search);
 
-card.classList.toggle(
-"hide",
-!(okCategory && okSearch)
-);
+    card.classList.toggle(
+      "hide",
+      !(categoryOK && searchOK)
+    );
 
-});
+  });
 }
 
+
 /* ORDER */
+
 function openOrder(product){
 
-document.getElementById("orderProduct").value=product;
+  document.getElementById("orderProduct").value=product;
 
-document.getElementById("orderModal")
-.classList.add("show");
-
+  document.getElementById("orderModal")
+  .classList.add("show");
 }
 
 function closeOrder(){
 
-document.getElementById("orderModal")
-.classList.remove("show");
-
+  document.getElementById("orderModal")
+  .classList.remove("show");
 }
 
 function sendOrder(){
 
-let product=
-document.getElementById("orderProduct").value;
+  const product=
+  document.getElementById("orderProduct").value;
 
-let name=
-document.getElementById("customerName").value.trim();
+  const name=
+  document.getElementById("customerName").value.trim();
 
-let phone=
-document.getElementById("customerPhone").value.trim();
+  const phone=
+  document.getElementById("customerPhone").value.trim();
 
-let quantity=
-document.getElementById("quantity").value;
+  const quantity=
+  document.getElementById("quantity").value;
 
-let address=
-document.getElementById("orderAddress").value.trim();
+  const address=
+  document.getElementById("orderAddress").value.trim();
 
-let message=
-document.getElementById("orderMessage").value.trim();
+  const message=
+  document.getElementById("orderMessage").value.trim();
 
-if(!name || !phone){
+  if(!name || !phone){
 
-alert("እባክዎ ስም እና ስልክ ያስገቡ።");
-return;
+    alert("እባክዎ ስም እና ስልክ ያስገቡ።");
 
+    return;
+  }
+
+  currentMessage=
+`DUKEM STEEL SALES
+
+🛒 ORDER
+Product: ${product}
+Name: ${name}
+Phone: ${phone}
+Quantity: ${quantity}
+Address: ${address}
+Message: ${message}`;
+
+  closeOrder();
+  showOptions();
 }
 
-currentMessage=
-"DUKEM STEEL SALES\n\n"+
-"🛒 ORDER\n"+
-"Product: "+product+"\n"+
-"Name: "+name+"\n"+
-"Phone: "+phone+"\n"+
-"Quantity: "+quantity+"\n"+
-"Address: "+address+"\n"+
-"Message: "+message;
-
-closeOrder();
-showOptions();
-
-}
 
 /* SERVICES */
+
 function openService(type){
 
-let title="";
+  let title="";
 
-if(type==="deposit")
-title="💰 ቀብድ ክፍያ";
+  if(type==="deposit")
+    title="💰 ቀብድ ክፍያ";
 
-if(type==="measure")
-title="📏 ልኬት ማስለካት";
+  if(type==="measure")
+    title="📏 ልኬት ማስለካት";
 
-if(type==="appointment")
-title="📅 ቀጠሮ";
+  if(type==="appointment")
+    title="📅 ቀጠሮ";
 
-document.getElementById("serviceTitle")
-.innerText=title;
+  document.getElementById("serviceTitle")
+  .innerText=title;
 
-document.getElementById("depositFields")
-.style.display=
-type==="deposit" ? "block" : "none";
+  document.getElementById("depositFields")
+  .style.display=
+  type==="deposit" ? "block" : "none";
 
-document.getElementById("appointmentFields")
-.style.display=
-(type==="measure" || type==="appointment")
-? "block" : "none";
+  document.getElementById("appointmentFields")
+  .style.display=
+  (type==="measure" || type==="appointment")
+  ? "block" : "none";
 
-document.getElementById("serviceModal")
-.dataset.type=type;
+  document.getElementById("serviceModal")
+  .dataset.type=type;
 
-document.getElementById("serviceModal")
-.classList.add("show");
-
+  document.getElementById("serviceModal")
+  .classList.add("show");
 }
 
 function closeService(){
 
-document.getElementById("serviceModal")
-.classList.remove("show");
-
+  document.getElementById("serviceModal")
+  .classList.remove("show");
 }
 
 function sendService(){
 
-let type=
-document.getElementById("serviceModal")
-.dataset.type;
+  const title=
+  document.getElementById("serviceTitle")
+  .innerText;
 
-let title=
-document.getElementById("serviceTitle")
-.innerText;
+  const name=
+  document.getElementById("serviceName")
+  .value.trim();
 
-let name=
-document.getElementById("serviceName")
-.value.trim();
+  const phone=
+  document.getElementById("servicePhone")
+  .value.trim();
 
-let phone=
-document.getElementById("servicePhone")
-.value.trim();
+  const address=
+  document.getElementById("serviceAddress")
+  .value.trim();
 
-let address=
-document.getElementById("serviceAddress")
-.value.trim();
+  const amount=
+  document.getElementById("depositAmount")
+  .value;
 
-let amount=
-document.getElementById("depositAmount")
-.value;
+  const payment=
+  document.getElementById("paymentMethod")
+  .value;
 
-let payment=
-document.getElementById("paymentMethod")
-.value;
+  const date=
+  document.getElementById("appointmentDate")
+  .value;
 
-let date=
-document.getElementById("appointmentDate")
-.value;
+  const time=
+  document.getElementById("appointmentTime")
+  .value;
 
-let time=
-document.getElementById("appointmentTime")
-.value;
+  const message=
+  document.getElementById("serviceMessage")
+  .value.trim();
 
-let message=
-document.getElementById("serviceMessage")
-.value.trim();
+  if(!name || !phone){
 
-if(!name || !phone){
+    alert("እባክዎ ስም እና ስልክ ያስገቡፀ።");
 
-alert("እባክዎ ስም እና ስልክ ያስገቡ።");
-return;
+    return;
+  }
 
+  currentMessage=
+`DUKEM STEEL SALES
+
+${title}
+Name: ${name}
+Phone: ${phone}
+Address: ${address}
+Deposit: ${amount}
+Payment: ${payment}
+Date: ${date}
+Time: ${time}
+Message: ${message}`;
+
+  closeService();
+  showOptions();
 }
 
-currentMessage=
-"DUKEM STEEL SALES\n\n"+
-title+"\n"+
-"Name: "+name+"\n"+
-"Phone: "+phone+"\n"+
-"Address: "+address+"\n"+
-"Deposit: "+amount+"\n"+
-"Payment: "+payment+"\n"+
-"Date: "+date+"\n"+
-"Time: "+time+"\n"+
-"Message: "+message;
 
-closeService();
-showOptions();
+/* SEND OPTIONS */
 
-}
-
-/* OPTIONS */
 function showOptions(){
-
-document.getElementById("options")
-.classList.add("show");
-
+  document.getElementById("options")
+  .classList.add("show");
 }
 
 function closeOptions(){
-
-document.getElementById("options")
-.classList.remove("show");
-
+  document.getElementById("options")
+  .classList.remove("show");
 }
+
 
 /* TELEGRAM */
+
 function sendTelegram(){
 
-let text=encodeURIComponent(currentMessage);
+  const text=
+  encodeURIComponent(currentMessage);
 
-window.open(
-"https://t.me/TADHSH?text="+text,
-"_blank"
-);
+  /*
+  Telegram opens the contact.
+  The prepared message is copied
+  to clipboard when possible.
+  */
 
+  copyMessage();
+
+  window.open(
+    "https://t.me/TADHSH",
+    "_blank"
+  );
 }
+
 
 /* SMS */
+
 function sendSMS(){
 
-let body=encodeURIComponent(currentMessage);
+  const body=
+  encodeURIComponent(currentMessage);
 
-window.location.href=
-"sms:0922337730?body="+body;
-
+  window.location.href=
+  "sms:0922337730?body="+body;
 }
+
 
 /* TIKTOK */
+
 function sendTikTok(){
 
-window.open(
-"https://www.tiktok.com/@dukem.steel.sales",
-"_blank"
-);
+  copyMessage();
+
+  window.open(
+    "https://www.tiktok.com/@dukem.steel.sales",
+    "_blank"
+  );
+}
+
+
+/* COPY */
+
+function copyMessage(){
+
+  if(navigator.clipboard){
+
+    navigator.clipboard
+    .writeText(currentMessage)
+    .catch(()=>{});
+
+  }
 
 }
+
 
 /* CALL */
+
 function callDukem(){
 
-window.location.href="tel:0922337730";
-
+  window.location.href=
+  "tel:0922337730";
 }
 
-/* CLOSE */
-window.onclick=function(e){
 
-if(e.target===document.getElementById("orderModal"))
-closeOrder();
+/* CLOSE MODALS */
 
-if(e.target===document.getElementById("serviceModal"))
-closeService();
+window.addEventListener("click",function(e){
 
-if(e.target===document.getElementById("options"))
-closeOptions();
+  if(e.target===
+  document.getElementById("orderModal"))
+    closeOrder();
 
-};
+  if(e.target===
+  document.getElementById("serviceModal"))
+    closeService();
+
+  if(e.target===
+  document.getElementById("options"))
+    closeOptions();
+
+});
 
 </script>
 
